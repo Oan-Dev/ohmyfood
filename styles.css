@@ -20,7 +20,7 @@ header{
   margin-top: 150px;
 }
 /* Containere principaux */
-.container__restaurant h2 {
+.block__titre{
   margin-bottom: 50px;
 }
 .container__restaurant {
@@ -28,7 +28,6 @@ header{
   height: 800px;
   padding: 10px;
   margin-top: 100px;
-  background-color: darkgrey
 }
 .block__Resto {
   height: 700px;
@@ -41,7 +40,7 @@ header{
   height: 100px;
   border: 2px solid #f2f2f2;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 #block__RestoLanote {
@@ -49,7 +48,7 @@ header{
   background-size: cover;
   width: auto;
   height: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 
 }
 
@@ -58,7 +57,7 @@ header{
   background-size: cover;
   width: auto;
   height: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 #block__RestoDelice {
@@ -66,7 +65,7 @@ header{
   background-size: cover;
   width: auto;
   height: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 /* footer*/
 footer {

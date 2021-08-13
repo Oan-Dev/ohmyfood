@@ -1,3 +1,4 @@
+/*Général*/
 body {
   width: 100%;
 }
@@ -16,9 +17,68 @@ header{
 /* les filtres la localisation & le block bienvenue */
 .container__filtres {
   width: 100%;
-  height: 100px;
+  height: 300px;
   margin-top: 150px;
 }
+.container__navBar {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container__nav h2 {
+  display: flex;
+  align-items: flex-start;
+}
+.nav__btn, .nav__icon {
+  display: flex;
+  flex-direction: row;
+}
+.nav__btn {
+  width: 60%;
+  height: 200px;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 2px #f2f2f2;
+background-color: #f2f2f2;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around;; */
+}
+.nav__icon{
+  width: 70px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 25px;
+  margin-left: -10px;
+}
+.nav__icon p {
+  background-color: #9356DC;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+}
+.nav__btn div a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 900;
+  font-size: 1.10rem;
+}
+.btn__choissez, .btn__composez, .btn__degustez {
+  display: flex;
+  align-items: center;
+  margin-right: 35px;
+}
+
 /* Containere principaux */
 .block__titre{
   height: 25px;
@@ -28,7 +88,7 @@ header{
   width: auto;
   height: 1500px;
   padding: 15px 15px 15px 15px;
-  margin-top: 150px;
+  margin-top: 110px;
   background-color: #f2f2f2;
 
 }

@@ -5,20 +5,53 @@ body {
 /*header logo*/
 header{
   width: 100%;
-  height: 100px;
+  height: auto;
 }
 .container__logo {
   width: auto;
-  height: 40px;
+  height: 70px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /* les filtres la localisation & le block bienvenue */
 .container__filtres {
   width: 100%;
   height: 300px;
-  margin-top: 150px;
+
+}
+.block__localisation{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebebeb;
+}
+.block__bienvenue{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 300px;
+}
+.block__bienvenue p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.element-btnExplorer{
+  width: 260px;
+  height: 80px;
+  background-color: #9356DC;
+  border-radius: 40px;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container__navBar {
   width: 100%;
@@ -88,7 +121,7 @@ background-color: #f2f2f2;
   width: auto;
   height: 1500px;
   padding: 15px 15px 15px 15px;
-  margin-top: 110px;
+  margin-top: 350px;
   background-color: #f2f2f2;
 
 }

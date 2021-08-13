@@ -29,6 +29,12 @@ header{
   justify-content: center;
   align-items: center;
   background-color: #ebebeb;
+  box-shadow: -5px -5px -5px -2px #ebebeb;
+  font-size: 1.10rem;
+  font-weight: 900;
+}
+.block__locateName{
+  margin-left: 15px;
 }
 .block__bienvenue{
   display: flex;
@@ -43,6 +49,7 @@ header{
   align-items: center;
   justify-content: center;
 }
+
 .element-btnExplorer{
   width: 260px;
   height: 80px;
@@ -52,6 +59,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 .container__navBar {
   width: 100%;
@@ -75,7 +83,7 @@ header{
   border: 1px solid #f2f2f2;
   border-radius: 15px;
   box-shadow: 5px 5px 5px 2px #f2f2f2;
-background-color: #f2f2f2;
+  background-color: #f2f2f2;
   margin-bottom: 25px;
   display: flex;
   align-items: center;
@@ -121,7 +129,7 @@ background-color: #f2f2f2;
   width: auto;
   height: 1500px;
   padding: 15px 15px 15px 15px;
-  margin-top: 350px;
+  margin-top: 400px;
   background-color: #f2f2f2;
 
 }

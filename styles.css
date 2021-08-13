@@ -53,7 +53,7 @@ header{
 .element-btnExplorer{
   width: 260px;
   height: 80px;
-  background-color: #9356DC;
+  background: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);
   border-radius: 40px;
   color: #ffff;
   display: flex;

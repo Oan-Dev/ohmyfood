@@ -5,13 +5,17 @@
     <meta charset="utf-8">
     <title>ohmyfood</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
   <header>
     <div class="container__logo">
+      <a href="index.html">
         <img class="headLogo" src="./images/logo/ohmyfood@2x.svg" alt="logo">
+      </a>
     </div>
   </header>
   <div class="container__filtres">
@@ -35,7 +39,7 @@
       <div class="nav__btn">
        <div class="nav__icon">
          <p>1</p>
-          <i class="fas fa-mobile-alt icon"></i>
+          <i class="fas fa-mobile-alt icon element-navIcon"></i>
        </div>
        <div class="btn__choissez">
          <a href="#">Choissez un restaurant</a>
@@ -44,7 +48,7 @@
     <div class="nav__btn">
        <div class="nav__icon">
          <p>2</p>
-          <i class="fas fa-list icon"></i>
+          <i class="fas fa-list icon element-navIcon"></i>
        </div>
        <div class="btn__composez">
          <a href="#">Composez votre menu</a>
@@ -53,7 +57,7 @@
     <div class="nav__btn">
        <div class="nav__icon">
          <p>3</p>
-          <i class="fas fa-store icon"></i>
+          <i class="fas fa-store icon element-navIcon"></i>
        </div>
        <div class="btn__degustez">
         <a href="#">Dégustez au restaurant</a>
@@ -67,6 +71,7 @@
       <h2>Restaurants</h2>
     </div>
     <div class="block__Resto">
+      <div class="block__RestoColumn1">
       <div class="block__restaurant">
           <div id="block__RestoPalette" class="block__imagesRestaurant block__RestoPalette"><a href="#"></a> </div>
             <div class="element-labelResto">
@@ -76,6 +81,8 @@
               </div>
               <div class="block__iconlove">
                <i class="fas fa-heart element-iconLove"></i>
+               <i class="fas fa-heart heart fill-gradient-linear element-iconCoeur"></i>
+               <!-- Font Awesome fontawesome.com -->
               </div>
             </div>
        </div>
@@ -90,7 +97,9 @@
                 <i class="fas fa-heart element-iconLove"></i>
                </div>
              </div>
+          </div>
         </div>
+        <div class="block__RestoColumn2">
         <div class="block__restaurant">
           <div id="block__RestoAlafrancaise" class="block__imagesRestaurant block__RestoAlafrancaise"><a href="#"></a> </div>
               <div class="element-labelResto">
@@ -114,6 +123,7 @@
                   <i class="fas fa-heart element-iconLove"></i>
                  </div>
                </div>
+          </div>
           </div>
     </div>
   </div>

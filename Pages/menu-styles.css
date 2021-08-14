@@ -1,0 +1,24 @@
+/* Général */
+body {
+  width: 100%;
+}
+.container__logo {
+  display: flex;
+  justify-content: center;
+}
+
+/* le container__menu */
+#block__RestoPalette {
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+.block__images {
+  width: auto;
+  height: 250px;
+}
+.block__imagesRestaurant{
+  background-size: cover;
+  width: auto;
+  height: 200px;
+}
+
+/* le block__menu */

@@ -2,10 +2,33 @@
 body {
   width: 100%;
 }
-.container__logo {
+header {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  width: 100%;
+  height: auto;
 }
+.container__logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+}
+.block__iconHtml {
+  width: 50px;
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 25px;
+}
+.color-IconIndex {
+    color: #000;
+}
+.block__Logo {
+  width: 250px;
+}
+
 
 /* le container__menu */
 #block__RestoPalette {
@@ -18,7 +41,13 @@ body {
 .block__imagesRestaurant{
   background-size: cover;
   width: auto;
-  height: 200px;
+  height: 300px;
 }
 
 /* le block__menu */
+.block__menu {
+  width: 100%;
+  height: 1200px;
+  background-color: #f2f2f2;
+  border-radius: 35px 35px 0 0;
+}

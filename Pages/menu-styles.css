@@ -52,6 +52,7 @@ header {
 .block__images {
   width: auto;
   height: 250px;
+  background-size: cover;
   margin-top: -50px;
   z-index: -1;
 }

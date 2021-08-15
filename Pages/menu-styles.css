@@ -72,7 +72,7 @@ header {
 }
 .block__menu {
   width: 100%;
-  height: 1400px;
+  height: 1500px;
   background-color: #f2f2f2;
   border-radius: 35px 35px 0 0;
   margin-top: -15px;
@@ -95,7 +95,7 @@ header {
   border: 1px solid #f2f2f2;
   background-color: #ffff;
   border-radius: 15px;
-  box-shadow: 5px 5px 5px 2px #ffff;
+  box-shadow: 5px 5px 5px 2px #d7d7d7;
   margin: auto;
   margin-bottom: 25px;
   padding: 25px 15px;

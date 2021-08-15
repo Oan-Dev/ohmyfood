@@ -1,3 +1,12 @@
+@media screen and (min-width: 447px) and (max-width: 767px) {
+  body {
+    width: 100%;
+  }
+}
+
+
+
+
 /* Mode Tablette  */
 @media screen and (min-width: 768px) and (max-width: 1239px) {
     body {
@@ -11,8 +20,9 @@
   }
   #block__RestoPalette {
     width: auto;
-    height: inherit;
+    height: 800px;
     background-size: cover;
+    margin-top: -180px;
   }
 
   /* le container principal menu    */
@@ -22,6 +32,11 @@
   .block__menu {
     height: 1000px;
     width: inherit;
+    display: flex;
+    align-content: stretch;
+  }
+  .block__titre{
+    justify-content: center;
   }
   .container_blockLabel {
     width: auto;
@@ -29,6 +44,25 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+      /* footer */
+  .container__down {
+    width: auto;
+  }
+  .container__down h4 {
+    display: flex;
+    justify-content: center;
+  }
+  .container__down ul {
+   width: auto;
+   display: flex;
+   flex-direction: row;
+
+  }
+  .container__down ul li {
+    margin-left: auto;
+    padding-right: 50px
   }
 }
 /* Mode Desktop (Taille minimum pour les 13 pouces) */
@@ -44,8 +78,9 @@
   }
   #block__RestoPalette {
     width: auto;
-    height: inherit;
+    height: 1200px;
     background-size: cover;
+    margin-top: -250px;
   }
 
   /* le container principal menu    */
@@ -55,6 +90,12 @@
   .block__menu {
     height: 600px;
     width: inherit;
+    margin-top: 150px;
+    display: flex;
+    align-content: stretch;
+  }
+  .block__titre{
+    justify-content: center;
   }
   .container_blockLabel {
     width: auto;
@@ -62,7 +103,31 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  .label__menu{
+    width: 150%;
+  }
+  .element-btn {
+    width: 400%;
+  }
 
+  /* footer */
+  .container__down {
+    width: auto;
+  }
+  .container__down h4 {
+    display: flex;
+    justify-content: center;
+  }
+  .container__down ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+
+  }
+  .container__down ul li {
+    margin: auto;
+    padding-right: 50px
   }
 
 }

@@ -30,7 +30,7 @@
     width: 100%;
   }
   .block__menu {
-    height: 1000px;
+    height: auto;
     width: inherit;
     display: flex;
     align-content: stretch;

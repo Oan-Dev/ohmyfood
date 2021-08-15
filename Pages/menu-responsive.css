@@ -45,7 +45,10 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  .label__menu{
+    width: 80%;
+    margin: 20px;
+  }
       /* footer */
   .container__down {
     width: auto;
@@ -66,7 +69,74 @@
   }
 }
 /* Mode Desktop (Taille minimum pour les 13 pouces) */
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1240px) and (max-width: 1310px) {
+    body {
+      width: 100%;
+    }
+
+  /* concernant l'image  */
+  .block__images {
+  width: auto;
+  height: 600px;
+  }
+  #block__RestoPalette {
+    width: auto;
+    height: 1200px;
+    background-size: cover;
+    margin-top: -250px;
+  }
+
+  /* le container principal menu    */
+  .container__menu {
+    width: 100%;
+  }
+  .block__menu {
+    height: 600px;
+    width: auto;
+    margin-top: 150px;
+    display: flex;
+    align-content: stretch;
+  }
+  .block__titre{
+    justify-content: center;
+  }
+  .container_blockLabel {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .label__menu{
+    width: 100%;
+    margin: 20px;
+  }
+  .element-btn {
+    width: 400%;
+  }
+
+  /* footer */
+  .container__down {
+    width: auto;
+  }
+  .container__down h4 {
+    display: flex;
+    justify-content: center;
+  }
+  .container__down ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+
+  }
+  .container__down ul li {
+    margin: auto;
+    padding-right: 50px
+  }
+
+}
+/* Mode Desktop (Taille minimum pour les 13 pouces) */
+@media screen and (min-width: 1311px) {
     body {
       width: 100%;
     }
@@ -105,7 +175,8 @@
     justify-content: space-between;
   }
   .label__menu{
-    width: 150%;
+    width: 120%;
+    margin: 20px;
   }
   .element-btn {
     width: 400%;

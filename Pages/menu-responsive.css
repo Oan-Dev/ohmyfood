@@ -105,11 +105,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .label__menu{
     width: 100%;
-    margin: 20px;
+    margin: 20px 0;
   }
 
   /* Bouton Commander */
@@ -139,7 +139,7 @@
   }
 
 }
-/* Mode Desktop (Taille minimum pour les 13 pouces) */
+/* Mode Desktop (Taille minimum pour les 13 pouces) & au delà */
 @media screen and (min-width: 1311px) {
     body {
       width: 100%;
@@ -177,10 +177,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: -50px;
+    margin-left: -60px;
   }
   .label__menu{
-    width: 120%;
+    width: 110%;
     margin: 20px 0;
   }
   /* Bouton Commander */

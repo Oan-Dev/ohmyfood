@@ -24,7 +24,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  width: auto%;
   height: auto;
 
 
@@ -55,7 +55,7 @@ header {
     color: #000;
 }
 .block__Logo {
-  width: 250px;
+  width: auto;
 }
 
 
@@ -78,43 +78,55 @@ header {
 
 /* le container principal, le block__menu */
 .container__menu {
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 25px;
 }
 .block__menu {
-  width: 100%;
-  height: 1500px;
+  width: auto;
+  height: 1300px;
   background-color: #f2f2f2;
   border-radius: 35px 35px 0 0;
-  margin-top: -15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
 }
 .block__titre {
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   margin-top: 15px;
 }
+
 /* les contenus
 du block principal des Etiquettes  */
+.titreMenu {
+  padding-left: 20px;
+  width: auto;
+  height: 20px;
+}
+.titreMenu-underline {
+  width: auto;
+  height: 20px;
+  padding-bottom: 20px;
+  text-decoration: underline #99E2D0;
 
+}
 .label__menu {
   width: 80%;
-  height: 100px;
+  height: 60px;
   border: 1px solid #f2f2f2;
   background-color: #ffff;
   border-radius: 15px;
   box-shadow: 5px 5px 5px 2px #d7d7d7;
   margin-bottom: 25px;
   padding: 15px;
+  margin-left: 20px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -142,7 +154,7 @@ du block principal des Etiquettes  */
 
 /* block Bouton */
 .block__btn {
-  width: 100%;
+  width: auto;
   height: 150px;
   display: flex;
   justify-content: center;

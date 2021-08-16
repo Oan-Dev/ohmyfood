@@ -1,8 +1,22 @@
 /*Général*/
-@font-face {}
+@font-face {
+  font-family: Roboto;
+  src: url("./Fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Shrikhand;
+  src: url("./Fonts/Shrikhand/Shrikhand-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   width: 100%;
 }
+
 /*header logo*/
 header{
   width: 100%;

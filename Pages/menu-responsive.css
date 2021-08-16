@@ -111,10 +111,14 @@
     width: 100%;
     margin: 20px;
   }
+
+  /* Bouton Commander */
   .element-btn {
     width: 400%;
   }
-
+  .block__btn a {
+    margin-left: -200px;
+  }
   /* footer */
   .container__down {
     width: auto;
@@ -172,16 +176,20 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-left: -50px;
   }
   .label__menu{
     width: 120%;
-    margin: 20px;
+    margin: 20px 0;
   }
+  /* Bouton Commander */
   .element-btn {
     width: 400%;
   }
-
+  .block__btn a {
+    margin-left: -200px;
+  }
   /* footer */
   .container__down {
     width: auto;

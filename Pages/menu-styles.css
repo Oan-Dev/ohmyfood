@@ -76,7 +76,7 @@ header {
   height: 300px;
 }
 
-/* le block__menu */
+/* le container principal, le block__menu */
 .container__menu {
   width: 100%;
   display: flex;
@@ -103,6 +103,9 @@ header {
   justify-content: space-around;
   margin-top: 15px;
 }
+/* les contenus
+du block principal des Etiquettes  */
+
 .label__menu {
   width: 80%;
   height: 100px;
@@ -111,7 +114,7 @@ header {
   border-radius: 15px;
   box-shadow: 5px 5px 5px 2px #d7d7d7;
   margin-bottom: 25px;
-  padding: 25px;
+  padding: 15px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -119,7 +122,6 @@ header {
 }
 .block__tarifs {
   width: auto;
-  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

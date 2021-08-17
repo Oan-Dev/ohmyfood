@@ -15,6 +15,7 @@
 
 body {
   width: 100%;
+  background-color: #f2f2f2;
 }
 a {
   text-decoration: none;
@@ -81,6 +82,8 @@ header {
   flex-direction: column;
   justify-content: center;
   padding-top: 25px;
+  padding-left: 15px;
+
 }
 .block__menu {
   width: auto;

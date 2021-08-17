@@ -121,7 +121,7 @@ du block principal des Etiquettes  */
 
   border-radius: 15px;
   margin-bottom: 25px;
-  padding: 15px;
+  padding: 45px 15px 20px 15px;
   margin-left: 20px;
   cursor: pointer;
   display: flex;
@@ -158,7 +158,8 @@ pour l'animation Keyframes  */
   background-color: #ffff;
   border-radius: 15px;
   box-shadow: 5px 5px 5px 2px #d7d7d7;
-
+  cursor: pointer;
+  margin-bottom: 15px;
 }
 .block__animaValidation {
   height: inherit;

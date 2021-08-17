@@ -49,6 +49,10 @@
     width: 80%;
     margin: 20px;
   }
+  .container__animationMenu {
+    width: auto;
+    margin-right: 15px;
+  }
       /* footer */
   .container__down {
     width: auto;
@@ -91,7 +95,7 @@
     width: 100%;
   }
   .block__menu {
-    height: 600px;
+    height: 1100px;
     width: auto;
     margin-top: 150px;
     display: flex;

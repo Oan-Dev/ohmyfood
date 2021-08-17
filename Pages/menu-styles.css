@@ -24,10 +24,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: auto%;
+  width: auto;
   height: auto;
-
-
 }
 .navBar{
   width: 100%;
@@ -119,11 +117,9 @@ du block principal des Etiquettes  */
 }
 .label__menu {
   width: 80%;
-  height: 60px;
-  border: 1px solid #f2f2f2;
-  background-color: #ffff;
+  height: 20px;
+
   border-radius: 15px;
-  box-shadow: 5px 5px 5px 2px #d7d7d7;
   margin-bottom: 25px;
   padding: 15px;
   margin-left: 20px;
@@ -151,6 +147,33 @@ du block principal des Etiquettes  */
   margin-top: 20px;
   cursor: pointer;
 }
+/* Container animation & les boites cachées des icons check
+pour l'animation Keyframes  */
+.container__animationMenu {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #f2f2f2;
+  background-color: #ffff;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 2px #d7d7d7;
+
+}
+.block__animaValidation {
+  height: inherit;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  visibility: hidden;
+}
+.icon-Color {
+  color: #ffff;
+}
+
 
 /* block Bouton */
 .block__btn {

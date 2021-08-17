@@ -185,7 +185,7 @@ pour l'animation Keyframes  */
   align-items: center;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 .block__bgIcon{
  background-color: #ffff;

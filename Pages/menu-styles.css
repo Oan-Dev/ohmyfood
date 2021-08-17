@@ -174,8 +174,17 @@ pour l'animation Keyframes  */
   border-radius: 0 15px 15px 0;
   /* visibility: hidden; */
 }
+.block__bgIcon{
+ background-color: #ffff;
+ width: 50px;
+ height: 50px;
+ border-radius: 25px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
 .icon-Color {
-  color: #ffff;
+  color: #99E2D0;
 }
 
 

@@ -1,6 +1,7 @@
 .container__animationMenu:hover {
   transform: scale(1.1);
-  animation: slideInRight rotateIn;
+  animation: slideInRight, rotateIn;
+  /* display:  */
 }
 /* container Etiquettes sécoué */
 

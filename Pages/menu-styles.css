@@ -188,7 +188,7 @@ pour l'animation Keyframes  */
   border-radius: 0 15px 15px 0;
   /* transform: scaleX(0); */
   /* visibility: hidden; */
-  /* display: none; */
+  display: none;
 }
 
 .block__bgIcon{

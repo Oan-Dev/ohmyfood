@@ -176,6 +176,7 @@ pour l'animation Keyframes  */
   box-shadow: 5px 5px 5px 2px #d7d7d7;
   cursor: pointer;
   margin-bottom: 15px;
+  transform-origin: top right;
 }
 .block__animaValidation {
   height: inherit;
@@ -188,6 +189,7 @@ pour l'animation Keyframes  */
   /* visibility: hidden; */
   /* display: none; */
 }
+
 .block__bgIcon{
  background-color: #ffff;
  width: 50px;

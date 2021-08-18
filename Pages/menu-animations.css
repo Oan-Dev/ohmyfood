@@ -1,8 +1,12 @@
+/* .container__animationMenu:hover {
+
+} */
+
 .slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   }
@@ -10,22 +14,28 @@
   0% {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
-    visibility: visible;
+    visibility: hidden;
+    width: 0;
     }
     100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
+    visibility: visible;
+    width: 120px;
     }
   }
   @keyframes slideInRight {
   0% {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
-  visibility: visible;
+  visibility: hidden;
+  width: 0;
   }
   100% {
   -webkit-transform: translateX(0);
   transform: translateX(0);
+  visibility: visible;
+  width: 120px;
   }
 }
 
@@ -33,8 +43,8 @@
 .rotateIn {
   -webkit-animation-name: rotateIn;
   animation-name: rotateIn;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   }

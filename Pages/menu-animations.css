@@ -1,7 +1,11 @@
-/* .container__animationMenu:hover {
+.container__animationMenu:hover {
+  transform: scale(1.1);
+  animation: slideInRight rotateIn;
+}
+/* container Etiquettes sécoué */
 
-} */
-
+/* le Container validation caché
+se dévoilant au survol de la souris */
 .slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;

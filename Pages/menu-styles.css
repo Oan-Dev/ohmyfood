@@ -180,15 +180,22 @@ pour l'animation Keyframes  */
 }
 .block__animaValidation {
   height: inherit;
-  width: 120px;
+  /* width: 120px; */
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
+  opacity: 0;
   /* transform: scaleX(0); */
   /* visibility: hidden; */
-  display: none;
+  /* display: none; */
+}
+.slideInRight, .rotateIn {
+  opacity: 0;
+
+
 }
 
 .block__bgIcon{

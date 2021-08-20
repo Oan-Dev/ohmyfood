@@ -26,6 +26,7 @@
 .slideInRight :hover {
   animation: slideInRight;
 }
+/* rotateIn s'active bien au survol du parent */
  .rotateIn :hover {
   animation: rotateIn;
 }

@@ -29,32 +29,37 @@ header {
   justify-content: center;
   width: auto;
   height: auto;
-        .navBar {
-        width: 100%;
-        height: 60px;
-        background-color: #ffff;
-        z-index: 1;
-        margin-top: -20px;
-        .container__logo {
-          width: auto;
-          display: flex;
-          flex-direction: row;
-          .block__iconHtml {
-            width: 50px;
-            display: flex;
-            justify-content: flex-start;
-            padding-right: 25px;
-          }
-          .color-IconIndex {
-              color: #000;
-          }
-          .block__Logo {
-            width: auto;
-          }
+  .navBar{
+    width: 100%;
+    height: 60px;
+    background-color: #ffff;
+    z-index: 1;
+    margin-top: -20px;
+    .container__logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        justify-content: center;
+        margin-top: 20px;
 
-        }
-      }
+    }
+    .block__iconHtml {
+      width: 50px;
+      display: flex;
+      justify-content: flex-start;
+      padding-right: 25px;
+    }
+    .color-IconIndex {
+        color: #000;
+    }
+    .block__Logo {
+      width: auto;
+    }
+  }
 }
+
+
 // container principal
 .container__menu {
   width: auto;
@@ -84,7 +89,6 @@ header {
   border-radius: 20px;
   background-color: #fff;
   cursor: pointer;
-
       .label__menu {
         display: flex;
         flex-direction: column;
@@ -96,22 +100,22 @@ header {
           }
         }
       }
-
       .animaValidation {
         display: flex;
         justify-content: space-between;
         width: 120px;
         height: auto;
-
+        background-color: #99E2D0;
             .check-ok {
               width: 50%;
-              height: 100%;
-              background-color: #99E2D0;
+              height: 120px;
+              background-color: #fff;
               .fa-check {
                 background-color: #fff;
                 color: 99E2D0;
             }
       }
+    }
 }
 
 
@@ -146,16 +150,16 @@ header {
   background-color: #353535;
   color: #ffff;
   padding-top: 20px;
-      h4 {
+  h4 {
     margin: 0 0 5px 40px;
-    font-family: Shrikhand;
-      }
-      ul li {
-        list-style: none;
-        margin-bottom: 5px;
-        a {
-          color: #ffff;
-          text-decoration: none;
-          }
-        }
-      }
+  }
+  ul li {
+    list-style: none;
+    margin-bottom: 5px;
+    a {
+      text-decoration: none;
+      color: #ffff;
+    }
+  }
+}
+// fin footer

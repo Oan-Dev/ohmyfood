@@ -23,9 +23,18 @@ a {
 }
 
 .container__menu {
-  width: 100%;
+  width: auto;
   height: auto;
   background-color: #f2f2f2;
+}
+
+.block__menu {
+  width: auto;
+}
+.block__menu .container__titreRestaurant {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .container__animationMenu {
@@ -65,9 +74,10 @@ a {
   width: auto;
   background-color: #f2f2f2;
   margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
-
-.element-btn {
+.block__btn .element-btn {
   width: 260px;
   height: 80px;
   background: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);

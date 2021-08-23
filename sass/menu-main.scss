@@ -24,10 +24,19 @@ a {
 }
 
 .container__menu {
-  width: 100%;
+  width: auto;
   height: auto;
   background-color: #f2f2f2;
 }
+.block__menu {
+  width: auto;
+  .container__titreRestaurant {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
 // Etiquettes
 .container__animationMenu {
   width: auto;
@@ -47,17 +56,27 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
+        .block__tarifs {
+          height: 50px;
+          .tarifs {
+            height: 50px;
+          }
+        }
       }
-      .block__animaValidation {
+
+      .animaValidation {
         display: flex;
         justify-content: space-between;
         width: 120px;
         height: auto;
-            .block__tarifs {
-              justify-content: flex-end;
-              align-items: flex-end;
-              height: 50px;
+
+            .check-ok {
+              width: 50%;
+              height: 100%;
+              background-color: #99E2D0;
+              .fa-check {
+                background-color: #fff;
+                color: 99E2D0;
             }
       }
 }
@@ -69,20 +88,23 @@ a {
   width: auto;
   background-color: #f2f2f2;
   margin-top: 50px;
-}
-
-.element-btn {
-  width: 260px;
-  height: 80px;
-  background: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);
-  border-radius: 40px;
-  color: #ffff;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  cursor: pointer;
+  .element-btn {
+    width: 260px;
+    height: 80px;
+    background: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);
+    border-radius: 40px;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+  }
 }
+
+
 
 /* footer*/
 .container__down {
@@ -91,17 +113,16 @@ a {
   background-color: #353535;
   color: #ffff;
   padding-top: 20px;
-  h4 {
+      h4 {
     margin: 0 0 5px 40px;
     font-family: Shrikhand;
+      }
+      ul li {
+        list-style: none;
+        margin-bottom: 5px;
+              a {
+                color: #ffff;
+                text-decoration: none;
+                }
+        }
   }
-  ul li {
-    list-style: none;
-    margin-bottom: 5px;
-      a {
-        color: #ffff;
-        text-decoration: none;
-    }
-  }
-
-}

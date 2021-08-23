@@ -22,7 +22,40 @@ body {
 a {
   text-decoration: none;
 }
+// header donc le logo & l'ancrage vers l'index.html
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  height: auto;
+        .navBar {
+        width: 100%;
+        height: 60px;
+        background-color: #ffff;
+        z-index: 1;
+        margin-top: -20px;
+        .container__logo {
+          width: auto;
+          display: flex;
+          flex-direction: row;
+          .block__iconHtml {
+            width: 50px;
+            display: flex;
+            justify-content: flex-start;
+            padding-right: 25px;
+          }
+          .color-IconIndex {
+              color: #000;
+          }
+          .block__Logo {
+            width: auto;
+          }
 
+        }
+      }
+}
+// container principal
 .container__menu {
   width: auto;
   height: auto;
@@ -120,9 +153,9 @@ a {
       ul li {
         list-style: none;
         margin-bottom: 5px;
-              a {
-                color: #ffff;
-                text-decoration: none;
-                }
+        a {
+          color: #ffff;
+          text-decoration: none;
+          }
         }
-  }
+      }

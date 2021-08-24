@@ -114,6 +114,11 @@ header .navBar .block__Logo {
   color: 9900D0;
 }
 
+.titreMenu .titreMenu-underline {
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+}
+
 /* Bouton Commander */
 .block__btn {
   height: 150px;

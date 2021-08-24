@@ -30,7 +30,7 @@ header {
   height: auto;
 }
 header .navBar {
-  width: 100%;
+  width: auto;
   height: 60px;
   background-color: #ffff;
   z-index: 1;
@@ -73,41 +73,57 @@ header .navBar .block__Logo {
 }
 
 .container__animationMenu {
-  width: auto;
+  width: 100%;
   height: auto;
   padding: 15px;
   margin-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid #f2f2f2;
-  box-shadow: 5px 5px 5px 2px #d7d7d7;
-  border-radius: 20px;
-  background-color: #fff;
   cursor: pointer;
 }
 .container__animationMenu .label__menu {
+  width: 85%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 2px solid #f2f2f2;
+  border-radius: 20px 0 0 20px;
+  background-color: #fff;
 }
-.container__animationMenu .label__menu .block__tarifs {
-  height: 50px;
+.container__animationMenu .block__tarifs {
+  width: 8%;
+  height: auto;
+  background-color: #fff;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
-.container__animationMenu .label__menu .block__tarifs .tarifs {
-  height: 50px;
+.container__animationMenu .block__tarifs .tarifs {
+  height: 85px;
+  display: flex;
+  align-items: flex-end;
 }
 .container__animationMenu .animaValidation {
   display: flex;
-  justify-content: space-between;
-  width: 120px;
-  height: auto;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 85px;
   background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
 }
 .container__animationMenu .animaValidation .check-ok {
-  width: 50%;
-  height: 120px;
+  width: 50px;
+  height: 50px;
   background-color: #fff;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container__animationMenu .animaValidation .check-ok .fa-check {
   background-color: #fff;

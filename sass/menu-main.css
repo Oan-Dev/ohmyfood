@@ -73,18 +73,19 @@ header .navBar .block__Logo {
 }
 
 .container__animationMenu {
-  width: 100%;
-  height: auto;
+  width: 95%;
+  height: 100px;
   padding: 15px;
   margin-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 20px;
   cursor: pointer;
 }
 .container__animationMenu .label__menu {
   width: 85%;
-  height: auto;
+  height: 85%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -93,8 +94,8 @@ header .navBar .block__Logo {
   background-color: #fff;
 }
 .container__animationMenu .block__tarifs {
-  width: 8%;
-  height: auto;
+  width: 12%;
+  height: 85%;
   background-color: #fff;
   border-top: 2px solid #f2f2f2;
   border-bottom: 2px solid #f2f2f2;
@@ -106,19 +107,20 @@ header .navBar .block__Logo {
   height: 85px;
   display: flex;
   align-items: flex-end;
+  margin-bottom: 20px;
 }
 .container__animationMenu .animaValidation {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 75px;
-  height: 85px;
+  height: 85%;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
 }
 .container__animationMenu .animaValidation .check-ok {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-color: #fff;
   border-radius: 25px;
   display: flex;
@@ -127,7 +129,7 @@ header .navBar .block__Logo {
 }
 .container__animationMenu .animaValidation .check-ok .fa-check {
   background-color: #fff;
-  color: 9900D0;
+  color: #99E2D0;
 }
 
 .titreMenu .titreMenu-underline {

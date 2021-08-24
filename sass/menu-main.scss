@@ -77,8 +77,8 @@ header {
 
 // Etiquettes
 .container__animationMenu {
-  width: 100%;
-  height: auto;
+  width: 95%;
+  height: 100px;
   padding: 15px;
   margin-bottom: 15px;
   display: flex;
@@ -86,12 +86,12 @@ header {
   justify-content: space-between;
   // border: 2px solid #f2f2f2;
   // box-shadow: 5px 5px 5px 2px #d7d7d7;
-  // border-radius: 20px;
+  border-radius: 20px;
   // background-color: #fff;
   cursor: pointer;
       .label__menu {
         width: 85%;
-        height: auto;
+        height: 85%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -101,8 +101,8 @@ header {
 
       }
       .block__tarifs {
-        width: 8%;
-        height: auto;
+        width: 12%;
+        height: 85%;
         background-color: #fff;
         border-top: 2px solid #f2f2f2;
         border-bottom: 2px solid #f2f2f2;
@@ -113,6 +113,7 @@ header {
           height: 85px;
           display: flex;
           align-items: flex-end;
+          margin-bottom: 20px;
         }
       }
       .animaValidation {
@@ -120,12 +121,12 @@ header {
         justify-content: center;
         align-items: center;
         width: 75px;
-        height: 85px;
+        height: 85%;
         background-color: #99E2D0;
         border-radius: 0 20px 20px 0;
             .check-ok {
-              width: 50px;
-              height: 50px;
+              width: 30px;
+              height: 30px;
               background-color: #fff;
               border-radius: 25px;
               display: flex;
@@ -133,7 +134,7 @@ header {
               align-items: center;
               .fa-check {
                 background-color: #fff;
-                color: 99E2D0;
+                color: #99E2D0;
             }
       }
     }

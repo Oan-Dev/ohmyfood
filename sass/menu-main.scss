@@ -79,12 +79,13 @@ header {
 .block__images {
   width: 100%;
   height: auto;
+  z-index: 1;
+
 }
 img {
   max-width: 100%;
   height: auto;
-  z-index: -1;
-
+  // margin-bottom: -100px;
 }
 
 // container principal
@@ -96,10 +97,11 @@ img {
   border-radius: 25px 25px 0 0;
   padding: 15px;
   // margin-top: -100px;
-  z-index: 0;
+  z-index: 2;
 }
 .block__menu {
   width: auto;
+  background-color: #f2f2f2;
   .container__titreRestaurant {
     display: flex;
     justify-content: space-around;

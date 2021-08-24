@@ -64,12 +64,12 @@ header .navBar .block__Logo {
 .block__images {
   width: 100%;
   height: auto;
+  z-index: 1;
 }
 
 img {
   max-width: 100%;
   height: auto;
-  z-index: -1;
 }
 
 .container__menu {
@@ -78,11 +78,12 @@ img {
   background-color: #f2f2f2;
   border-radius: 25px 25px 0 0;
   padding: 15px;
-  z-index: 0;
+  z-index: 2;
 }
 
 .block__menu {
   width: auto;
+  background-color: #f2f2f2;
 }
 .block__menu .container__titreRestaurant {
   display: flex;

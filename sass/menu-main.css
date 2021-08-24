@@ -61,12 +61,24 @@ header .navBar .block__Logo {
   width: auto;
 }
 
+.block__images {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
 .container__menu {
   width: auto;
   height: auto;
   background-color: #f2f2f2;
   border-radius: 25px 25px 0 0;
   padding: 15px;
+  z-index: 0;
 }
 
 .block__menu {
@@ -86,7 +98,7 @@ header .navBar .block__Logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 20px;
+  border-radius: 50px 50px 0 0;
   cursor: pointer;
 }
 .container__animationMenu .label__menu {

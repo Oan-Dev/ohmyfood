@@ -76,7 +76,16 @@ header {
 //   margin-top: -50px;
 //   z-index: -1;
 // }
+.block__images {
+  width: 100%;
+  height: auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  z-index: -1;
 
+}
 
 // container principal
 
@@ -86,6 +95,8 @@ header {
   background-color: #f2f2f2;
   border-radius: 25px 25px 0 0;
   padding: 15px;
+  // margin-top: -100px;
+  z-index: 0;
 }
 .block__menu {
   width: auto;
@@ -108,7 +119,7 @@ header {
   justify-content: space-between;
   // border: 2px solid #f2f2f2;
   // box-shadow: 5px 5px 5px 2px #d7d7d7;
-  border-radius: 20px;
+  border-radius: 50px 50px 0 0 ;
   // background-color: #fff;
   cursor: pointer;
       .label__menu {

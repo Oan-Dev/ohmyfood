@@ -81,7 +81,6 @@ header .navBar .block__Logo {
   width: 95%;
   height: 100px;
   padding: 15px;
-  margin-bottom: 15px;
   margin-left: -10px;
   display: flex;
   align-items: center;
@@ -92,12 +91,27 @@ header .navBar .block__Logo {
 .container__animationMenu .label__menu {
   width: 85%;
   height: 85%;
+  padding-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border: 2px solid #f2f2f2;
   border-radius: 20px 0 0 20px;
   background-color: #fff;
+}
+.container__animationMenu .label__menu .titre-dish {
+  font-weight: 700;
+}
+.container__animationMenu .label__menu .titre-dish .dish-specificite {
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+}
+.container__animationMenu .label__menu .titre-dish .dish-specificite--hidden {
+  opacity: 1;
+}
+.container__animationMenu .label__menu .titre-dish .threePoints {
+  opacity: 0;
 }
 .container__animationMenu .block__tarifs {
   width: 12%;
@@ -175,6 +189,7 @@ header .navBar .block__Logo {
 }
 .container__down h4 {
   margin: 0 0 5px 40px;
+  font-family: Shrikhand;
 }
 .container__down ul li {
   list-style: none;

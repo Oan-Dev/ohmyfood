@@ -86,7 +86,7 @@ header {
   width: 95%;
   height: 100px;
   padding: 15px;
-  margin-bottom: 15px;
+  // margin-bottom: 15px;
   margin-left: -10px;
   display: flex;
   align-items: center;
@@ -99,13 +99,27 @@ header {
       .label__menu {
         width: 85%;
         height: 85%;
+        padding-left: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         border: 2px solid #f2f2f2;
         border-radius: 20px 0 0 20px;
         background-color: #fff;
-
+        .titre-dish {
+          font-weight: 700;
+          .dish-specificite {
+            font-weight: 400;
+            display: flex;
+            flex-direction: row;
+          }
+          .dish-specificite--hidden {
+            opacity: 1;
+          }
+          .threePoints {
+            opacity: 0;
+          }
+        }
       }
       .block__tarifs {
         width: 12%;
@@ -187,6 +201,7 @@ header {
   padding-top: 20px;
   h4 {
     margin: 0 0 5px 40px;
+    font-family: Shrikhand;
   }
   ul li {
     list-style: none;

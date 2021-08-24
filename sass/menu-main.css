@@ -14,7 +14,6 @@
 }
 body {
   width: 100%;
-  background-color: #f2f2f2;
   font-family: Roboto;
 }
 
@@ -62,10 +61,24 @@ header .navBar .block__Logo {
   width: auto;
 }
 
+#block__RestoPalette {
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+
+.block__images {
+  width: auto;
+  height: 250px;
+  background-size: cover;
+  margin-top: -50px;
+  z-index: -1;
+}
+
 .container__menu {
   width: auto;
   height: auto;
   background-color: #f2f2f2;
+  border-radius: 25px 25px 0 0;
+  padding: 15px;
 }
 
 .block__menu {

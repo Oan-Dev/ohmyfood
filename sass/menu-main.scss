@@ -269,7 +269,24 @@ header {
       width: 100%;
     }
 
+    // le picture
+    #block__RestoPalette {
+      max-width: 100%;
+      height: inherit;
+      background-position-y: -100px;
+      background-repeat: no-repeat;
+    }
+    .block__images {
+      background-size: 50% auto;
+      height: 450px;
+    }
 
+    // le container principal
+    .container__titreRestaurant {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .container_blockLabel {
       width: auto;
       display: flex;
@@ -295,14 +312,29 @@ header {
             }
         }
       }
-
-
-
-
   }
+
 @media screen and (min-width: 1240px) and (max-width: 1310px) {
   body {
     width: 100%;
+  }
+
+  // le picture
+  #block__RestoPalette {
+    max-width: 100%;
+    height: inherit;
+    background-position-y: -100px;
+  }
+  .block__images {
+    background-size: 50% auto;
+    height: 550px;
+  }
+
+  // le container principal
+  .container__titreRestaurant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .container_blockLabel {
     width: auto;
@@ -311,6 +343,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
   // le footer
     .container__down {
       width: auto;
@@ -336,25 +369,32 @@ header {
     body {
       width: 100%;
     }
+
+    // le header avec la navBar
     header {
       background-color: #fff !important;
       .navBar {
         background-color: #fff !important;
-
       }
     }
+
+    // le picture
     #block__RestoPalette {
       max-width: 100%;
       height: inherit;
+      background-position-y: -100px;
     }
     .block__images {
-      background-position: center;
-      background-attachment: fixed;
-      background-origin: border-bottom;
-      height: 950px;
-      margin-top: -400px;
+      background-size: 50% auto;
+      height: 550px;
     }
 
+    // le container principal
+    .container__titreRestaurant {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .container_blockLabel {
       width: auto;
       display: flex;
@@ -380,4 +420,17 @@ header {
             }
         }
       }
+  }
+  @media screen and (min-width: 1500px) {
+    // le picture
+    #block__RestoPalette {
+      max-width: 100%;
+      height: inherit;
+      background-position-y: -150px;
+    }
+    .block__images {
+      background-size: 50% auto;
+      height: 700px;
+    }
+
   }

@@ -94,25 +94,25 @@ header .navBar .block__Logo {
 }
 
 .container__animationMenu {
-  width: 95%;
+  width: auto;
   height: 100px;
   padding: 15px;
   margin-left: -10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 50px 50px 0 0;
+  border-radius: 50px;
   cursor: pointer;
 }
 .container__animationMenu .label__menu {
-  width: 85%;
+  width: 100%;
   height: 85%;
   padding-left: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border: 2px solid #f2f2f2;
-  border-radius: 20px 0 0 20px;
+  border-radius: 20px;
   background-color: #fff;
 }
 .container__animationMenu .label__menu .titre-dish {
@@ -124,6 +124,7 @@ header .navBar .block__Logo {
   flex-direction: row;
 }
 .container__animationMenu .label__menu .titre-dish .dish-specificite--hidden {
+  margin-left: 5px;
   opacity: 1;
 }
 .container__animationMenu .label__menu .titre-dish .threePoints {

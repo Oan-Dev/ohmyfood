@@ -256,8 +256,47 @@ header {
   }
 }
 // fin footer
+// fin mode Mobile-first
 
 // Mode Responsive
+
+
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+    body {
+      width: 100%;
+    }
+
+
+    .container_blockLabel {
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    // le footer
+      .container__down {
+        width: auto;
+        h4 {
+          display: flex;
+          justify-content: center;
+        }
+        ul {
+          width: auto;
+          display: flex;
+          flex-direction: row;
+            li {
+              margin: auto;
+              padding-right: 50px
+            }
+        }
+      }
+
+
+
+
+  }
 @media screen and (min-width: 1240px) and (max-width: 1310px) {
   body {
     width: 100%;

@@ -109,7 +109,7 @@ header .navBar .block__Logo {
   height: 85%;
   padding-left: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   border: 2px solid #f2f2f2;
   border-radius: 20px 0 0 20px;
@@ -129,17 +129,14 @@ header .navBar .block__Logo {
 .container__animationMenu .label__menu .titre-dish .threePoints {
   opacity: 0;
 }
-.container__animationMenu .block__tarifs {
+.container__animationMenu .label__menu .block__tarifs {
   width: 12%;
   height: 85%;
-  background-color: #fff;
-  border-top: 2px solid #f2f2f2;
-  border-bottom: 2px solid #f2f2f2;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-.container__animationMenu .block__tarifs .tarifs {
+.container__animationMenu .label__menu .block__tarifs .tarifs {
   height: 85px;
   display: flex;
   align-items: flex-end;

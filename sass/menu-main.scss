@@ -30,6 +30,7 @@ header {
   width: inherit;
   height: 70px;
   background-color: #ffff;
+  z-index: 1;
 
   .navBar{
     width: 100%;
@@ -38,6 +39,7 @@ header {
     margin-top: -20px;
     display: flex;
     justify-content: center;
+    background-color: #fff;
     .container__logo{
         display: flex;
         flex-direction: row;
@@ -75,7 +77,8 @@ header {
   max-width: 100%;
   height: 300px;
   background-size: cover;
-
+  z-index: -1;
+  box-sizing: border-box;
 }
 
 .block__images {
@@ -332,6 +335,24 @@ header {
 @media screen and (min-width: 1311px) {
     body {
       width: 100%;
+    }
+    header {
+      background-color: #fff !important;
+      .navBar {
+        background-color: #fff !important;
+
+      }
+    }
+    #block__RestoPalette {
+      max-width: 100%;
+      height: inherit;
+    }
+    .block__images {
+      background-position: center;
+      background-attachment: fixed;
+      background-origin: border-bottom;
+      height: 950px;
+      margin-top: -400px;
     }
 
     .container_blockLabel {

@@ -213,3 +213,65 @@ header .navBar .block__Logo {
   text-decoration: none;
   color: #ffff;
 }
+
+@media screen and (min-width: 1240px) and (max-width: 1310px) {
+  body {
+    width: 100%;
+  }
+
+  .container_blockLabel {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .container__down {
+    width: auto;
+  }
+  .container__down h4 {
+    display: flex;
+    justify-content: center;
+  }
+  .container__down ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .container__down ul li {
+    margin: auto;
+    padding-right: 50px;
+  }
+}
+/* Mode Desktop (Taille minimum pour les 13 pouces) & au delà */
+@media screen and (min-width: 1311px) {
+  body {
+    width: 100%;
+  }
+
+  .container_blockLabel {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .container__down {
+    width: auto;
+  }
+  .container__down h4 {
+    display: flex;
+    justify-content: center;
+  }
+  .container__down ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .container__down ul li {
+    margin: auto;
+    padding-right: 50px;
+  }
+}

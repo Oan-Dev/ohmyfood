@@ -130,7 +130,8 @@ header {
 
 // Etiquettes
 .container__animationMenu {
-  width: auto;
+  cursor: pointer;
+  width: 100%;
   height: 100px;
   padding: 15px;
   // margin-bottom: 15px;
@@ -142,10 +143,7 @@ header {
   // box-shadow: 5px 5px 5px 2px #d7d7d7;
   border-radius: 50px;
   // background-color: #fff;
-  cursor: pointer;
-  &:hover {
-    animation: slideInRight;
-  }
+
       .label__menu {
         width: 100%;
         height: 85%;
@@ -156,6 +154,7 @@ header {
         border: 2px solid #f2f2f2;
         border-radius: 20px;
         background-color: #fff;
+        cursor: pointer;
         .titre-dish {
           font-weight: 700;
           .dish-specificite {
@@ -440,16 +439,24 @@ header {
   }
 
   // Les Animations @keyframes / containers cachés
-  .container__animationMenu:hover {
-    animation: slideInRight;
-    // animation: slideIn;
+
+.container__animationMenu:hover::before,
+.container__animationMenu:focus::before {
+    animation: slideInRight 0ms;
+    // cursor: pointer;
   }
-  // .slideIn :hover {
-  //   animation: slideIn;
-  // }
-  // .slideInRight :hover {
-  //   animation: slideInRight;
-  // }
+
+.container__animationMenu:hover,
+.container__animationMenu:focus {
+  animation: slideInRight 450ms;
+  // cursor: pointer;
+}
+
+
+
+
+
+
   /* rotateIn s'active bien au survol du parent */
    .rotateIn :hover {
     animation: rotateIn;
@@ -463,10 +470,11 @@ header {
      {
     -webkit-animation-name: slideInRight;
     animation-name: slideInRight;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
+    -webkit-animation-duration: 450ms;
+    animation-duration: 450ms;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    cursor: pointer;
     }
     @-webkit-keyframes slideInRight {
     0% {
@@ -505,10 +513,11 @@ header {
   .rotateIn {
     -webkit-animation-name: rotateIn;
     animation-name: rotateIn;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
+    -webkit-animation-duration: 450ms;
+    animation-duration: 450ms;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+    cursor: pointer;
     }
     @-webkit-keyframes rotateIn {
       0% {
@@ -542,11 +551,3 @@ header {
     opacity: 1;
     }
   }
-  // @keyframes slideIn {
-  //           0% {opacity: 0;
-  //             transform: translate(-200px);}
-  //           100% {opacity: 1;
-  //              padding-left: 110px;
-  //               width: 300px;
-  //               margin-left: -100px;}
-  //       }

@@ -98,7 +98,8 @@ header .navBar .block__Logo {
 }
 
 .container__animationMenu {
-  width: auto;
+  cursor: pointer;
+  width: 100%;
   height: 100px;
   padding: 15px;
   margin-left: -10px;
@@ -106,10 +107,6 @@ header .navBar .block__Logo {
   align-items: center;
   justify-content: space-between;
   border-radius: 50px;
-  cursor: pointer;
-}
-.container__animationMenu:hover {
-  animation: slideInRight;
 }
 .container__animationMenu .label__menu {
   width: 100%;
@@ -121,6 +118,7 @@ header .navBar .block__Logo {
   border: 2px solid #f2f2f2;
   border-radius: 20px;
   background-color: #fff;
+  cursor: pointer;
 }
 .container__animationMenu .label__menu .titre-dish {
   font-weight: 700;
@@ -383,8 +381,14 @@ header .navBar .block__Logo {
     height: 700px;
   }
 }
-.container__animationMenu:hover {
-  animation: slideInRight;
+.container__animationMenu:hover::before,
+.container__animationMenu:focus::before {
+  animation: slideInRight 0ms;
+}
+
+.container__animationMenu:hover,
+.container__animationMenu:focus {
+  animation: slideInRight 450ms;
 }
 
 /* rotateIn s'active bien au survol du parent */
@@ -397,10 +401,11 @@ se dévoilant au survol de la souris */
 .slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 450ms;
+  animation-duration: 450ms;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  cursor: pointer;
 }
 
 @-webkit-keyframes slideInRight {
@@ -438,10 +443,11 @@ se dévoilant au survol de la souris */
 .rotateIn {
   -webkit-animation-name: rotateIn;
   animation-name: rotateIn;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 450ms;
+  animation-duration: 450ms;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  cursor: pointer;
 }
 
 @-webkit-keyframes rotateIn {

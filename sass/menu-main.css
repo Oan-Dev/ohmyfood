@@ -156,6 +156,7 @@ header .navBar .block__Logo {
   height: 85%;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
+  display: none;
 }
 .container__animationMenu .animaValidation .check-ok {
   width: 30px;
@@ -381,70 +382,18 @@ header .navBar .block__Logo {
     height: 700px;
   }
 }
-.container__animationMenu:hover::before,
-.container__animationMenu:focus::before {
-  animation: slideInRight 0ms;
-}
-
-.container__animationMenu:hover,
-.container__animationMenu:focus {
-  animation: slideInRight 450ms;
-}
-
+/* le Container validation caché
+se dévoilant au survol de la souris */
 /* rotateIn s'active bien au survol du parent */
 .rotateIn :hover {
   animation: rotateIn;
 }
 
-/* le Container validation caché
-se dévoilant au survol de la souris */
-.slideInRight {
-  -webkit-animation-name: slideInRight;
-  animation-name: slideInRight;
-  -webkit-animation-duration: 450ms;
-  animation-duration: 450ms;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  cursor: pointer;
-}
-
-@-webkit-keyframes slideInRight {
-  0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    opacity: 0;
-    visibility: hidden;
-    width: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    width: 75px;
-  }
-}
-@keyframes slideInRight {
-  0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    opacity: 0;
-    visibility: hidden;
-    width: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    width: 75px;
-  }
-}
 .rotateIn {
   -webkit-animation-name: rotateIn;
   animation-name: rotateIn;
-  -webkit-animation-duration: 450ms;
-  animation-duration: 450ms;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   cursor: pointer;
@@ -480,5 +429,28 @@ se dévoilant au survol de la souris */
     -webkit-transform: none;
     transform: none;
     opacity: 1;
+  }
+}
+.right-slide {
+  animation: right-slide 2s;
+}
+
+.container__animationMenu:hover {
+  transform: animation;
+}
+
+.label__menu:hover .right-slide {
+  transform: translateX(0);
+  animation: right-slide;
+}
+
+@keyframes right-slide {
+  0% {
+    display: none;
+    transform: translateX(100%);
+  }
+  100% {
+    display: inline-block;
+    transform: translateX(0%);
   }
 }

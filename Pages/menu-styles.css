@@ -1,0 +1,243 @@
+/* Général */
+@font-face {
+  font-family: Roboto;
+  src: url("../Fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Shrikhand;
+  src: url("../Fonts/Shrikhand/Shrikhand-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+a {
+  text-decoration: none;
+}
+/* le header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+.navBar{
+  width: 100%;
+  height: 60px;
+  background-color: #ffff;
+  z-index: 1;
+  margin-top: -20px;
+}
+.container__logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.block__iconHtml {
+  width: 50px;
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 25px;
+}
+.color-IconIndex {
+    color: #000;
+}
+.block__Logo {
+  width: auto;
+}
+
+
+/* le container__menu */
+#block__RestoPalette {
+  background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+.block__images {
+  width: auto;
+  height: 250px;
+  background-size: cover;
+  margin-top: -50px;
+  z-index: -1;
+}
+.block__imagesRestaurant{
+  background-size: cover;
+  width: auto;
+  height: 300px;
+}
+
+/* le container principal, le block__menu */
+.container__menu {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 25px;
+  padding-left: 15px;
+
+}
+.block__menu {
+  width: auto;
+  height: 1300px;
+  background-color: #f2f2f2;
+  border-radius: 35px 35px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.container__titreRestaurant{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.block__titre {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.block__iconlove {
+  width: 50px;
+  height: 50px;
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* les contenus
+du block principal des Etiquettes  */
+.titreMenu {
+  padding-left: 20px;
+  width: auto;
+  height: 20px;
+}
+.titreMenu-underline {
+  display: inline-block;
+  width: auto;
+  height: 5px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #99E2D0;
+}
+.label__menu {
+  width: 80%;
+  height: 20px;
+
+  border-radius: 15px;
+  margin-bottom: 25px;
+  padding: 45px 15px 20px 15px;
+  margin-left: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.block__tarifs {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* Bouton Commander */
+.element-btn {
+  width: 260px;
+  height: 80px;
+  background: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);
+  border-radius: 40px;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+/* Container animation & les boites cachées des icons check
+pour l'animation Keyframes  */
+.container__animationMenu {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #f2f2f2;
+  background-color: #ffff;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 2px #d7d7d7;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transform-origin: top right;
+}
+.block__animaValidation {
+  height: inherit;
+  /* width: 120px; */
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  opacity: 0;
+  /* transform: scaleX(0); */
+  /* visibility: hidden; */
+  /* display: none; */
+}
+.slideInRight, .rotateIn {
+  opacity: 0;
+
+
+}
+
+.block__bgIcon{
+ background-color: #ffff;
+ width: 50px;
+ height: 50px;
+ border-radius: 25px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.icon-Color {
+  color: #99E2D0;
+}
+
+
+/* block Bouton */
+.block__btn {
+  width: auto;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+/* footer*/
+.container__down {
+  width: auto;
+  height: 200px;
+  background-color: #353535;
+  color: #ffff;
+  padding-top: 20px;
+}
+.container__down h4 {
+  margin: 0 0 5px 40px;
+}
+.container__down ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.container__down ul li a {
+    color: #ffff;
+    text-decoration: none;
+}

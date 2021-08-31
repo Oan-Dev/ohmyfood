@@ -562,18 +562,32 @@ header {
   .container__animationMenu:hover {
       transform: animation;
   }
-  .label__menu:hover::before + .right-slide,
-  .label__menu:focus::before + .right-slide {
-        transform: translateX(100%);
+
+  .container__animationMenu::before > .right-slide,
+  .container__animationMenu:focus::before >.right-slide {
+        // transform: translateX(100%);
         display: none;
 
   }
-  .label__menu:hover + .right-slide,
-  .label__menu:focus + .right-slide  {
-    transform: translateX(0);
+  .container__animationMenu > .right-slide,
+  .container__animationMenu > .right-slide  {
+    // transform: translateX(0);
     animation: right-slide;
     display: inline-block;
   }
+
+  // .label__menu:hover::before + .right-slide,
+  // .label__menu:focus::before + .right-slide {
+  //       // transform: translateX(100%);
+  //       display: none;
+  //
+  // }
+  // .label__menu:hover + .right-slide,
+  // .label__menu:focus + .right-slide  {
+  //   transform: translateX(0);
+  //   animation: right-slide;
+  //   display: inline-block;
+  // }
 
     @keyframes right-slide {
     0% {

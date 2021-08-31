@@ -442,14 +442,14 @@ se dévoilant au survol de la souris */
   transform: animation;
 }
 
-.label__menu:hover::before .right-slide,
-.label__menu:focus::before .right-slide {
+.label__menu:hover::before + .right-slide,
+.label__menu:focus::before + .right-slide {
   transform: translateX(100%);
   display: none;
 }
 
-.label__menu:hover .right-slide,
-.label__menu:focus .right-slide {
+.label__menu:hover + .right-slide,
+.label__menu:focus + .right-slide {
   transform: translateX(0);
   animation: right-slide;
   display: inline-block;

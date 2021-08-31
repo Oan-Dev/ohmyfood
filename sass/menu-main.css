@@ -106,7 +106,10 @@ header .navBar .block__Logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 2px solid #f2f2f2;
+  box-shadow: 5px 5px 5px 2px #d7d7d7;
   border-radius: 50px;
+  background-color: #fff;
 }
 .container__animationMenu .label__menu {
   width: 100%;
@@ -156,7 +159,6 @@ header .navBar .block__Logo {
   height: 85%;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
-  display: none;
 }
 .container__animationMenu .animaValidation .check-ok {
   width: 30px;
@@ -433,15 +435,24 @@ se dévoilant au survol de la souris */
 }
 .right-slide {
   animation: right-slide 2s;
+  display: inline-block;
 }
 
 .container__animationMenu:hover {
   transform: animation;
 }
 
-.label__menu:hover .right-slide {
+.label__menu:hover::before .right-slide,
+.label__menu:focus::before .right-slide {
+  transform: translateX(100%);
+  display: none;
+}
+
+.label__menu:hover .right-slide,
+.label__menu:focus .right-slide {
   transform: translateX(0);
   animation: right-slide;
+  display: inline-block;
 }
 
 @keyframes right-slide {

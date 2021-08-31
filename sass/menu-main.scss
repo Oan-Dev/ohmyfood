@@ -463,16 +463,16 @@ header {
   animation: slideInRight;
   transition: animation 2s;
   // opacity: 1;
-  display:  block;
+  display:  inline-block;
   transform: translateX(0);
   width: 75px;
 
   .container__animationMenu:hover > .slideInRight > .rotateIn,
   .container__animationMenu:focus > .slideInRight > .rotateIn {
   animation: rotateIn;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 }
 
   // cursor: pointer;
@@ -533,6 +533,7 @@ header {
   /* rotateIn s'active bien au survol du parent */
    .rotateIn :hover {
     animation: rotateIn;
+    opacity: 1;
   }
 
   .rotateIn {

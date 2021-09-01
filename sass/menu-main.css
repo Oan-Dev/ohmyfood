@@ -434,7 +434,7 @@ header .navBar .block__Logo {
 .container__animationMenu:focus > .label__menu {
   width: 80%;
   transition: 2s;
-  text-overflow: ellipsis;
+  text-overflow: "…";
 }
 .container__animationMenu:hover > .label__menu .dish-specificite--hidden,
 .container__animationMenu:focus > .label__menu .dish-specificite--hidden {

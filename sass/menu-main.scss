@@ -461,6 +461,16 @@ header {
   width: 75px;
 }
 
+.container__animationMenu:hover::before > .label__menu,
+.container__animationMenu:focus::before > .label__menu {
+  width: 100%;
+}
+
+.container__animationMenu:hover > .label__menu,
+.container__animationMenu:focus > .label__menu {
+  width: 80%;
+  transition: 2s;
+}
 
 
 

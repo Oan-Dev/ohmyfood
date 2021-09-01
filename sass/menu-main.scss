@@ -129,7 +129,7 @@ header {
       background-color: transparent !important;
       width: auto;
       height: auto;
-      
+      // border-radius: 30px 60px 60px 30px;
       cursor: pointer;
       }
   }
@@ -454,11 +454,30 @@ header {
   }
   .fa-heart:hover,
   .fa-heart:focus {
-    transform: background-image;
-    transform-origin: center;
-    transition: 2s 5s;
-    background-image: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
-    color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
+    animation: iconLove 2s;
+    // transform: background-image;
+    // transform-origin: center;
+    // transition: 2s 5s;
+    // background-image: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
+    // color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
+  }
+
+
+  // keyframes linear-Gradient pour icone fa-heart
+
+  @keyframes iconLove {
+    0% {
+
+    }
+    50% {
+
+    }
+    100% {
+      transform: background-image;
+      transform-origin: center;
+      background-image: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
+      color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
+    }
   }
 
   // Les Animations @keyframes / containers cachés

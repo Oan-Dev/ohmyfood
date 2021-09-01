@@ -194,9 +194,6 @@ header {
         height: 85%;
         background-color: #99E2D0;
         border-radius: 0 20px 20px 0;
-        // opacity: 0;
-        display: none;
-        // visibility: hidden;
         // display: none;
             .check-ok {
               width: 30px;
@@ -445,38 +442,40 @@ header {
   // Les Animations @keyframes / containers cachés
 
 
-.container__animationMenu:hover::before > .slideInRight,
-.container__animationMenu:focus::before > .slideInRight {
+// .container__animationMenu:hover::before > .slideInRight,
+// .container__animationMenu:focus::before > .slideInRight {
+//   animation: slideInRight 0ms;
+//   display: none;
+//   transform: translateX(100%);
+//   width: 0;
+//   }
+//
+// .container__animationMenu:hover > .slideInRight,
+// .container__animationMenu:focus > .slideInRight {
+//
+//   animation: slideInRight;
+//   transition: animation 2s;
+//   display: block;
+//   transform: translateX(0);
+//   width: 75px;
+// }
 
-  animation: slideInRight 0ms;
-  // opacity: 0;
-  display: none;
-  transform: translateX(100%);
-  width: 0;
+.container__animationMenu:hover::before .rotateIn,
+.container__animationMenu:focus::before .rotateIn {
+animation: rotateIn 0s;
 
-  // cursor: pointer;
-  }
+}
 
-.container__animationMenu:hover > .slideInRight,
-.container__animationMenu:focus > .slideInRight {
-
-  animation: slideInRight;
-  transition: animation 2s;
-  // opacity: 1;
-  display:  inline-block;
-  transform: translateX(0);
-  width: 75px;
-
-  .container__animationMenu:hover > .slideInRight > .rotateIn,
-  .container__animationMenu:focus > .slideInRight > .rotateIn {
+  .container__animationMenu:hover .rotateIn,
+  .container__animationMenu:focus .rotateIn {
+  transform: animation;
   animation: rotateIn;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-}
-
-  // cursor: pointer;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #99E2D0;
+  }
 
 
   /* le Container validation caché
@@ -508,7 +507,7 @@ header {
       transform: translateX(0);
       opacity: 1;
       // visibility: visible;
-      display: none;
+      display: block;
       width: 75px;
       }
     }
@@ -517,24 +516,18 @@ header {
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
     opacity: 0;
-    // visibility: hidden;
     display: none;
     width: 0;
     }
     100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    // visibility: hidden;
-    display: none;
+    display: block;
     width: 75px;
     }
   }
 
   /* rotateIn s'active bien au survol du parent */
-   .rotateIn :hover {
-    animation: rotateIn;
-    opacity: 1;
-  }
 
   .rotateIn {
     -webkit-animation-name: rotateIn;
@@ -545,9 +538,6 @@ header {
     animation-fill-mode: both;
     color: #99E2D0;
     cursor: pointer;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     }
     @-webkit-keyframes rotateIn {
       0% {

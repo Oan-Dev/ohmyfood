@@ -456,24 +456,12 @@ header {
 
   animation: rotateIn slideInRight;
   transition: animation 2s;
-  display: block;
+  display: flex;
   transform: translateX(0);
   width: 75px;
 }
 
-// .slideInRight::before .rotateIn,
-// .slideInRight:focus::before .rotateIn {
-// animation: rotateIn 0s;
-//
-// }
-//
-//   .slideInRight:hover .rotateIn,
-//   .slideInRight:focus .rotateIn {
-//   animation: rotateIn;
-//   display: block;
-//   opacity: 1;
-//   color: #99E2D0;
-//   }
+
 
 
   /* le Container validation caché
@@ -617,3 +605,16 @@ header {
 //       transform: translateX(0%);
 //     }
 // }
+// .slideInRight::before .rotateIn,
+// .slideInRight:focus::before .rotateIn {
+// animation: rotateIn 0s;
+//
+// }
+//
+//   .slideInRight:hover .rotateIn,
+//   .slideInRight:focus .rotateIn {
+//   animation: rotateIn;
+//   display: block;
+//   opacity: 1;
+//   color: #99E2D0;
+//   }

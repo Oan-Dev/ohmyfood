@@ -396,7 +396,7 @@ header .navBar .block__Logo {
 .container__animationMenu:focus > .slideInRight {
   animation: rotateIn slideInRight;
   transition: animation 2s;
-  display: block;
+  display: flex;
   transform: translateX(0);
   width: 75px;
 }

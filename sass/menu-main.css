@@ -158,6 +158,7 @@ header .navBar .block__Logo {
   height: 85%;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
+  display: none;
 }
 .container__animationMenu .animaValidation .check-ok {
   width: 30px;
@@ -167,9 +168,9 @@ header .navBar .block__Logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #99E2D0;
 }
 .container__animationMenu .animaValidation .check-ok .fa-check {
-  background-color: #fff;
   color: #99E2D0;
 }
 
@@ -383,20 +384,21 @@ header .navBar .block__Logo {
     height: 700px;
   }
 }
-.container__animationMenu:hover::before .rotateIn,
-.container__animationMenu:focus::before .rotateIn {
-  animation: rotateIn 0s;
+.container__animationMenu:hover::before > .slideInRight,
+.container__animationMenu:focus::before > .slideInRight {
+  animation: rotateIn slideInRight 0ms;
+  display: none;
+  transform: translateX(100%);
+  width: 0;
 }
 
-.container__animationMenu:hover .rotateIn,
-.container__animationMenu:focus .rotateIn {
-  transform: animation;
-  animation: rotateIn;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-  color: #99E2D0;
+.container__animationMenu:hover > .slideInRight,
+.container__animationMenu:focus > .slideInRight {
+  animation: rotateIn slideInRight;
+  transition: animation 2s;
+  display: block;
+  transform: translateX(0);
+  width: 75px;
 }
 
 /* le Container validation caché
@@ -423,7 +425,7 @@ se dévoilant au survol de la souris */
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
-    display: block;
+    display: flex;
     width: 75px;
   }
 }
@@ -438,7 +440,7 @@ se dévoilant au survol de la souris */
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    display: block;
+    display: flex;
     width: 75px;
   }
 }
@@ -460,7 +462,7 @@ se dévoilant au survol de la souris */
     transform-origin: center;
     -webkit-transform: rotate3d(0, 0, 1, -200deg);
     transform: rotate3d(0, 0, 1, -200deg);
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     -webkit-transform-origin: center;
@@ -476,7 +478,7 @@ se dévoilant au survol de la souris */
     transform-origin: center;
     -webkit-transform: rotate3d(0, 0, 1, -200deg);
     transform: rotate3d(0, 0, 1, -200deg);
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     -webkit-transform-origin: center;

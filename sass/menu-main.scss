@@ -194,7 +194,7 @@ header {
         height: 85%;
         background-color: #99E2D0;
         border-radius: 0 20px 20px 0;
-        // display: none;
+        display: none;
             .check-ok {
               width: 30px;
               height: 30px;
@@ -203,8 +203,9 @@ header {
               display: flex;
               justify-content: center;
               align-items: center;
+              color: #99E2D0;
               .fa-check {
-                background-color: #fff;
+                // background-color: #fff;
                 color: #99E2D0;
             }
       }
@@ -442,40 +443,37 @@ header {
   // Les Animations @keyframes / containers cachés
 
 
-// .container__animationMenu:hover::before > .slideInRight,
-// .container__animationMenu:focus::before > .slideInRight {
-//   animation: slideInRight 0ms;
-//   display: none;
-//   transform: translateX(100%);
-//   width: 0;
-//   }
-//
-// .container__animationMenu:hover > .slideInRight,
-// .container__animationMenu:focus > .slideInRight {
-//
-//   animation: slideInRight;
-//   transition: animation 2s;
-//   display: block;
-//   transform: translateX(0);
-//   width: 75px;
-// }
+.container__animationMenu:hover::before > .slideInRight,
+.container__animationMenu:focus::before > .slideInRight {
+  animation: rotateIn slideInRight 0ms;
+  display: none;
+  transform: translateX(100%);
+  width: 0;
+  }
 
-.container__animationMenu:hover::before .rotateIn,
-.container__animationMenu:focus::before .rotateIn {
-animation: rotateIn 0s;
+.container__animationMenu:hover > .slideInRight,
+.container__animationMenu:focus > .slideInRight {
 
+  animation: rotateIn slideInRight;
+  transition: animation 2s;
+  display: block;
+  transform: translateX(0);
+  width: 75px;
 }
 
-  .container__animationMenu:hover .rotateIn,
-  .container__animationMenu:focus .rotateIn {
-  transform: animation;
-  animation: rotateIn;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-  color: #99E2D0;
-  }
+// .slideInRight::before .rotateIn,
+// .slideInRight:focus::before .rotateIn {
+// animation: rotateIn 0s;
+//
+// }
+//
+//   .slideInRight:hover .rotateIn,
+//   .slideInRight:focus .rotateIn {
+//   animation: rotateIn;
+//   display: block;
+//   opacity: 1;
+//   color: #99E2D0;
+//   }
 
 
   /* le Container validation caché
@@ -507,7 +505,7 @@ animation: rotateIn 0s;
       transform: translateX(0);
       opacity: 1;
       // visibility: visible;
-      display: block;
+      display: flex;
       width: 75px;
       }
     }
@@ -522,7 +520,7 @@ animation: rotateIn 0s;
     100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    display: block;
+    display: flex;
     width: 75px;
     }
   }
@@ -545,7 +543,7 @@ animation: rotateIn 0s;
       transform-origin: center;
       -webkit-transform: rotate3d(0, 0, 1, -200deg);
       transform: rotate3d(0, 0, 1, -200deg);
-      opacity: 0;
+      opacity: 1;
       }
       100% {
       -webkit-transform-origin: center;
@@ -561,7 +559,7 @@ animation: rotateIn 0s;
     transform-origin: center;
     -webkit-transform: rotate3d(0, 0, 1, -200deg);
     transform: rotate3d(0, 0, 1, -200deg);
-    opacity: 0;
+    opacity: 1;
     }
     100% {
     -webkit-transform-origin: center;

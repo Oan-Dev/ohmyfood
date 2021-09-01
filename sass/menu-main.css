@@ -132,7 +132,6 @@ header .navBar .block__Logo {
 }
 .container__animationMenu .label__menu .titre-dish .dish-specificite--hidden {
   margin-left: 5px;
-  opacity: 1;
 }
 .container__animationMenu .label__menu .titre-dish .threePoints {
   opacity: 0;
@@ -410,6 +409,19 @@ header .navBar .block__Logo {
 .container__animationMenu:focus > .label__menu {
   width: 80%;
   transition: 2s;
+}
+.container__animationMenu:hover > .label__menu .dish-specificite--hidden,
+.container__animationMenu:focus > .label__menu .dish-specificite--hidden {
+  display: none;
+}
+.container__animationMenu:hover > .label__menu .threePoints,
+.container__animationMenu:focus > .label__menu .threePoints {
+  opacity: 1;
+}
+
+.container__animationMenu:hover,
+.container__animationMenu:focus {
+  width: 90%;
 }
 
 /* le Container validation caché

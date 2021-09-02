@@ -509,7 +509,9 @@ header {
 .container__animationMenu:hover > .label__menu,
 .container__animationMenu:focus > .label__menu {
   width: 80%;
-  transition: 2s;
+  transition: 5s ;
+  border-radius: 20px 0 0 20px;
+
   .dish-specificite--hidden {
     display: none;
   }

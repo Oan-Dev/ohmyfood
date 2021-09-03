@@ -119,7 +119,7 @@ header {
   // position: absolute;
 }
 .block__menu {
-  width: auto;
+  width: 100%;
   background-color: #f2f2f2;
   .container__titreRestaurant {
     display: flex;
@@ -148,13 +148,13 @@ header {
   justify-content: space-between;
   // border: 2px solid #f2f2f2;
   // box-shadow: 5px 5px 5px 2px #d7d7d7;
-  border-radius: 50px;
+  border-radius: 20px;
   background-color: #fff;
   transform: animation;
   animation: slideInRight;
       .label__menu {
         width: 100%;
-        height: 85%;
+        height: 70px;
         padding-left: 10px;
         display: flex;
         flex-direction: row;
@@ -299,11 +299,18 @@ header {
       align-items: center;
     }
     .container_blockLabel {
-      width: auto;
+      width: 100%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+      .container__animationMenu {
+        margin-bottom: 20px;
+      }
+      .menu__plats,
+      .menu__deserts {
+        margin-left: 20px;
+      }
     }
 
     // le footer
@@ -348,11 +355,18 @@ header {
     align-items: center;
   }
   .container_blockLabel {
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    .container__animationMenu {
+      margin-bottom: 20px;
+    }
+    .menu__plats,
+    .menu__deserts {
+      margin-left: 20px;
+    }
   }
 
   // le footer
@@ -407,12 +421,19 @@ header {
       align-items: center;
     }
     .container_blockLabel {
-      width: auto;
+      width: 100%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
       // margin-left: -60px;
+      .container__animationMenu {
+        margin-bottom: 20px;
+      }
+      .menu__plats,
+      .menu__deserts {
+        margin-left: 20px;
+      }
     }
     // le footer
       .container__down {
@@ -510,7 +531,7 @@ header {
 .container__animationMenu:focus > .label__menu {
   width: 80%;
   transition: 5s;
-  transform: border-radius;
+  transform: border-radius width;
   border-radius: 20px 0 0 20px;
 
   .dish-specificite--hidden {

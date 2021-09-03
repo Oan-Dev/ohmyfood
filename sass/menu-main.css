@@ -88,7 +88,7 @@ header .navBar .block__Logo {
 }
 
 .block__menu {
-  width: auto;
+  width: 100%;
   background-color: #f2f2f2;
 }
 .block__menu .container__titreRestaurant {
@@ -111,14 +111,14 @@ header .navBar .block__Logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 50px;
+  border-radius: 20px;
   background-color: #fff;
   transform: animation;
   animation: slideInRight;
 }
 .container__animationMenu .label__menu {
   width: 100%;
-  height: 85%;
+  height: 70px;
   padding-left: 10px;
   display: flex;
   flex-direction: row;
@@ -249,11 +249,18 @@ header .navBar .block__Logo {
   }
 
   .container_blockLabel {
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .container_blockLabel .container__animationMenu {
+    margin-bottom: 20px;
+  }
+  .container_blockLabel .menu__plats,
+.container_blockLabel .menu__deserts {
+    margin-left: 20px;
   }
 
   .container__down {
@@ -296,11 +303,18 @@ header .navBar .block__Logo {
   }
 
   .container_blockLabel {
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .container_blockLabel .container__animationMenu {
+    margin-bottom: 20px;
+  }
+  .container_blockLabel .menu__plats,
+.container_blockLabel .menu__deserts {
+    margin-left: 20px;
   }
 
   .container__down {
@@ -351,11 +365,18 @@ header .navBar .block__Logo {
   }
 
   .container_blockLabel {
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .container_blockLabel .container__animationMenu {
+    margin-bottom: 20px;
+  }
+  .container_blockLabel .menu__plats,
+.container_blockLabel .menu__deserts {
+    margin-left: 20px;
   }
 
   .container__down {
@@ -432,7 +453,7 @@ header .navBar .block__Logo {
 .container__animationMenu:focus > .label__menu {
   width: 80%;
   transition: 5s;
-  transform: border-radius;
+  transform: border-radius width;
   border-radius: 20px 0 0 20px;
 }
 .container__animationMenu:hover > .label__menu .dish-specificite--hidden,

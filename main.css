@@ -264,6 +264,7 @@ a {
 
 .container__down h4 {
   margin: 0 0 5px 40px;
+  font-family: Shrikhand;
 }
 
 .container__down ul li {
@@ -274,4 +275,100 @@ a {
 .container__down ul li a {
   color: #ffff;
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .container__restaurant {
+    height: auto;
+  }
+
+  .block__Resto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .block__Resto .block__RestoColumn1, .block__Resto .block__RestoColumn2 {
+    width: 100%;
+    height: auto;
+    margin: 20px;
+  }
+
+  .container__down {
+    width: auto;
+  }
+  .container__down h4 {
+    display: flex;
+    justify-content: center;
+  }
+  .container__down ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .container__down ul li {
+    margin: auto;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1240px) and (max-width: 1310px) {
+  .container__down {
+    width: auto;
+  }
+  .container__down h4 {
+    display: flex;
+    justify-content: center;
+  }
+  .container__down ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .container__down ul li {
+    margin: auto;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1311px) {
+  .container__restaurant {
+    height: auto;
+  }
+
+  .block__Resto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .block__Resto .block__RestoColumn1, .block__Resto .block__RestoColumn2 {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .block__Resto .block__RestoColumn1 .block__restaurant, .block__Resto .block__RestoColumn2 .block__restaurant {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .container__down {
+    width: auto;
+  }
+  .container__down h4 {
+    display: flex;
+    justify-content: center;
+  }
+  .container__down ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .container__down ul li {
+    margin: auto;
+    padding-right: 50px;
+  }
 }

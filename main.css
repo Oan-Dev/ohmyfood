@@ -430,3 +430,30 @@ a {
     padding-right: 50px;
   }
 }
+.block__iconlove .icon-hover {
+  display: none;
+  color: #861780;
+  color: linear-gradient(175deg, #83005f 10%, #521e90 90%);
+}
+
+.block__iconlove:hover::before .icon-before:hover::before,
+.block__iconlove:hover::before .icon-before:focus::before,
+.block__iconlove:focus::before .icon-before:hover::before,
+.block__iconlove:focus::before .icon-before:focus::before {
+  display: block;
+}
+.block__iconlove:hover::before .icon-hover:hover::before,
+.block__iconlove:hover::before .icon-hover:focus::before,
+.block__iconlove:focus::before .icon-hover:hover::before,
+.block__iconlove:focus::before .icon-hover:focus::before {
+  display: none;
+}
+
+.block__iconlove:hover .icon-before,
+.block__iconlove:focus .icon-before {
+  display: none;
+}
+.block__iconlove:hover .icon-hover,
+.block__iconlove:focus .icon-hover {
+  display: block;
+}

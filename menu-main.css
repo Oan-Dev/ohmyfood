@@ -434,7 +434,7 @@ header .navBar .block__Logo {
 }
 .block__iconlove .icon-hover {
   display: none;
-  color: blue;
+  color: #861780;
   color: linear-gradient(175deg, #83005f 10%, #521e90 90%);
 }
 

@@ -423,3 +423,37 @@ padding: 70px 20px 70px 0;
       }
     }
 }
+
+// Les Animations
+// Les icones Coeur
+
+.block__iconlove {
+  .icon-hover {
+    display: none;
+    color: #861780;
+    color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
+
+  }
+}
+
+.block__iconlove:hover::before,
+.block__iconlove:focus::before {
+.icon-before:hover::before,
+.icon-before:focus::before {
+  display: block;
+}
+.icon-hover:hover::before,
+.icon-hover:focus::before {
+  display: none;
+}
+}
+.block__iconlove:hover,
+.block__iconlove:focus {
+.icon-before {
+  display: none;
+}
+.icon-hover {
+  display: block;
+  // color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
+}
+}

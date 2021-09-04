@@ -96,13 +96,19 @@ header .navBar .block__Logo {
 }
 .block__menu .container__titreRestaurant {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+}
+.block__menu .container__titreRestaurant .block__titre h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: Shrikhand;
 }
 .block__menu .container__titreRestaurant .block__iconlove {
   background-color: transparent !important;
   width: auto;
   height: auto;
+  margin-left: 50px;
   cursor: pointer;
 }
 
@@ -431,6 +437,10 @@ header .navBar .block__Logo {
     background-size: 50% auto;
     height: 700px;
   }
+}
+.block__iconlove {
+  width: 50px;
+  height: 50px;
 }
 .block__iconlove .icon-hover {
   display: none;

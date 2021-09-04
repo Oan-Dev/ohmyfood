@@ -262,6 +262,11 @@ header .navBar .block__Logo {
   .container_blockLabel .container__animationMenu {
     margin-bottom: 20px;
   }
+  .container_blockLabel .menu__entrees,
+.container_blockLabel .menu__plats,
+.container_blockLabel .menu__deserts {
+    width: 40%;
+  }
   .container_blockLabel .menu__plats,
 .container_blockLabel .menu__deserts {
     margin-left: 20px;
@@ -315,6 +320,11 @@ header .navBar .block__Logo {
   }
   .container_blockLabel .container__animationMenu {
     margin-bottom: 20px;
+  }
+  .container_blockLabel .menu__entrees,
+.container_blockLabel .menu__plats,
+.container_blockLabel .menu__deserts {
+    width: 40%;
   }
   .container_blockLabel .menu__plats,
 .container_blockLabel .menu__deserts {
@@ -376,6 +386,11 @@ header .navBar .block__Logo {
   }
   .container_blockLabel .container__animationMenu {
     margin-bottom: 20px;
+  }
+  .container_blockLabel .menu__entrees,
+.container_blockLabel .menu__plats,
+.container_blockLabel .menu__deserts {
+    width: 80%;
   }
   .container_blockLabel .menu__plats,
 .container_blockLabel .menu__deserts {

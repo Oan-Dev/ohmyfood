@@ -311,6 +311,11 @@ header {
       .container__animationMenu {
         margin-bottom: 20px;
       }
+      .menu__entrees,
+      .menu__plats,
+      .menu__deserts {
+        width: 40%;
+      }
       .menu__plats,
       .menu__deserts {
         margin-left: 20px;
@@ -366,6 +371,11 @@ header {
     justify-content: space-around;
     .container__animationMenu {
       margin-bottom: 20px;
+    }
+    .menu__entrees,
+    .menu__plats,
+    .menu__deserts {
+      width: 40%;
     }
     .menu__plats,
     .menu__deserts {
@@ -433,6 +443,11 @@ header {
       // margin-left: -60px;
       .container__animationMenu {
         margin-bottom: 20px;
+      }
+      .menu__entrees,
+      .menu__plats,
+      .menu__deserts {
+        width: 80%;
       }
       .menu__plats,
       .menu__deserts {

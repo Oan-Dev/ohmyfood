@@ -430,6 +430,9 @@ a {
     padding-right: 50px;
   }
 }
+.block__iconlove {
+  font-size: 30px;
+}
 .block__iconlove .icon-hover {
   display: none;
   color: #861780;

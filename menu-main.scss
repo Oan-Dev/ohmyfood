@@ -315,6 +315,10 @@ header {
       .menu__plats,
       .menu__deserts {
         width: 40%;
+        .label__menu p span {
+          font-size: 12px;
+        }
+
       }
       .menu__plats,
       .menu__deserts {

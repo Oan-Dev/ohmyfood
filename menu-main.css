@@ -267,6 +267,11 @@ header .navBar .block__Logo {
 .container_blockLabel .menu__deserts {
     width: 40%;
   }
+  .container_blockLabel .menu__entrees .label__menu p span,
+.container_blockLabel .menu__plats .label__menu p span,
+.container_blockLabel .menu__deserts .label__menu p span {
+    font-size: 12px;
+  }
   .container_blockLabel .menu__plats,
 .container_blockLabel .menu__deserts {
     margin-left: 20px;

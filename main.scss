@@ -247,6 +247,7 @@ header{
   padding-top: 20px;
 }
 .container__down h4 {
+  font-size: 20px;
   margin: 0 0 5px 40px;
   font-family: Shrikhand;
 }
@@ -264,6 +265,8 @@ header{
   // container principal
   .container__restaurant {
   height: auto;
+  padding: 70px 20px 70px 0;
+
   }
 
   .block__Resto {
@@ -297,28 +300,29 @@ header{
     }
 }
 @media screen and (min-width: 1240px) and (max-width: 1310px) {
-// la navBar
-.container__nav {
-  height: auto;
-  .container__navBar {
-    display: flex;
-    flex-direction: row;
-    // height: auto;
-    .nav__btn {
-      width: auto;
-      height: 20%;
-      margin: auto;
+  // la navBar
+  .container__nav {
+    margin: 0;
+    .container__navBar {
+      display: flex;
+      flex-direction: row;
+      height: 70px;
+      .nav__btn {
+        width: auto;
+        height: 50%;
+        margin: auto;
+      }
+
     }
 
   }
 
-}
-
   // container principal
   .container__restaurant {
   height: auto;
+  margin-top: 300px;
+  padding: 70px 20px 70px 0;
   }
-
   .block__Resto {
     width: 100%;
     height: auto;
@@ -359,14 +363,14 @@ header{
 @media screen and (min-width: 1311px) {
   // la navBar
   .container__nav {
-    height: auto;
+    margin: 0;
     .container__navBar {
       display: flex;
       flex-direction: row;
-      // height: auto;
+      height: 70px;
       .nav__btn {
         width: auto;
-        height: 20%;
+        height: 50%;
         margin: auto;
       }
 
@@ -376,6 +380,8 @@ header{
 // container principal
 .container__restaurant {
 height: auto;
+margin-top: 300px;
+padding: 70px 20px 70px 0;
 }
 
 .block__Resto {

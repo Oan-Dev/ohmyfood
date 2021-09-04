@@ -297,7 +297,47 @@ header{
     }
 }
 @media screen and (min-width: 1240px) and (max-width: 1310px) {
+// la navBar
+.container__nav {
+  height: auto;
+  .container__navBar {
+    display: flex;
+    flex-direction: row;
+    // height: auto;
+    .nav__btn {
+      width: auto;
+      height: 20%;
+      margin: auto;
+    }
 
+  }
+
+}
+
+  // container principal
+  .container__restaurant {
+  height: auto;
+  }
+
+  .block__Resto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .block__RestoColumn1,.block__RestoColumn2 {
+      width: 100%;
+      height: auto;
+      padding: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .block__restaurant {
+        width: 100%;
+        margin: 10px;
+      }
+    }
+  }
   // le footer
     .container__down {
       width: auto;
@@ -317,6 +357,22 @@ header{
     }
 }
 @media screen and (min-width: 1311px) {
+  // la navBar
+  .container__nav {
+    height: auto;
+    .container__navBar {
+      display: flex;
+      flex-direction: row;
+      // height: auto;
+      .nav__btn {
+        width: auto;
+        height: 20%;
+        margin: auto;
+      }
+
+    }
+
+  }
 // container principal
 .container__restaurant {
 height: auto;

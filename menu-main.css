@@ -126,7 +126,6 @@ header .navBar .block__Logo {
   animation: slideInRight;
 }
 .container__animationMenu .label__menu {
-  font-size: 14px;
   width: 100%;
   height: 70px;
   padding: 5px 15px 0 10px;
@@ -138,9 +137,11 @@ header .navBar .block__Logo {
 }
 .container__animationMenu .label__menu .titre-dish {
   font-weight: 700;
+  font-size: 18px;
 }
 .container__animationMenu .label__menu .titre-dish .dish-specificite {
   font-weight: 400;
+  font-size: 14px;
   display: flex;
   flex-direction: row;
 }

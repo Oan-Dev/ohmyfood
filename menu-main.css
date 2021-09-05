@@ -254,6 +254,10 @@ header .navBar .block__Logo {
     height: 450px;
   }
 
+  .container__menu {
+    width: 100%;
+  }
+
   .container__titreRestaurant {
     display: flex;
     justify-content: center;
@@ -316,6 +320,10 @@ header .navBar .block__Logo {
   .block__images {
     background-size: 50% auto;
     height: 550px;
+  }
+
+  .container__menu {
+    width: 100%;
   }
 
   .container__titreRestaurant {
@@ -383,6 +391,10 @@ header .navBar .block__Logo {
   .block__images {
     background-size: 50% auto;
     height: 550px;
+  }
+
+  .container__menu {
+    width: 100%;
   }
 
   .container__titreRestaurant {

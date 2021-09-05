@@ -92,7 +92,7 @@ header{
 /* la navBar  */
 .container__navBar {
   width: 100%;
-  height: 250px;
+  height: 255px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,11 +108,11 @@ header{
   flex-direction: row;
 }
 .nav__btn {
-  width: 55%;
+  width: 90%;
   height: 230px;
   border: 1px solid #f2f2f2;
   border-radius: 15px;
-  box-shadow: 5px 5px 5px 2px #f2f2f2;
+  box-shadow: 8px 8px 8px 5px #f2f2f2;
   background-color: #f2f2f2;
   margin-bottom: 25px;
   display: flex;
@@ -140,14 +140,18 @@ header{
 }
 .element-navIcon {
   color: #787878;
+  // padding-left: 15px;
 }
 
+// .nav__btn div {
+//   margin-bottom: 8px;
+// }
 
 .nav__btn div a {
   text-decoration: none;
   color: #000;
   font-weight: 900;
-  font-size: 1.10rem;
+  font-size: .9rem;
 }
 .btn__choissez, .btn__composez, .btn__degustez {
   display: flex;

@@ -430,13 +430,17 @@ a {
     padding-right: 50px;
   }
 }
+.element-navIcon:hover,
+.element-navIcon:focus {
+  color: #9356DC;
+}
+
 .block__iconlove {
   font-size: 30px;
 }
 .block__iconlove .icon-hover {
   display: none;
-  color: #861780;
-  color: linear-gradient(175deg, #83005f 10%, #521e90 90%);
+  color: #9356DC;
 }
 
 .block__iconlove:hover::before .icon-before:hover::before,

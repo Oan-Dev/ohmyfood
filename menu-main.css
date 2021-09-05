@@ -444,8 +444,7 @@ header .navBar .block__Logo {
 }
 .block__iconlove .icon-hover {
   display: none;
-  color: #861780;
-  color: linear-gradient(175deg, #83005f 10%, #521e90 90%);
+  color: #9356DC;
 }
 
 .block__iconlove:hover::before .icon-before:hover::before,
@@ -512,8 +511,6 @@ header .navBar .block__Logo {
   opacity: 1;
 }
 
-/* le Container validation caché
-se dévoilant au survol de la souris */
 .slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;

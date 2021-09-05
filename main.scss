@@ -427,14 +427,19 @@ padding: 70px 20px 70px 0;
 
 // Les Animations
 // Les icones Coeur
+.element-navIcon:hover,
+.element-navIcon:focus {
+  color: #9356DC;
+  // background: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);
 
+}
 .block__iconlove {
   font-size: 30px;
   .icon-hover {
     display: none;
-    color: #861780;
-    color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
-
+    color: #9356DC;
+    // color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
+    // color: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);
   }
 }
 

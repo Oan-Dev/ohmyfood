@@ -504,33 +504,13 @@ header {
   // les Animations
 
   // animation des icones Coeur
-
-
-  // .fa-heart:hover::before,
-  // .fa-heart:focus::before {
-  //   content: "\f004";
-  //   background-image: transparent;
-  // }
-  // .fa-heart:hover,
-  // .fa-heart:focus {
-  //   animation: iconLove 2s;
-  //   // transform: background-image;
-  //   // transform-origin: center;
-  //   // transition: 2s 5s;
-  //   // background-image: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
-  //   // color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
-  // }
-
     .block__iconlove {
-      // width: 50px;
-      // height: 50px;
       font-size: 30px;
       .icon-hover {
-        // width: inherit;
-        // height: inherit;
+        // transition: 250ms 2s;
         display: none;
-        color: #861780;
-        color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
+        color: #9356DC;
+        // color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
 
       }
     }
@@ -553,29 +533,13 @@ header {
     }
     .icon-hover {
       display: block;
+
+
       // color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
     }
   }
 
-  // keyframes linear-Gradient pour icone fa-heart
-
-  // @keyframes iconLove {
-  //   0% {
-  //
-  //   }
-  //   50% {
-  //
-  //   }
-  //   100% {
-  //     transform: background-image;
-  //     transform-origin: center;
-  //     background-image: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
-  //     color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
-  //   }
-  // }
-
-  // Les Animations @keyframes / containers cachés
-
+// les Animations "validation" cachées pour les Etiquettes
 
 .container__animationMenu:hover::before > .slideInRight,
 .container__animationMenu:focus::before > .slideInRight {
@@ -619,16 +583,6 @@ header {
   }
 }
 
-// .container__animationMenu:hover,
-// .container__animationMenu:focus {
-//   width: 90%;
-// }
-
-
-  /* le Container validation caché
-  se dévoilant au survol de la souris */
-    // .slideInRight:hover,
-
     .slideInRight
      {
     -webkit-animation-name: slideInRight;
@@ -638,14 +592,12 @@ header {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     cursor: pointer;
-    // transition: animation;
     }
     @-webkit-keyframes slideInRight {
     0% {
       -webkit-transform: translateX(100%);
       transform: translateX(100%);
       opacity: 0;
-      // visibility: hidden;
       display: none;
       width: 0;
       }
@@ -653,7 +605,6 @@ header {
       -webkit-transform: translateX(0);
       transform: translateX(0);
       opacity: 1;
-      // visibility: visible;
       display: flex;
       width: 75px;
       }
@@ -718,64 +669,3 @@ header {
     opacity: 1;
     }
   }
-
-  // .right-slide {
-  //   animation: right-slide 2s;
-  //   display: inline-block;
-  // }
-
-  // .container__animationMenu:hover {
-  //     transform: animation;
-  // }
-  //
-  // .container__animationMenu::before  .right-slide,
-  // .container__animationMenu:focus::before  .right-slide {
-  //       // transform: translateX(100%);
-  //       display: none;
-  //
-  // }
-  // .container__animationMenu  .right-slide,
-  // .container__animationMenu  .right-slide  {
-  //   // transform: translateX(0);
-  //   animation: right-slide;
-  //   display: inline-block;
-  // }
-
-  // .label__menu:hover::before + .right-slide,
-  // .label__menu:focus::before + .right-slide {
-  //       // transform: translateX(100%);
-  //       display: none;
-  //
-  // }
-  // .label__menu:hover + .right-slide,
-  // .label__menu:focus + .right-slide  {
-  //   transform: translateX(0);
-  //   animation: right-slide;
-  //   display: inline-block;
-  // }
-//
-//     @keyframes right-slide {
-//     0% {
-//       display: none;
-//       transform: translateX(100%);
-//
-//     }
-//
-//     100% {
-//       display: inline-block;
-//       transform: translateX(0%);
-//     }
-// }
-// .slideInRight::before .rotateIn,
-// .slideInRight:focus::before .rotateIn {
-// animation: rotateIn 0s;
-//
-// }
-//
-//   .slideInRight:hover .rotateIn,
-//   .slideInRight:focus .rotateIn {
-//   animation: rotateIn;
-//   display: block;
-//   opacity: 1;
-//   color: #99E2D0;
-//   }

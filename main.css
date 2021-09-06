@@ -265,7 +265,7 @@ a {
   align-items: center;
   position: absolute;
   margin-top: 20px;
-  margin-left: 220px;
+  margin-left: 150px;
   z-index: 1;
 }
 
@@ -317,6 +317,10 @@ a {
     width: 100%;
     height: auto;
     margin: 20px;
+  }
+
+  .label-Nouveau {
+    margin-left: 220;
   }
 
   .container__down {
@@ -433,6 +437,10 @@ a {
   .block__Resto .block__RestoColumn1 .block__restaurant, .block__Resto .block__RestoColumn2 .block__restaurant {
     width: 100%;
     margin: 10px;
+  }
+
+  .label-Nouveau {
+    margin-left: 220px;
   }
 
   .container__down {

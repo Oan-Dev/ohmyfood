@@ -266,6 +266,10 @@ a {
   z-index: 1;
 }
 
+.lien__Resto {
+  display: inline-block;
+}
+
 /* fin du container__restaurant (principal) */
 /* footer*/
 .container__down {
@@ -444,6 +448,13 @@ a {
     padding-right: 50px;
   }
 }
+.nav__btn:hover,
+.nav__btn:focus {
+  transform: background-color;
+  transition: 2s;
+  background-color: #e9ddf8;
+}
+
 .element-navIcon:hover,
 .element-navIcon:focus {
   color: #9356DC;

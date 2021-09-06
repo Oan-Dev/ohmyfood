@@ -263,11 +263,15 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 220px;
   z-index: 1;
 }
 
 .lien__Resto {
   display: inline-block;
+  position: relative;
 }
 
 /* fin du container__restaurant (principal) */
@@ -454,10 +458,9 @@ a {
   transition: 2s;
   background-color: #e9ddf8;
 }
-.nav__btn:hover .nav__icon :hover > .element-navIcon,
-.nav__btn:hover .nav__icon :focus > .element-navIcon,
-.nav__btn:focus .nav__icon :hover > .element-navIcon,
-.nav__btn:focus .nav__icon :focus > .element-navIcon {
+.nav__btn:hover.nav__icon :hover > .element-navIcon, .nav__btn:hover.nav__icon :focus > .element-navIcon,
+.nav__btn:focus.nav__icon :hover > .element-navIcon,
+.nav__btn:focus.nav__icon :focus > .element-navIcon {
   transform: color;
   transition: 2s;
   color: #9356DC;

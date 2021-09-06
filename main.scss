@@ -258,13 +258,14 @@ header{
   justify-content: center;
   align-items: center;
 
-  // position: absolute;
-  // top: 10px;
-  // right: 10px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 220px;
   z-index: 1;
 }
 .lien__Resto {
   display: inline-block;
+  position: relative;
 }
 /* fin du container__restaurant (principal) */
 
@@ -462,8 +463,8 @@ padding: 70px 20px 70px 0;
   transform: background-color;
   transition: 2s;
   background-color: #e9ddf8;
-  .nav__icon :hover > .element-navIcon,
-  .nav__icon :focus > .element-navIcon {
+  &.nav__icon :hover > .element-navIcon,
+  &.nav__icon :focus > .element-navIcon {
     transform: color;
     transition: 2s;
     color: #9356DC;

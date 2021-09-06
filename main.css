@@ -258,20 +258,14 @@ a {
   width: 100px;
   height: 30px;
   background-color: #278870;
+  border-radius: 5px;
   color: #99E2D0;
   font-weight: 900;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin-top: 20px;
-  margin-left: 150px;
   z-index: 1;
-}
-
-.lien__Resto {
-  display: inline-block;
-  position: relative;
 }
 
 /* fin du container__restaurant (principal) */
@@ -317,10 +311,7 @@ a {
     width: 100%;
     height: auto;
     margin: 20px;
-  }
-
-  .label-Nouveau {
-    margin-left: 220;
+    flex-direction: row;
   }
 
   .container__down {
@@ -439,10 +430,6 @@ a {
     margin: 10px;
   }
 
-  .label-Nouveau {
-    margin-left: 220px;
-  }
-
   .container__down {
     width: auto;
   }
@@ -466,9 +453,9 @@ a {
   transition: 2s;
   background-color: #e9ddf8;
 }
-.nav__btn:hover.nav__icon :hover > .element-navIcon, .nav__btn:hover.nav__icon :focus > .element-navIcon,
-.nav__btn:focus.nav__icon :hover > .element-navIcon,
-.nav__btn:focus.nav__icon :focus > .element-navIcon {
+
+.nav__btn:hover .nav__icon .element-navIcon,
+.nav__btn:focus .nav__icon .element-navIcon {
   transform: color;
   transition: 2s;
   color: #9356DC;

@@ -247,6 +247,7 @@ header{
   width: 100px;
   height: 30px;
   background-color: #278870;
+  border-radius: 5px;
   color: #99E2D0;
   font-weight: 900;
 
@@ -255,14 +256,29 @@ header{
   align-items: center;
 
   position: absolute;
-  margin-top: 20px;
-  margin-left: 150px;
+  // right: 4rem;
+  // margin-top: 20px;
+  // margin-left: 150px;
   z-index: 1;
 }
-.lien__Resto {
-  display: inline-block;
-  position: relative;
-}
+// .lien__Resto {
+//   display: block;
+//   position: relative;
+//   .label-Nouveau {
+//     position: absolute;
+//     right: 0;
+//   }
+// }
+// .block__restaurant {
+//   position: relative;
+//   .lien__Resto {
+//     position: relative;
+//       .label-Nouveau {
+//         position: absolute;
+//         right: 0;
+//       }
+//   }
+// }
 /* fin du container__restaurant (principal) */
 
 /* footer*/
@@ -306,11 +322,12 @@ header{
       width: 100%;
       height: auto;
       margin: 20px;
+      flex-direction: row;
     }
   }
-  .label-Nouveau {
-    margin-left: 220;
-  }
+  // .label-Nouveau {
+  //   margin-left: 250px;
+  // }
   // le footer
     .container__down {
       width: auto;
@@ -434,9 +451,9 @@ padding: 70px 20px 70px 0;
     }
   }
 }
-.label-Nouveau {
-  margin-left: 220px;
-}
+// .label-Nouveau {
+//   margin-left: 220px;
+// }
 
   // le footer
     .container__down {
@@ -464,15 +481,15 @@ padding: 70px 20px 70px 0;
   transform: background-color;
   transition: 2s;
   background-color: #e9ddf8;
-  &.nav__icon :hover > .element-navIcon,
-  &.nav__icon :focus > .element-navIcon {
-    transform: color;
-    transition: 2s;
-    color: #9356DC;
-    // background: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);
-
-  }
 }
+.nav__btn:hover .nav__icon .element-navIcon,
+.nav__btn:focus .nav__icon .element-navIcon {
+  transform: color;
+  transition: 2s;
+  color: #9356DC;
+}
+
+  // background: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);
 
 
 // Les icones Coeur

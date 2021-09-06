@@ -456,7 +456,7 @@ header .navBar .block__Logo {
 }
 .block__iconlove .icon-hover {
   display: none;
-  color: #9356DC;
+  color: #cc12c4;
 }
 
 .block__iconlove:hover::before .icon-before:hover::before,

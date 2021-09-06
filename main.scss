@@ -182,12 +182,14 @@ header{
   background-image: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   height: 200px;
   max-width: 100%;
+  z-index: 0;
 }
 
 #block__RestoLanote {
   background-image: url(./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   height: 200px;
   width: 100%;
+  z-index: 0;
 }
 
 #block__RestoAlafrancaise {
@@ -239,6 +241,22 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.label-Nouveau {
+  width: 100px;
+  height: 30px;
+  background-color: #278870;
+  color: #99E2D0;
+  font-weight: 900;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // position: absolute;
+  // top: 10px;
+  // right: 10px;
+  z-index: 1;
 }
 /* fin du container__restaurant (principal) */
 

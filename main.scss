@@ -462,16 +462,19 @@ padding: 70px 20px 70px 0;
   transform: background-color;
   transition: 2s;
   background-color: #e9ddf8;
+  .nav__icon :hover > .element-navIcon,
+  .nav__icon :focus > .element-navIcon {
+    transform: color;
+    transition: 2s;
+    color: #9356DC;
+    // background: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);
+
+  }
 }
 
 
 // Les icones Coeur
-.element-navIcon:hover,
-.element-navIcon:focus {
-  color: #9356DC;
-  // background: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);
 
-}
 .block__iconlove {
   font-size: 30px;
   .icon-hover {

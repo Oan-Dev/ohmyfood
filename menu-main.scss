@@ -682,11 +682,32 @@ header {
   }
   // .container__animationMenu,
 
-.container__animationMenu {
-  animation: label-load 950ms ease-in-out forwards;
+// .container__animationMenu {
+//   // animation: label-load 950ms ease-in-out;
+//   .label-load1,
+//   .label-load2,
+//   .label-load3 {
+//     animation: label-load 950ms ease-in-out;
+//
+//   }
+// }
+.menu__entrees,
+.menu__plats,
+.menu__deserts  {
+  .label-load1 {
+    animation: label-load 650ms ease-in-out;
 
+  }
+  .label-load2 {
+    animation: label-load 650ms ease-in-out;
+    animation-delay: 100ms;
+  }
+  .label-load3 {
+    animation: label-load 650ms ease-in-out ;
+    animation-delay: 100ms + 50ms;
+
+  }
 }
-
 
   //  .container_blockLabel {
   //        .menu__entrees,
@@ -728,7 +749,7 @@ header {
     }
     66%{
       transform: translateY(33%);
-      opacity: .5;
+      opacity: .4;
     }
     80%{
       opacity: .8;

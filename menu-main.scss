@@ -680,17 +680,14 @@ header {
     opacity: 1;
     }
   }
-  // .container__animationMenu,
+
+
+  // .container__animationMenu, la loading Page
 
 // .container__animationMenu {
 //   // animation: label-load 950ms ease-in-out;
-//   .label-load1,
-//   .label-load2,
-//   .label-load3 {
-//     animation: label-load 950ms ease-in-out;
-//
-//   }
 // }
+
 .menu__entrees,
 .menu__plats,
 .menu__deserts  {
@@ -708,31 +705,6 @@ header {
 
   }
 }
-
-  //  .container_blockLabel {
-  //        .menu__entrees,
-  //        .menu__plats,
-  //        .menu__desert  {
-  //          animation: label-load 950ms ease-in-out forwards;
-  //
-  //      // .menu__entrees:first-child,
-  //      // .menu__plats:first-child,
-  //      // .menu__desert:first-child {
-  //      //  animation: label-load 950ms ease-in-out forwards;
-  //      // }
-  //      // .menu__entrees:nth-child(2),
-  //      // .menu__plats:nth-child(2),
-  //      // .menu__desert:nth-child(2) {
-  //      //  animation: label-load 950ms ease-in-out forwards;
-  //      // }
-  //
-  //      // .menu__entrees:last-child,
-  //      // .menu__plats:last-child,
-  //      // .menu__desert:last-child {
-  //      //  animation: label-load 950ms ease-in-out forwards;
-  //      // }
-  //  }
-  // }
 
   @keyframes label-load {
     0% {
@@ -758,4 +730,11 @@ header {
       transform: translateY(0);
       opacity: 1;
     }
+  }
+
+  // Animations sur le btn
+
+  .element-btn:hover,
+  .element-btn:focus {
+    transform: scale(1.1);
   }

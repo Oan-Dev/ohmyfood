@@ -477,6 +477,11 @@ a {
   transform: scale(1.02);
 }
 
+.element-btnExplorer:hover,
+.element-btnExplorer:focus {
+  transform: scale(1.1);
+}
+
 .block__iconlove {
   font-size: 30px;
 }

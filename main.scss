@@ -183,6 +183,7 @@ header{
   height: 200px;
   max-width: 100%;
   z-index: 0;
+
 }
 
 #block__RestoLanote {
@@ -255,20 +256,20 @@ header{
   justify-content: center;
   align-items: center;
 
-  position: absolute;
-  // right: 4rem;
-  // margin-top: 20px;
-  // margin-left: 150px;
   z-index: 1;
 }
-// .lien__Resto {
-//   display: block;
-//   position: relative;
-//   .label-Nouveau {
-//     position: absolute;
-//     right: 0;
-//   }
-// }
+.lien__Resto {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  .label-Nouveau {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: -80px;
+    margin-right: 20px;
+  }
+ }
+//
 // .block__restaurant {
 //   position: relative;
 //   .lien__Resto {

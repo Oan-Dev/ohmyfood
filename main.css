@@ -472,6 +472,11 @@ a {
   color: #9356DC;
 }
 
+.block__restaurant:hover,
+.block__restaurant:focus {
+  transform: scale(1.02);
+}
+
 .block__iconlove {
   font-size: 30px;
 }

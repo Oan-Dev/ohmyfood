@@ -466,6 +466,7 @@ padding: 70px 20px 70px 0;
 }
 
 // Les Animations
+
 // le background-color des btn de la nav
 .nav__btn:hover,
 .nav__btn:focus {
@@ -480,7 +481,11 @@ padding: 70px 20px 70px 0;
   color: #9356DC;
 }
 
-  // background: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);
+// hover sur les Etiquettes
+.block__restaurant:hover,
+.block__restaurant:focus {
+    transform: scale(1.02)
+  }
 
 
 // Les icones Coeur

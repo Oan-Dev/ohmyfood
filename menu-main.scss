@@ -682,31 +682,36 @@ header {
   }
   // .container__animationMenu,
 
-   .container_blockLabel {
-         .menu__entrees,
-         .menu__plats,
-         .menu__desert  {
-           // animation: label-load 950ms ease-in-out forwards;
+.container__animationMenu {
+  animation: label-load 950ms ease-in-out forwards;
 
-       // .menu__entrees:first-child,
-       // .menu__plats:first-child,
-       // .menu__desert:first-child {
-       //  animation: label-load 950ms ease-in-out forwards;
-       // }
-       .menu__entrees:nth-child(2),
-       .menu__plats:nth-child(2),
-       .menu__desert:nth-child(2) {
-        animation: label-load 950ms ease-in-out forwards;
-       }
+}
 
-       .menu__entrees:last-child,
-       .menu__plats:last-child,
-       .menu__desert:last-child {
-        animation: label-load 950ms ease-in-out forwards;
-       }
-   }
 
-  }
+  //  .container_blockLabel {
+  //        .menu__entrees,
+  //        .menu__plats,
+  //        .menu__desert  {
+  //          animation: label-load 950ms ease-in-out forwards;
+  //
+  //      // .menu__entrees:first-child,
+  //      // .menu__plats:first-child,
+  //      // .menu__desert:first-child {
+  //      //  animation: label-load 950ms ease-in-out forwards;
+  //      // }
+  //      // .menu__entrees:nth-child(2),
+  //      // .menu__plats:nth-child(2),
+  //      // .menu__desert:nth-child(2) {
+  //      //  animation: label-load 950ms ease-in-out forwards;
+  //      // }
+  //
+  //      // .menu__entrees:last-child,
+  //      // .menu__plats:last-child,
+  //      // .menu__desert:last-child {
+  //      //  animation: label-load 950ms ease-in-out forwards;
+  //      // }
+  //  }
+  // }
 
   @keyframes label-load {
     0% {

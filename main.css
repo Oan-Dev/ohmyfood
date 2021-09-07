@@ -223,7 +223,7 @@ a {
 .block__restaurant {
   border-radius: 15px 15px 15px 15px;
   border: 2px solid #f2f2f2;
-  box-shadow: 0px 8px 8px 10px #f2f2f2;
+  box-shadow: 5px 5px 8px 8px #fff;
   margin-bottom: 25px;
   cursor: pointer;
   display: flex;

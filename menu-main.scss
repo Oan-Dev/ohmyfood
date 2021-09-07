@@ -680,3 +680,29 @@ header {
     opacity: 1;
     }
   }
+  .container__animationMenu {
+    animation: label-load 950ms ease-in-out forwards;
+  }
+
+  @keyframes label-load {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    33%{
+      transform: translateY(66%);
+      opacity: .33;
+    }
+    50% {
+      transform: translateY(50%);
+      opacity: .5;
+    }
+    66%{
+      transform: translateY(33%);
+      opacity: .66;
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

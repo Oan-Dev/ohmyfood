@@ -608,7 +608,26 @@ header .navBar .block__Logo {
     opacity: 1;
   }
 }
-.container__animationMenu {
+.container_blockLabel .menu__entrees .menu__entrees:nth-child(2),
+.container_blockLabel .menu__entrees .menu__plats:nth-child(2),
+.container_blockLabel .menu__entrees .menu__desert:nth-child(2),
+.container_blockLabel .menu__plats .menu__entrees:nth-child(2),
+.container_blockLabel .menu__plats .menu__plats:nth-child(2),
+.container_blockLabel .menu__plats .menu__desert:nth-child(2),
+.container_blockLabel .menu__desert .menu__entrees:nth-child(2),
+.container_blockLabel .menu__desert .menu__plats:nth-child(2),
+.container_blockLabel .menu__desert .menu__desert:nth-child(2) {
+  animation: label-load 950ms ease-in-out forwards;
+}
+.container_blockLabel .menu__entrees .menu__entrees:last-child,
+.container_blockLabel .menu__entrees .menu__plats:last-child,
+.container_blockLabel .menu__entrees .menu__desert:last-child,
+.container_blockLabel .menu__plats .menu__entrees:last-child,
+.container_blockLabel .menu__plats .menu__plats:last-child,
+.container_blockLabel .menu__plats .menu__desert:last-child,
+.container_blockLabel .menu__desert .menu__entrees:last-child,
+.container_blockLabel .menu__desert .menu__plats:last-child,
+.container_blockLabel .menu__desert .menu__desert:last-child {
   animation: label-load 950ms ease-in-out forwards;
 }
 
@@ -619,15 +638,18 @@ header .navBar .block__Logo {
   }
   33% {
     transform: translateY(66%);
-    opacity: 0.33;
+    opacity: 0.1;
   }
   50% {
     transform: translateY(50%);
-    opacity: 0.5;
+    opacity: 0.3;
   }
   66% {
     transform: translateY(33%);
-    opacity: 0.66;
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.8;
   }
   100% {
     transform: translateY(0);

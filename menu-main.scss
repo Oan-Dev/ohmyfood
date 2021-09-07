@@ -680,8 +680,32 @@ header {
     opacity: 1;
     }
   }
-  .container__animationMenu {
-    animation: label-load 950ms ease-in-out forwards;
+  // .container__animationMenu,
+
+   .container_blockLabel {
+         .menu__entrees,
+         .menu__plats,
+         .menu__desert  {
+           // animation: label-load 950ms ease-in-out forwards;
+
+       // .menu__entrees:first-child,
+       // .menu__plats:first-child,
+       // .menu__desert:first-child {
+       //  animation: label-load 950ms ease-in-out forwards;
+       // }
+       .menu__entrees:nth-child(2),
+       .menu__plats:nth-child(2),
+       .menu__desert:nth-child(2) {
+        animation: label-load 950ms ease-in-out forwards;
+       }
+
+       .menu__entrees:last-child,
+       .menu__plats:last-child,
+       .menu__desert:last-child {
+        animation: label-load 950ms ease-in-out forwards;
+       }
+   }
+
   }
 
   @keyframes label-load {
@@ -691,15 +715,18 @@ header {
     }
     33%{
       transform: translateY(66%);
-      opacity: .33;
+      opacity: .1;
     }
     50% {
       transform: translateY(50%);
-      opacity: .5;
+      opacity: .3;
     }
     66%{
       transform: translateY(33%);
-      opacity: .66;
+      opacity: .5;
+    }
+    80%{
+      opacity: .8;
     }
     100%{
       transform: translateY(0);

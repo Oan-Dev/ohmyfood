@@ -146,11 +146,14 @@ header .navBar .block__Logo {
   font-size: 14px;
   display: flex;
   flex-direction: row;
+  flex-grow: 2;
 }
 .container__animationMenu .label__menu .titre-dish .dish-specificite--hidden {
+  display: inline-block;
   margin-left: 5px;
 }
 .container__animationMenu .label__menu .titre-dish .threePoints {
+  display: inline-block;
   opacity: 0;
 }
 .container__animationMenu .label__menu .block__tarifs {

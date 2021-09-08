@@ -187,11 +187,15 @@ header {
             font-size: 14px;
             display: flex;
             flex-direction: row;
+            flex-grow: 2
           }
           .dish-specificite--hidden {
+            display: inline-block;
             margin-left: 5px;
           }
           .threePoints {
+            display: inline-block;
+
             opacity: 0;
           }
         }

@@ -458,6 +458,21 @@ a {
     padding-right: 50px;
   }
 }
+body {
+  animation: loadingPage 0.95s;
+}
+
+@keyframes loadingPage {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .nav__btn:hover,
 .nav__btn:focus {
   transform: background-color;

@@ -214,6 +214,11 @@ header{
 
 }
 /* Format des Etiquettes */
+.lien__Resto {
+  display: flex;
+  flex-direction: column;
+
+}
 .block__restaurant {
    border-radius: 15px 15px 15px 15px;
    border: 2px solid #f2f2f2;

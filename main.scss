@@ -228,11 +228,10 @@ header{
 
 
 .block__RestoColumn1 {
-  background-color: darkorange;
-  // display: flex;
   position: relative;
-} .block__RestoColumn2 {
-  background-color: darkgreen;
+}
+.block__RestoColumn2 {
+  position: relative;
 }
 
 .block__restaurant {
@@ -281,23 +280,13 @@ header{
 
   z-index: 1;
 }
-// .lien__Resto {
-//   display: flex;
-//   position: relative;
-//   // justify-content: flex-end;
-//   .label-Nouveau {
-//     position: relative;
-//     margin-top: 15px;
-//     margin-bottom: -80px;
-//     margin-right: 20px;
-//   }
-//  }
- // .label-Nouveau {
- //   position: absolute;
- //     // margin-top: 15px;
- //   // margin-bottom: 80px;
- //   // margin-left: 80px;
- // }
+
+ .label-Nouveau {
+   position: absolute;
+   right: 0;
+   margin-top: 15px;
+   margin-right: 15px;
+ }
 
 /* fin du container__restaurant (principal) */
 

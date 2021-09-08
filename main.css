@@ -462,6 +462,7 @@ a {
 }
 body {
   animation: loadingPage 0.95s;
+  transition: animation 2s;
 }
 
 @keyframes loadingPage {
@@ -478,25 +479,27 @@ to {
 .nav__btn:hover,
 .nav__btn:focus {
   transform: background-color;
-  transition: 2s;
+  transition: transform 2s;
   background-color: #e9ddf8;
 }
 
 .nav__btn:hover .nav__icon .element-navIcon,
 .nav__btn:focus .nav__icon .element-navIcon {
   transform: color;
-  transition: 2s;
+  transition: transform 2s;
   color: #9356DC;
 }
 
 .block__restaurant:hover,
 .block__restaurant:focus {
   transform: scale(1.02);
+  transition: transform 1.5s;
 }
 
 .element-btnExplorer:hover,
 .element-btnExplorer:focus {
   transform: scale(1.02);
+  transition: transform 1.5s;
 }
 
 .block__iconlove {
@@ -527,4 +530,5 @@ to {
 .block__iconlove:hover .icon-hover,
 .block__iconlove:focus .icon-hover {
   display: block;
+  transition: display 2s;
 }

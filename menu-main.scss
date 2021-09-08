@@ -546,8 +546,7 @@ header {
     }
     .icon-hover {
       display: block;
-
-
+      transition: display 2s;
       // color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
     }
   }
@@ -695,16 +694,18 @@ header {
 .menu__deserts  {
   .label-load1 {
     animation: label-load 650ms ease-in-out;
+    transition: animation 2s;
 
   }
   .label-load2 {
     animation: label-load 650ms ease-in-out;
     animation-delay: 100ms;
+    transition: animation 2s 2s;
   }
   .label-load3 {
     animation: label-load 650ms ease-in-out ;
     animation-delay: 100ms + 50ms;
-
+    transition: animation 2s 4s;
   }
 }
 
@@ -739,4 +740,5 @@ header {
   .element-btn:hover,
   .element-btn:focus {
     transform: scale(1.02);
+    transition: transform 1.01s;
   }

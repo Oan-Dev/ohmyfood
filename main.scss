@@ -470,6 +470,7 @@ padding: 70px 20px 70px 0;
 // Les Animations
 body {
   animation: loadingPage .95s;
+  transition: animation 2s;
 }
 @keyframes loadingPage {
   from {
@@ -486,13 +487,13 @@ body {
 .nav__btn:hover,
 .nav__btn:focus {
   transform: background-color;
-  transition: 2s;
+  transition:  transform 2s;
   background-color: #e9ddf8;
 }
 .nav__btn:hover .nav__icon .element-navIcon,
 .nav__btn:focus .nav__icon .element-navIcon {
   transform: color;
-  transition: 2s;
+  transition: transform 2s;
   color: #9356DC;
 }
 
@@ -500,11 +501,13 @@ body {
 .block__restaurant:hover,
 .block__restaurant:focus {
     transform: scale(1.02);
+    transition: transform 1.5s;
   }
 // hover sur le btn
 .element-btnExplorer:hover,
 .element-btnExplorer:focus {
   transform: scale(1.02);
+  transition: transform 1.5s;
 }
 
 
@@ -539,6 +542,8 @@ body {
   }
   .icon-hover {
     display: block;
+    transition: display 2s;
+
     // color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
   }
 }

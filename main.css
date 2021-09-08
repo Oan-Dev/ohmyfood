@@ -93,6 +93,7 @@ header {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 /* la navBar  */
@@ -225,12 +226,23 @@ a {
 .lien__Resto {
   display: flex;
   flex-direction: column;
+  width: auto;
+  height: 80%;
+}
+
+.block__RestoColumn1 {
+  background-color: darkorange;
+  position: relative;
+}
+
+.block__RestoColumn2 {
+  background-color: darkgreen;
 }
 
 .block__restaurant {
   border-radius: 15px 15px 15px 15px;
   border: 2px solid #f2f2f2;
-  box-shadow: 5px 5px 8px 8px #fff;
+  box-shadow: px 5px 2px 2px #fff;
   margin-bottom: 25px;
   cursor: pointer;
   display: flex;
@@ -239,7 +251,7 @@ a {
 
 .element-labelResto {
   width: auto;
-  height: 100px;
+  height: 120px;
   background-color: #ffff;
   border-radius: 0 0 15px 15px;
   padding-left: 15px;
@@ -272,18 +284,6 @@ a {
   justify-content: center;
   align-items: center;
   z-index: 1;
-}
-
-.lien__Resto {
-  display: flex;
-  position: relative;
-  justify-content: flex-end;
-}
-.lien__Resto .label-Nouveau {
-  position: relative;
-  margin-top: 15px;
-  margin-bottom: -80px;
-  margin-right: 20px;
 }
 
 /* fin du container__restaurant (principal) */
@@ -433,7 +433,7 @@ a {
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .block__Resto .block__RestoColumn1, .block__Resto .block__RestoColumn2 {
     width: 100%;
@@ -442,6 +442,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
   }
   .block__Resto .block__RestoColumn1 .block__restaurant, .block__Resto .block__RestoColumn2 .block__restaurant {
     width: 100%;
@@ -465,11 +466,6 @@ a {
     padding-right: 50px;
   }
 }
-body {
-  animation: loadingPage 0.95s;
-  transition: animation 2s;
-}
-
 @keyframes loadingPage {
   from {
     opacity: 0;

@@ -89,6 +89,9 @@ header{
 }
  a {
   text-decoration: none;
+  color: #000;
+  // margin-bottom: 10px;
+  // display: block;
 }
 
 /* la navBar  */
@@ -217,12 +220,25 @@ header{
 .lien__Resto {
   display: flex;
   flex-direction: column;
+  width: auto;
+  height: 80%;
 
 }
+
+
+
+.block__RestoColumn1 {
+  background-color: darkorange;
+  // display: flex;
+  position: relative;
+} .block__RestoColumn2 {
+  background-color: darkgreen;
+}
+
 .block__restaurant {
    border-radius: 15px 15px 15px 15px;
    border: 2px solid #f2f2f2;
-   box-shadow: 5px 5px 8px 8px #fff;
+   box-shadow: px 5px 2px 2px #fff;
    margin-bottom: 25px;
    cursor: pointer;
    display: flex;
@@ -231,7 +247,7 @@ header{
 }
 .element-labelResto {
   width: auto;
-  height: 100px;
+  height: 120px;
   background-color: #ffff;
   border-radius: 0 0 15px 15px;
   padding-left: 15px;
@@ -265,17 +281,23 @@ header{
 
   z-index: 1;
 }
-.lien__Resto {
-  display: flex;
-  position: relative;
-  justify-content: flex-end;
-  .label-Nouveau {
-    position: relative;
-    margin-top: 15px;
-    margin-bottom: -80px;
-    margin-right: 20px;
-  }
- }
+// .lien__Resto {
+//   display: flex;
+//   position: relative;
+//   // justify-content: flex-end;
+//   .label-Nouveau {
+//     position: relative;
+//     margin-top: 15px;
+//     margin-bottom: -80px;
+//     margin-right: 20px;
+//   }
+//  }
+ // .label-Nouveau {
+ //   position: absolute;
+ //     // margin-top: 15px;
+ //   // margin-bottom: 80px;
+ //   // margin-left: 80px;
+ // }
 
 /* fin du container__restaurant (principal) */
 
@@ -316,7 +338,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    .block__RestoColumn1,.block__RestoColumn2 {
+    .block__RestoColumn1, .block__RestoColumn2 {
       width: 100%;
       height: auto;
       margin: 20px;
@@ -375,7 +397,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    .block__RestoColumn1,.block__RestoColumn2 {
+    .block__RestoColumn1, .block__RestoColumn2 {
       width: 100%;
       height: auto;
       padding: 5px;
@@ -435,18 +457,22 @@ padding: 70px 20px 70px 0;
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  .block__RestoColumn1,.block__RestoColumn2 {
+  justify-content: space-between;
+  .block__RestoColumn1, .block__RestoColumn2 {
     width: 100%;
     height: auto;
     padding: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     .block__restaurant {
       width: 100%;
       margin: 10px;
     }
+    // .block__RestoColumn2 {
+    //   margin-bottom: 20px;
+    // }
   }
 }
 // .label-Nouveau {
@@ -473,10 +499,11 @@ padding: 70px 20px 70px 0;
 }
 
 // Les Animations
-body {
-  animation: loadingPage .95s;
-  transition: animation 2s;
-}
+
+// body {
+//   animation: loadingPage .95s;
+//   transition: animation 2s;
+// }
 @keyframes loadingPage {
   from {
     opacity: 0;

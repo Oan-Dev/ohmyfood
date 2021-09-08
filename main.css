@@ -477,7 +477,7 @@ a {
 }
 body {
   animation: loadingPage 0.95s;
-  transition: animation 2s;
+  transition: animation 4s;
 }
 
 @keyframes loadingPage {

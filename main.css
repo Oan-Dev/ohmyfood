@@ -481,10 +481,15 @@ body {
   animation-delay: 150ms;
   transition: animation 4s;
 }
-body .circle {
+body .container__circle {
   position: absolute;
-  top: 50vh;
-  left: 40vw;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container__circle .circle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -495,7 +500,7 @@ body .circle {
   border-color: #cc12c4 #9356DC #FF79DA #99E2D0;
   animation: spin 100ms linear 10;
 }
-body .circle .spin__content {
+body .container__circle .circle .spin__content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -503,11 +508,6 @@ body .circle .spin__content {
   height: 25px;
   border-radius: 50%;
   animation: no-spin 100ms linear 10;
-}
-body .circle .spin__content p {
-  font-family: Shrikhand;
-  font-size: 18px;
-  margin-left: 5px;
 }
 
 @keyframes spin {

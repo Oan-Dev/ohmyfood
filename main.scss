@@ -493,7 +493,7 @@ padding: 70px 20px 70px 0;
 
 body {
   position: relative;
-  animation: loadingPage 1250ms;
+  animation: loadingPage 1050ms;
   animation-delay: 150ms;
   transition: animation 4s;
   .container__circle {
@@ -513,16 +513,17 @@ body {
       border: 5px solid;
       border-radius: 50%;
       border-color: #cc12c4 #9356DC #FF79DA #99E2D0;
-      animation: spin 100ms linear 10;
+      animation: spin 100ms linear 15 forwards;
+      opacity: 0;
       .spin__content {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         border-radius:50%;
-        animation: no-spin 100ms linear 10;
-      
+        animation: no-spin 100ms linear 20 forwards;
+
       }
     }
   }

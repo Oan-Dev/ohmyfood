@@ -490,9 +490,29 @@ padding: 70px 20px 70px 0;
 // Les Animations
 
 body {
+  position: relative;
   animation: loadingPage .95s;
   transition: animation 4s;
 }
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // content: "1f374";
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border: 5px solid;
+  border-radius: 50%;
+  border-color: #cc12c4 #9356DC #FF79DA #99E2D0;
+  p {
+    font-family: Shrikhand;
+    font-size: 18px;
+    margin-left: 5px;
+
+  }
+}
+
 @keyframes loadingPage {
   from {
     opacity: 0;

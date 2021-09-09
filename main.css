@@ -477,23 +477,34 @@ a {
 }
 body {
   position: relative;
-  animation: loadingPage 0.95s;
+  animation: loadingPage 1250ms;
+  animation-delay: 150ms;
   transition: animation 4s;
 }
-
-.circle {
+body .circle {
+  position: absolute;
+  top: 22vh;
+  left: 25vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 150px;
-  position: absolute;
+  width: 50px;
+  height: 50px;
   border: 5px solid;
   border-radius: 50%;
   border-color: #cc12c4 #9356DC #FF79DA #99E2D0;
-  animation: spin 100ms alternate 10;
+  animation: spin 100ms linear 10;
 }
-.circle p {
+body .circle .spin__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  animation: no-spin 100ms linear 10;
+}
+body .circle .spin__content p {
   font-family: Shrikhand;
   font-size: 18px;
   margin-left: 5px;
@@ -502,9 +513,19 @@ body {
 @keyframes spin {
   from {
     transform: rotate(0);
+    opacity: 1;
   }
   to {
     transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes no-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
   }
 }
 @keyframes loadingPage {

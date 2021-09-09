@@ -483,8 +483,8 @@ body {
 }
 body .circle {
   position: absolute;
-  top: 22vh;
-  left: 25vh;
+  top: 50vh;
+  left: 40vw;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -477,8 +477,8 @@ a {
 }
 body {
   position: relative;
-  animation: loadingPage 1050ms;
-  animation-delay: 150ms;
+  animation: loadingPage 1550ms ease-in-out;
+  animation-delay: 200ms;
   transition: animation 4s;
 }
 body .container__circle {
@@ -498,7 +498,7 @@ body .container__circle .circle {
   border: 5px solid;
   border-radius: 50%;
   border-color: #cc12c4 #9356DC #FF79DA #99E2D0;
-  animation: spin 100ms linear 15 forwards;
+  animation: spin 150ms linear 25 forwards;
   opacity: 0;
 }
 body .container__circle .circle .spin__content {
@@ -508,7 +508,7 @@ body .container__circle .circle .spin__content {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  animation: no-spin 100ms linear 25 forwards;
+  animation: no-spin 150ms linear 25 forwards;
 }
 
 @keyframes spin {
@@ -534,7 +534,7 @@ body .container__circle .circle .spin__content {
 @keyframes loadingPage {
   from {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(100px);
   }
 }
 to {

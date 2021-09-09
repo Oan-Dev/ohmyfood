@@ -522,7 +522,7 @@ body {
         width: 30px;
         height: 30px;
         border-radius:50%;
-        animation: no-spin 100ms linear 20 forwards;
+        animation: no-spin 100ms linear 25 forwards;
 
       }
     }
@@ -544,10 +544,11 @@ body {
 @keyframes no-spin {
   from {
     transform: rotate(360deg);
+    opacity: 1
   }
   to {
     transform: rotate(0);
-
+    opacity: 0;
   }
 }
 

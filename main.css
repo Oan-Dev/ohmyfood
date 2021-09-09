@@ -491,6 +491,7 @@ body {
   border: 5px solid;
   border-radius: 50%;
   border-color: #cc12c4 #9356DC #FF79DA #99E2D0;
+  animation: spin 100ms alternate 10;
 }
 .circle p {
   font-family: Shrikhand;
@@ -498,6 +499,14 @@ body {
   margin-left: 5px;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 @keyframes loadingPage {
   from {
     opacity: 0;

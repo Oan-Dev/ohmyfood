@@ -1,59 +1,58 @@
-@media screen and (min-width: 447px) and (max-width: 767px) {
+/* Mode Responsive */
+
+
+@media screen and (min-width: 768px) and (max-width: 1239px) {
   body {
     width: 100%;
   }
-}
 
-
-
-
-/* Mode Tablette  */
-@media screen and (min-width: 768px) and (max-width: 1239px) {
-    body {
-      width: 100%;
-    }
-
-  /* concernant l'image  */
-  .block__images {
-  width: auto;
-  height: 400px;
-  }
   #block__RestoPalette {
-    width: auto;
-    height: 800px;
-    background-size: cover;
-    margin-top: -180px;
+    max-width: 100%;
+    height: inherit;
+    background-position-y: -100px;
+    background-repeat: no-repeat;
   }
 
-  /* le container principal menu    */
+  .block__images {
+    background-size: 50% auto;
+    height: 450px;
+  }
+
   .container__menu {
     width: 100%;
   }
-  .block__menu {
-    height: auto;
-    width: inherit;
+
+  .container__titreRestaurant {
     display: flex;
-    align-content: stretch;
-  }
-  .block__titre{
     justify-content: center;
+    align-items: center;
   }
+
   .container_blockLabel {
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .label__menu{
-    width: 80%;
-    margin: 20px;
+  .container_blockLabel .container__animationMenu {
+    margin-bottom: 20px;
   }
-  .container__animationMenu {
-    width: auto;
-    margin-right: 15px;
+  .container_blockLabel .menu__entrees,
+.container_blockLabel .menu__plats,
+.container_blockLabel .menu__deserts {
+    width: 40%;
   }
-      /* footer */
+  .container_blockLabel .menu__entrees .label__menu p span,
+.container_blockLabel .menu__plats .label__menu p span,
+.container_blockLabel .menu__deserts .label__menu p span {
+    font-size: 13px;
+  }
+  .container_blockLabel .menu__plats,
+.container_blockLabel .menu__deserts {
+    margin-left: 20px;
+  }
+
   .container__down {
     width: auto;
   }
@@ -62,68 +61,61 @@
     justify-content: center;
   }
   .container__down ul {
-   width: auto;
-   display: flex;
-   flex-direction: row;
-
+    width: auto;
+    display: flex;
+    flex-direction: row;
   }
   .container__down ul li {
-    margin-left: auto;
-    padding-right: 50px
+    margin: auto;
+    padding-right: 50px;
   }
 }
-/* Mode Desktop (Taille minimum pour les 13 pouces) */
 @media screen and (min-width: 1240px) and (max-width: 1310px) {
-    body {
-      width: 100%;
-    }
-
-  /* concernant l'image  */
-  .block__images {
-  width: auto;
-  height: 600px;
+  body {
+    width: 100%;
   }
+
   #block__RestoPalette {
-    width: auto;
-    height: 1200px;
-    background-size: cover;
-    margin-top: -250px;
+    max-width: 100%;
+    height: inherit;
+    background-position-y: -100px;
   }
 
-  /* le container principal menu    */
+  .block__images {
+    background-size: 50% auto;
+    height: 550px;
+  }
+
   .container__menu {
     width: 100%;
   }
-  .block__menu {
-    height: 1100px;
-    width: auto;
-    margin-top: 150px;
+
+  .container__titreRestaurant {
     display: flex;
-    align-content: stretch;
-  }
-  .block__titre{
     justify-content: center;
+    align-items: center;
   }
+
   .container_blockLabel {
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .label__menu{
-    width: 90%;
-    margin: 20px 0;
+  .container_blockLabel .container__animationMenu {
+    margin-bottom: 20px;
+  }
+  .container_blockLabel .menu__entrees,
+.container_blockLabel .menu__plats,
+.container_blockLabel .menu__deserts {
+    width: 40%;
+  }
+  .container_blockLabel .menu__plats,
+.container_blockLabel .menu__deserts {
+    margin-left: 20px;
   }
 
-  /* Bouton Commander */
-  .element-btn {
-    width: 400%;
-  }
-  .block__btn a {
-    margin-left: -200px;
-  }
-  /* footer */
   .container__down {
     width: auto;
   }
@@ -135,67 +127,65 @@
     width: auto;
     display: flex;
     flex-direction: row;
-
   }
   .container__down ul li {
     margin: auto;
-    padding-right: 50px
+    padding-right: 50px;
   }
-
 }
 /* Mode Desktop (Taille minimum pour les 13 pouces) & au delà */
 @media screen and (min-width: 1311px) {
-    body {
-      width: 100%;
-    }
-
-  /* concernant l'image  */
-  .block__images {
-  width: auto;
-  height: 600px;
+  body {
+    width: 100%;
   }
+
+  header {
+    background-color: #fff !important;
+  }
+  header .navBar {
+    background-color: #fff !important;
+  }
+
   #block__RestoPalette {
-    width: auto;
-    height: 1200px;
-    background-size: cover;
-    margin-top: -250px;
+    max-width: 100%;
+    height: inherit;
+    background-position-y: -100px;
   }
 
-  /* le container principal menu    */
+  .block__images {
+    background-size: 50% auto;
+    height: 550px;
+  }
+
   .container__menu {
     width: 100%;
+  }
 
-  }
-  .block__menu {
-    height: 1200px;
-    width: inherit;
-    margin-top: 150px;
+  .container__titreRestaurant {
     display: flex;
-    align-content: stretch;
-  }
-  .block__titre{
     justify-content: center;
+    align-items: center;
   }
+
   .container_blockLabel {
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: -60px;
   }
-  .label__menu{
-    width: 110%;
-    margin: 20px 0;
+  .container_blockLabel .container__animationMenu {
+    margin-bottom: 20px;
   }
-  /* Bouton Commander */
-  .element-btn {
-    width: 400%;
+  .container_blockLabel .menu__entrees,
+.container_blockLabel .menu__plats,
+.container_blockLabel .menu__deserts {
+    width: 80%;
   }
-  .block__btn a {
-    margin-left: -350px;
+  .container_blockLabel .menu__plats,
+.container_blockLabel .menu__deserts {
+    margin-left: 20px;
   }
-  /* footer */
+
   .container__down {
     width: auto;
   }
@@ -207,11 +197,21 @@
     width: auto;
     display: flex;
     flex-direction: row;
-
   }
   .container__down ul li {
     margin: auto;
-    padding-right: 50px
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #block__RestoPalette {
+    max-width: 100%;
+    height: inherit;
+    background-position-y: -150px;
   }
 
+  .block__images {
+    background-size: 50% auto;
+    height: 700px;
+  }
 }

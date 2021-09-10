@@ -1,0 +1,154 @@
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .container__restaurant {
+    height: auto;
+    padding: 70px 20px 70px 0;
+  }
+
+  .block__Resto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .block__Resto .block__RestoColumn1, .block__Resto .block__RestoColumn2 {
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    flex-direction: row;
+  }
+
+  .container__down {
+    width: auto;
+  }
+  .container__down h4 {
+    display: flex;
+    justify-content: center;
+  }
+  .container__down ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .container__down ul li {
+    margin: auto;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1240px) and (max-width: 1310px) {
+  .container__nav {
+    margin: 0;
+  }
+  .container__nav .container__navBar {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+  }
+  .container__nav .container__navBar .nav__btn {
+    width: auto;
+    height: 50%;
+    margin: auto;
+  }
+
+  .container__restaurant {
+    height: auto;
+    margin-top: 300px;
+    padding: 70px 20px 70px 0;
+  }
+
+  .block__Resto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .block__Resto .block__RestoColumn1, .block__Resto .block__RestoColumn2 {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .block__Resto .block__RestoColumn1 .block__restaurant, .block__Resto .block__RestoColumn2 .block__restaurant {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .container__down {
+    width: auto;
+  }
+  .container__down h4 {
+    display: flex;
+    justify-content: center;
+  }
+  .container__down ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .container__down ul li {
+    margin: auto;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 1311px) {
+  .container__nav {
+    margin: 0;
+  }
+  .container__nav .container__navBar {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+  }
+  .container__nav .container__navBar .nav__btn {
+    width: auto;
+    height: 50%;
+    margin: auto;
+  }
+
+  .container__restaurant {
+    height: auto;
+    margin-top: 300px;
+    padding: 70px 20px 70px 0;
+  }
+
+  .block__Resto {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .block__Resto .block__RestoColumn1, .block__Resto .block__RestoColumn2 {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .block__Resto .block__RestoColumn1 .block__restaurant, .block__Resto .block__RestoColumn2 .block__restaurant {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .container__down {
+    width: auto;
+  }
+  .container__down h4 {
+    display: flex;
+    justify-content: center;
+  }
+  .container__down ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .container__down ul li {
+    margin: auto;
+    padding-right: 50px;
+  }
+}

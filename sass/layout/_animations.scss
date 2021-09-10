@@ -1,0 +1,140 @@
+// Les Animations
+
+// la loadingPage + spinner
+
+body {
+  position: relative;
+  animation: loadingPage 1550ms ease-in-out;
+  animation-delay: 200ms;
+  transition: animation 4s;
+  .container__circle {
+      position: absolute;
+      min-height: 25vh;
+      min-width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // content: "1f374";
+      width: 50px;
+      height: 50px;
+      border: 5px solid;
+      border-radius: 50%;
+      border-color: #cc12c4 #9356DC #FF79DA #99E2D0;
+      animation: spin 150ms linear 25 forwards;
+      opacity: 0;
+      .spin__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius:50%;
+        animation: no-spin 150ms linear 25 forwards;
+
+      }
+    }
+  }
+
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes no-spin {
+  from {
+    transform: rotate(360deg);
+    opacity: 1
+  }
+  to {
+    transform: rotate(0);
+    opacity: 0;
+  }
+}
+
+@keyframes loadingPage {
+  from {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+}
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+// le background-color des btn de la nav
+.nav__btn:hover,
+.nav__btn:focus {
+  transform: background-color;
+  transition:  transform 2s;
+  background-color: #e9ddf8;
+}
+.nav__btn:hover .nav__icon .element-navIcon,
+.nav__btn:focus .nav__icon .element-navIcon {
+  transform: color;
+  transition: transform 2s;
+  color: #9356DC;
+}
+
+// hover sur les Etiquettes
+.block__restaurant:hover,
+.block__restaurant:focus {
+    transform: scale(1.02);
+    transition: transform 1.5s;
+  }
+// hover sur le btn
+.element-btnExplorer:hover,
+.element-btnExplorer:focus {
+  transform: scale(1.02);
+  transition: transform 1.5s;
+}
+
+
+
+// Les icones Coeur
+
+.block__iconlove {
+  font-size: 30px;
+  .icon-hover {
+    display: none;
+    color: #cc12c4;
+    // color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
+    // color: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);
+  }
+}
+
+.block__iconlove:hover::before,
+.block__iconlove:focus::before {
+  .icon-before:hover::before,
+  .icon-before:focus::before {
+    display: block;
+  }
+  .icon-hover:hover::before,
+  .icon-hover:focus::before {
+    display: none;
+  }
+}
+.block__iconlove:hover,
+.block__iconlove:focus {
+  .icon-before {
+    display: none;
+  }
+  .icon-hover {
+    display: block;
+    transition: display 2s;
+
+    // color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
+  }
+}

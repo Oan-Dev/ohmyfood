@@ -498,7 +498,7 @@ body {
   transition: animation 4s;
   .container__circle {
       position: absolute;
-      min-height: 100vh;
+      min-height: 25vh;
       min-width: 100vw;
       display: flex;
       justify-content: center;
@@ -555,7 +555,7 @@ body {
 @keyframes loadingPage {
   from {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(100vh);
   }
 }
     to {

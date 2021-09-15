@@ -247,9 +247,12 @@
       background-size: cover;
       z-index: -1;
       box-sizing: border-box;
+      // object-fit: cover;
     }
     .block__imagesRestaurant2 {
       height: 700px;
+      // object-fit: cover;
+
     }
 
     .block__images {

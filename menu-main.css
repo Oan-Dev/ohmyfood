@@ -74,6 +74,33 @@ header .navBar .block__Logo {
   box-sizing: border-box;
 }
 
+#block__RestoLanote {
+  background-image: url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  max-width: 100%;
+  height: 300px;
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+#block__RestoAlafrancaise {
+  background-image: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  max-width: 100%;
+  height: 300px;
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+#block__RestoDelice {
+  background-image: url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  max-width: 100%;
+  height: 300px;
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
 .block__images {
   width: 100%;
   height: 300px;

@@ -7,15 +7,23 @@
     }
 
     // le picture
-    #block__RestoPalette {
+    #block__RestoPalette,
+    #block__RestoLanote,
+    #block__RestoAlafrancaise,
+    #block__RestoDelice  {
       max-width: 100%;
       height: inherit;
       background-position-y: -100px;
       background-repeat: no-repeat;
+
     }
     .block__images {
       background-size: 50% auto;
       height: 450px;
+    }
+    .block__images2 {
+      background-size: 50% auto;
+      height: 700px;
     }
 
     // le container principal
@@ -76,12 +84,20 @@
   }
 
   // le picture
-  #block__RestoPalette {
+  #block__RestoPalette,
+  #block__RestoLanote,
+  #block__RestoAlafrancaise,
+  #block__RestoDelice  {
     max-width: 100%;
     height: inherit;
     background-position-y: -100px;
   }
+
   .block__images {
+    background-size: 50% auto;
+    height: 550px;
+  }
+  .block__images2 {
     background-size: 50% auto;
     height: 550px;
   }
@@ -150,12 +166,19 @@
     }
 
     // le picture
-    #block__RestoPalette {
+    #block__RestoPalette,
+    #block__RestoLanote,
+    #block__RestoAlafrancaise,
+    #block__RestoDelice {
       max-width: 100%;
       height: inherit;
       background-position-y: -100px;
     }
     .block__images {
+      background-size: 50% auto;
+      height: 550px;
+    }
+    .block__images2 {
       background-size: 50% auto;
       height: 550px;
     }
@@ -173,9 +196,7 @@
       width: 100%;
       display: flex;
       flex-direction: row;
-      // flex-wrap: wrap;
       justify-content: space-around;
-      // margin-left: -60px;
       .container__animationMenu {
         margin-bottom: 20px;
       }
@@ -213,9 +234,27 @@
       max-width: 100%;
       height: inherit;
       background-position-y: -150px;
+      background-size: cover;
+      z-index: -1;
+      box-sizing: border-box;
     }
+    #block__RestoLanote,
+    #block__RestoAlafrancaise,
+    #block__RestoDelice {
+      width: 100%;
+      height: 700px;
+      background-position-y: -150px;
+      background-size: cover;
+      z-index: -1;
+      box-sizing: border-box;
+    }
+
     .block__images {
       background-size: 50% auto;
+      height: 700px;
+    }
+    .block__images2 {
+      // background-size: 50% auto;
       height: 700px;
     }
 

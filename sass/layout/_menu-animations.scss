@@ -4,10 +4,8 @@
   .block__iconlove {
     font-size: 30px;
     .icon-hover {
-      // transition: 250ms 2s;
       display: none;
       color: #cc12c4;
-      // color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
 
     }
   }
@@ -31,7 +29,6 @@
   .icon-hover {
     display: block;
     transition: display 2s;
-    // color: linear-gradient(175deg, rgb(131, 0, 95) 10%, rgb(82, 30, 144) 90%);
   }
 }
 
@@ -62,7 +59,6 @@ width: 100%;
 
 .container__animationMenu:hover > .label__menu,
 .container__animationMenu:focus > .label__menu {
-// width: 100%;
 transition: 5s;
 transform: border-radius;
 border-radius: 20px 0 0 20px;
@@ -165,14 +161,6 @@ text-overflow: clip;
   opacity: 1;
   }
 }
-
-
-// .container__animationMenu, la loading Page
-
-// .container__animationMenu {
-//   // animation: label-load 950ms ease-in-out;
-// }
-
 .menu__entrees,
 .menu__plats,
 .menu__deserts  {

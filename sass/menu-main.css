@@ -94,7 +94,7 @@ header .navBar .block__Logo {
 
 #block__RestoDelice {
   background-image: url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-  max-width: 100%;
+  width: 100%;
   height: 300px;
   background-size: cover;
   z-index: -1;
@@ -104,6 +104,11 @@ header .navBar .block__Logo {
 .block__images {
   width: 100%;
   height: 300px;
+}
+
+.block__images2 {
+  width: 95%;
+  height: 50vh;
 }
 
 .container__menu {
@@ -274,7 +279,10 @@ header .navBar .block__Logo {
     width: 100%;
   }
 
-  #block__RestoPalette {
+  #block__RestoPalette,
+#block__RestoLanote,
+#block__RestoAlafrancaise,
+#block__RestoDelice {
     max-width: 100%;
     height: inherit;
     background-position-y: -100px;
@@ -284,6 +292,11 @@ header .navBar .block__Logo {
   .block__images {
     background-size: 50% auto;
     height: 450px;
+  }
+
+  .block__images2 {
+    background-size: 50% auto;
+    height: 700px;
   }
 
   .container__menu {
@@ -343,13 +356,21 @@ header .navBar .block__Logo {
     width: 100%;
   }
 
-  #block__RestoPalette {
+  #block__RestoPalette,
+#block__RestoLanote,
+#block__RestoAlafrancaise,
+#block__RestoDelice {
     max-width: 100%;
     height: inherit;
     background-position-y: -100px;
   }
 
   .block__images {
+    background-size: 50% auto;
+    height: 550px;
+  }
+
+  .block__images2 {
     background-size: 50% auto;
     height: 550px;
   }
@@ -414,13 +435,21 @@ header .navBar .block__Logo {
     background-color: #fff !important;
   }
 
-  #block__RestoPalette {
+  #block__RestoPalette,
+#block__RestoLanote,
+#block__RestoAlafrancaise,
+#block__RestoDelice {
     max-width: 100%;
     height: inherit;
     background-position-y: -100px;
   }
 
   .block__images {
+    background-size: 50% auto;
+    height: 550px;
+  }
+
+  .block__images2 {
     background-size: 50% auto;
     height: 550px;
   }
@@ -472,14 +501,28 @@ header .navBar .block__Logo {
   }
 }
 @media screen and (min-width: 1500px) {
-  #block__RestoPalette {
+  #block__RestoPalette,
+#block__RestoLanote,
+#block__RestoAlafrancaise,
+#block__RestoDelice {
     max-width: 100%;
     height: inherit;
     background-position-y: -150px;
+    background-size: cover;
+    z-index: -1;
+    box-sizing: border-box;
+  }
+
+  .block__imagesRestaurant2 {
+    height: 700px;
   }
 
   .block__images {
     background-size: 50% auto;
+    height: 700px;
+  }
+
+  .block__images2 {
     height: 700px;
   }
 }

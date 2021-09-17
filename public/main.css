@@ -1,3 +1,6 @@
+
+@charset "UTF-8";
+
 /* Importation du fichier
 compilateur main.css
 dans dossier sass vers celui
@@ -7,4 +10,6 @@ tandis que la compilation se fait
 dans le dossier sass
  */
 
-@import url("../sass/main.css");
+/* @import url("../sass/main.css"); */
+/* @import '../sass/main.css'; */
+@import "../sass/main.css";

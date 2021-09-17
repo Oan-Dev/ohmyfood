@@ -7,4 +7,4 @@ tandis que la compilation se fait
 dans le dossier sass
  */
 
-@import "../sass/main.css"
+@import url("../sass/main.css");

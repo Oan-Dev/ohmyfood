@@ -575,6 +575,8 @@ header .navBar .block__Logo {
   display: flex;
   transform: translateX(0);
   width: 75px;
+  transform: translateX(-100%);
+ -webkit-transform: translateX(-100%);
 }
 .container__animationMenu:hover > .slideInRight,
 .container__animationMenu:focus > .slideInRight {
@@ -660,6 +662,7 @@ n'étant pas valide aux Css Validator */
     display: none;
     width: 0;
     /* right: calc(0 - 75px); */
+
 
   }
   100% {

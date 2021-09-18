@@ -564,7 +564,22 @@ header .navBar .block__Logo {
   transform: translateX(100%);
   width: 0;
 } */
-
+/* .container__animationMenu:hover > .slideInRight,
+.container__animationMenu:focus > .slideInRight {
+  animation: slideInRight;
+  transition: animation 2s;
+  display: flex;
+  transform: translateX(0);
+  width: 75px;
+}
+.container__animationMenu:hover > .slideInRight,
+.container__animationMenu:focus > .slideInRight {
+  animation: rotateIn;
+  transition: animation 2s;
+  display: flex;
+  transform: translateX(0);
+  width: 75px;
+} */
 .container__animationMenu:hover > .slideInRight,
 .container__animationMenu:focus > .slideInRight {
   animation: rotateIn slideInRight;

@@ -10,17 +10,17 @@
     }
   }
 
-.block__iconlove:hover::before,
-.block__iconlove:focus::before {
-  .icon-before:hover::before,
-  .icon-before:focus::before {
-    display: block;
-  }
-  .icon-hover:hover::before,
-  .icon-hover:focus::before {
-    display: none;
-  }
-}
+// .block__iconlove:hover::before,
+// .block__iconlove:focus::before {
+//   .icon-before:hover::before,
+//   .icon-before:focus::before {
+//     display: block;
+//   }
+//   .icon-hover:hover::before,
+//   .icon-hover:focus::before {
+//     display: none;
+//   }
+// }
 .block__iconlove:hover,
 .block__iconlove:focus {
   .icon-before {
@@ -34,13 +34,13 @@
 
 // les Animations "validation" cachées pour les Etiquettes
 
-.container__animationMenu:hover::before > .slideInRight,
-.container__animationMenu:focus::before > .slideInRight {
-animation: rotateIn slideInRight 0ms;
-display: none;
-transform: translateX(100%);
-width: 0;
-}
+// .container__animationMenu:hover::before > .slideInRight,
+// .container__animationMenu:focus::before > .slideInRight {
+// animation: rotateIn slideInRight 0ms;
+// display: none;
+// transform: translateX(100%);
+// width: 0;
+// }
 
 .container__animationMenu:hover > .slideInRight,
 .container__animationMenu:focus > .slideInRight {
@@ -60,7 +60,7 @@ width: 100%;
 .container__animationMenu:hover > .label__menu,
 .container__animationMenu:focus > .label__menu {
 transition: 5s;
-transform: border-radius;
+// transform: border-radius;
 border-radius: 20px 0 0 20px;
 text-overflow: clip;
 .block__tarifs {

@@ -241,7 +241,7 @@ a {
 .block__restaurant {
   border-radius: 15px 15px 15px 15px;
   border: 2px solid #f2f2f2;
-  box-shadow: px 5px 2px 2px #fff;
+  box-shadow: 2px 5px 2px 2px #fff;
   margin-bottom: 25px;
   cursor: pointer;
   display: flex;
@@ -544,14 +544,14 @@ to {
 
 .nav__btn:hover,
 .nav__btn:focus {
-  transform: background-color;
+  /* transform: background-color; */
   transition: transform 2s;
   background-color: #e9ddf8;
 }
 
 .nav__btn:hover .nav__icon .element-navIcon,
 .nav__btn:focus .nav__icon .element-navIcon {
-  transform: color;
+  /* transform: color; */
   transition: transform 2s;
   color: #9356DC;
 }
@@ -576,7 +576,7 @@ to {
   color: #cc12c4;
 }
 
-.block__iconlove:hover::before .icon-before:hover::before,
+/* .block__iconlove:hover::before .icon-before:hover::before,
 .block__iconlove:hover::before .icon-before:focus::before,
 .block__iconlove:focus::before .icon-before:hover::before,
 .block__iconlove:focus::before .icon-before:focus::before {
@@ -587,7 +587,7 @@ to {
 .block__iconlove:focus::before .icon-hover:hover::before,
 .block__iconlove:focus::before .icon-hover:focus::before {
   display: none;
-}
+} */
 
 .block__iconlove:hover .icon-before,
 .block__iconlove:focus .icon-before {

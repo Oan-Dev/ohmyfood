@@ -77,13 +77,13 @@ body {
 // le background-color des btn de la nav
 .nav__btn:hover,
 .nav__btn:focus {
-  transform: background-color;
+  // transform: background-color;
   transition:  transform 2s;
   background-color: #e9ddf8;
 }
 .nav__btn:hover .nav__icon .element-navIcon,
 .nav__btn:focus .nav__icon .element-navIcon {
-  transform: color;
+  // transform: color;
   transition: transform 2s;
   color: #9356DC;
 }
@@ -113,17 +113,17 @@ body {
   }
 }
 
-.block__iconlove:hover::before,
-.block__iconlove:focus::before {
-  .icon-before:hover::before,
-  .icon-before:focus::before {
-    display: block;
-  }
-  .icon-hover:hover::before,
-  .icon-hover:focus::before {
-    display: none;
-  }
-}
+// .block__iconlove:hover::before,
+// .block__iconlove:focus::before {
+//   .icon-before:hover::before,
+//   .icon-before:focus::before {
+//     display: block;
+//   }
+//   .icon-hover:hover::before,
+//   .icon-hover:focus::before {
+//     display: none;
+//   }
+// }
 .block__iconlove:hover,
 .block__iconlove:focus {
   .icon-before {

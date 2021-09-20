@@ -2,13 +2,13 @@
 /* Général */
 @font-face {
   font-family: Roboto;
-  src: url("./Fonts/Roboto/Roboto-Regular.ttf");
+  src: url("../Fonts/Roboto/Roboto-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Shrikhand;
-  src: url("./Fonts/Shrikhand/Shrikhand-Regular.ttf");
+  src: url("../Fonts/Shrikhand/Shrikhand-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }

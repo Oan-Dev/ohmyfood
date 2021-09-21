@@ -16,7 +16,191 @@ $top-font: 'Shrikland';
 
 // les images des restaurants
 
-$image-resto1: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-$image-resto2: url(./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-$image-resto3: url(./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-$image-resto4: url(./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+$image-resto1: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+$image-resto2: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+$image-resto3: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+$image-resto4: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+
+$logo: url("../images/logo/ohmyfood.png");
+
+// La palette du gout
+
+// Entées
+
+$entreesTitre1: "Fricassée d'escargot";
+$entreesSousTitre1: "Au piment d'Espelette";
+$entreesPrix1: "25€";
+
+$entreesTitre2: "Foie gras de canard mi-cuit";
+$entreesSousTitre2: "Assaisonné à la truffe sur lit de caviar";
+$entreesPrix2: "35€";
+
+$entreesTitre3: "Oeuf au plat";
+$entreesSousTitre3: "Au piment d'Espelette";
+$entreesPrix3: "20€";
+
+// Plats
+
+$platsTitre1: "Filet de boeuf aux herbes";
+$platsSousTitre1: "Accompagné de sa ribambelle de légumes";
+$platsPrix1: "40€";
+
+$platsTitre2: "Parmentier de queue de boeuf";
+$platsSousTitre2: "À la truffe noire sur sa purée de panais";
+$platsPrix2: "35€";
+
+$platsTitre3: "Filet de turbot";
+$platsSousTitre3: "Aux agrumes";
+$platsPrix3: "44€";
+
+// Desserts
+
+$dessertsTitre1: "Paris-Brest";
+$dessertsSousTitre1: "Revisité";
+$dessertsPrix1: "18€";
+
+$dessertsTitre2: "Macaron au chocolat d'exception";
+$dessertsSousTitre2: "Et glace à la vanille de Madagascar";
+$dessertsPrix2: "22€";
+
+$dessertsTitre3: "Mousse au chocolat";
+$dessertsSousTitre3: "Au piment d'Espelette et à la truffe noire";
+$dessertsPrix3: "23€";
+
+// La note enchantée
+
+// Entées
+
+$entreesTitre4: "Ravioles de foie grast";
+$entreesSousTitre4: "Accompagnés de leur crème à la truffe";
+$entreesPrix4: "25€";
+
+$entreesTitre5: "Caviar osciètre";
+$entreesSousTitre5: "Sur blini à la farine de blé noir";
+$entreesPrix5: "35€";
+
+$entreesTitre6: "Homard et espuma de potiron";
+$entreesSousTitre6: "Mariné aux zestes d'orange";
+$entreesPrix6: "20€";
+
+$entreesTitre7: "Foie gras de canard cuit entier";
+$entreesSousTitre7: "Confiture de figue et pain toasté";
+$entreesPrix7: "35€";
+
+// Plats
+
+$platsTitre4: "Noix de coquilles Saint-Jacques";
+$platsSousTitre4: "Sur lit de purée de céleri-rave";
+$platsPrix4: "40€";
+
+$platsTitre5: "Langoustine poêlée";
+$platsSousTitre5: "Purée de patate douce";
+$platsPrix5: "35€";
+
+$platsTitre6: "Mijoté de queue de boeuf";
+$platsSousTitre6: "Et riz sauvage aux zestes de citron";
+$platsPrix6: "44€";
+
+// Desserts
+
+$dessertsTitre4: "Macaron noisette et chocolat";
+$dessertsSousTitre4: "Glace au caramel brun et sel de Guérande";
+$dessertsPrix4: "18€";
+
+$dessertsTitre5: "Baba au rhum revisité";
+$dessertsSousTitre5: "Avec son coulis de citron";
+$dessertsPrix5: "22€";
+
+$dessertsTitre6: "Tarte au citron meringuée";
+$dessertsSousTitre6: "Déstructurée";
+$dessertsPrix6: "23€";
+
+// Resto à la française
+
+// Entées
+
+$entreesTitre8: "Tartare de poulpe acidulé";
+$entreesSousTitre8: "Aux zestes d'orange";
+$entreesPrix8: "25€";
+
+$entreesTitre9: "Velouté de légumes d'antan";
+$entreesSousTitre9: "Carotte, panais, topinambour";
+$entreesPrix9: "35€";
+
+$entreesTitre10: "Soupe à l'oignon";
+$entreesSousTitre10: "Revisitée";
+$entreesPrix10: "20€";
+
+
+// Plats
+
+$platsTitre7: "Coquilles Saint-Jacques";
+$platsSousTitre7: "Accompagnées d'une purée de panais";
+$platsPrix7: "40€";
+
+$platsTitre8: "Magret de canard";
+$platsSousTitre8: "Et parmentier de pommes de terre";
+$platsPrix8: "35€";
+
+$platsTitre9: "Pigeonneau d’Ille-et-Vilaine";
+$platsSousTitre9: "Sur son lit de gnocchis aux légumes";
+$platsPrix9: "44€";
+
+// Desserts
+
+$dessertsTitre7: "Pétales de violettes glacés";
+$dessertsSousTitre7: "Et purée de noisettes";
+$dessertsPrix7: "18€";
+
+$dessertsTitre8: "Fondant au chocolat";
+$dessertsSousTitre8: "Revisité";
+$dessertsPrix8: "22€";
+
+$dessertsTitre9: "Millefeuille croustillant";
+$dessertsSousTitre9: "Myrtilles et pâte d’amande";
+$dessertsPrix9: "23€";
+
+// Les délices des sens
+
+// Entées
+
+$entreesTitre11: "Tartare de thon";
+$entreesSousTitre11: "Assaisonné au yuzu";
+$entreesPrix11: "25€";
+
+$entreesTitre12: "Bouchée de homard croustillant ";
+$entreesSousTitre12: "Et sa farandole de petits légumes";
+$entreesPrix12: "35€";
+
+$entreesTitre13: "Velouté de cèpes";
+$entreesSousTitre13: "Aux truffes";
+$entreesPrix13: "20€";
+
+
+// Plats
+
+$platsTitre10: "Poulet rôti aux herbes de Provence";
+$platsSousTitre10: "Et sa crème de truffe";
+$platsPrix10: "40€";
+
+$platsTitre11: "Langouste rôtie";
+$platsSousTitre11: "Et ses légumes de saison";
+$platsPrix11: "35€";
+
+$platsTitre12: "Côte de boeuf Angus ";
+$platsSousTitre12: "Et sa purée de panais";
+$platsPrix12: "44€";
+
+// Desserts
+
+$dessertsTitre10: "Farandole de desserts";
+$dessertsSousTitre10: "Du chef";
+$dessertsPrix10: "18€";
+
+$dessertsTitre11: "Crème brulée";
+$dessertsSousTitre11: "Revisité";
+$dessertsPrix11: "22€";
+
+$dessertsTitre12: "Tiramisu";
+$dessertsSousTitre12: "À la noisette";
+$dessertsPrix12: "23€";

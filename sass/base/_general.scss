@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/*Général*/
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Shrikhand;
+  src: url("../fonts/Shrikhand/Shrikhand-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

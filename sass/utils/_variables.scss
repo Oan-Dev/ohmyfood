@@ -9,10 +9,27 @@ $colorFooter: #353535;
 $color-white: #fff;
 $color-accent-white: #f2f2f2;
 
-// les polices de caractères
+// les polices de caractères & texture
 
 $main-txt-font: 'Roboto';
 $logo-font: 'Shrikland';
+
+$noramlWeight-txt: 400;
+$middleBold-txt: 700;
+$strongBold-txt: 900;
+
+// Dimensions et Formats Boites
+
+// Boites Rondes
+$circleBox: 25px;
+
+// border-radius
+$top-radius: 25px 25px 0 0;
+$bottom-radius: 0 0 25px 25px;
+
+// Etiquettes Format
+$labelBox-size: 20px;
+
 
 // les images des restaurants
 
@@ -22,7 +39,8 @@ $image-resto3: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg")
 $image-resto4: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 
 // Le logo de la société
-$logo: url("../images/logo/ohmyfood.png");
+$logo1: url("../images/logo/ohmyfood.png");
+$logo2: url("../images/logo/ohmyfood@2x.svg");
 
 // Début des variables des menus
 // La palette du gout

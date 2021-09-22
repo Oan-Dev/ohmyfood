@@ -1,0 +1,138 @@
+
+.container__animationMenu {
+  width: 80%;
+}
+// fin de section config plan de travail
+// propriétés en plan de travail
+// section de la partie Animation
+// slide loading Page
+.container__animationMenu:hover > .label__menu,
+.container__animationMenu:focus > .label__menu {
+transition: 5s;
+// transform: border-radius;
+border-radius: 20px 0 0 20px;
+text-overflow: clip;
+.block__tarifs {
+  width: auto;
+}
+
+.dish-specificite--hidden {
+  display: none;
+}
+.threePoints {
+  opacity: 1;
+}
+}
+
+// mode animation slide only sur hover
+
+.container__animationMenu:focus > .slideInRight,
+.container__animationMenu:hover > .slideInRight {
+  animation: slideInRight 2s ease;
+  transition: animation 2ms;
+  transform-origin: right;
+  display: flex;
+  width: 75px;
+}
+
+
+.slideInRight {
+  animation-name: slideInRight;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
+  transform-origin: right;
+  display: none;
+  width: 75px;
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    transform-origin: right;
+    opacity: 0;
+    display: none;
+    width: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    display: flex;
+    width: 75px;
+  }
+}
+/* rotateIn s'active bien au survol du parent */
+.rotateIn {
+  animation-name: rotateIn;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  color: #99E2D0;
+  cursor: pointer;
+}
+@keyframes rotateIn {
+  0% {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -180deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+// le Chargeur Etiquettes
+.menu__entrees,
+.menu__plats,
+.menu__deserts  {
+.label-load1 {
+  animation: label-load 650ms ease-in-out;
+  transition: animation 2s;
+
+}
+.label-load2 {
+  animation: label-load 650ms ease-in-out;
+  animation-delay: 100ms;
+  transition: animation 2s 2s;
+}
+.label-load3 {
+  animation: label-load 650ms ease-in-out ;
+  animation-delay: 100ms + 50ms;
+  transition: animation 2s 4s;
+}
+}
+
+@keyframes label-load {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  33%{
+    transform: translateY(66%);
+    opacity: .1;
+  }
+  50% {
+    transform: translateY(50%);
+    opacity: .3;
+  }
+  66%{
+    transform: translateY(33%);
+    opacity: .4;
+  }
+  80%{
+    opacity: .8;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+Animations sur le btn
+.element-btn:hover,
+.element-btn:focus {
+  transform: scale(1.02);
+  transition: transform 1.01s;
+}

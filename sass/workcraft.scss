@@ -26,7 +26,8 @@ body {
 .container__animationMenu:hover > .slideInRight,
 .container__animationMenu:focus > .slideInRight {
 animation: rotateIn, slideInRight;
-transition: animation 450ms;
+transition: animation 2ms;
+transform-origin: right;
 display: flex;
 width: 75px;
 }
@@ -61,55 +62,52 @@ width: 75px;
 
   .slideInRight
    {
-  animation-name: slideInRight running;
-  animation-duration: 450ms;
+  animation-name: slideInRight;
+  animation-duration: 2s;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
   cursor: pointer;
   transform-origin: right;
-  transform: width;
+  display: none;
+  // transform: width;
+  width: 75px;
   }
 
   @keyframes slideInRight {
   0% {
-  transform: translateX(0px);
+  transform: translateX(100%);
   transform-origin: right;
   opacity: 0;
-  // display: none;
+  display: none;
   width: 0;
   }
-  15%{
-    transform: translateX(15px);
-    opacity: 0.15;
-    // display: none;
-    width: 10px;
-  }
-  33% {
-  transform: translateX(20px);
-  opacity: .3;
-  display: flex;
-  width: 20px;
-  }
-  50% {
-    transform: translateX(30px);
-    opacity: .5;
-    // display: flex;
-    width: 30px;
-  }
-  66% {
-    transform: translateX(50px);
-    opacity: .6;
-    // display: flex;
-    width: 50px;
-    }
-  80%{
-    transform: translateX(60px);
-    opacity: .8;
-    // display: flex;
-    width: 60px;
-  }
+
+  // 33% {
+  // transform: translateX(66%);
+  // opacity: .3;
+  // display: flex;
+  // width: 20px;
+  // }
+  // 50% {
+  //   transform: translateX(50%);
+  //   opacity: .5;
+  //   // display: flex;
+  //   width: 30px;
+  // }
+  // 66% {
+  //   transform: translateX(33%);
+  //   opacity: .6;
+  //   // display: flex;
+  //   width: 50px;
+  //   }
+  // 80%{
+  //   transform: translateX(15%);
+  //   opacity: .8;
+  //   // display: flex;
+  //   width: 60px;
+  // }
   100% {
-  transform: translateX(75px);
+  transform: translateX(0);
   opacity: 1;
   display: flex;
   width: 75px;
@@ -121,6 +119,7 @@ width: 75px;
 .rotateIn {
   animation-name: rotateIn;
   animation-duration: 2s;
+  // animation-delay: .5s;
   animation-fill-mode: both;
   color: #99E2D0;
   cursor: pointer;

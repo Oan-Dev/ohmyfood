@@ -16,15 +16,7 @@ body {
   width: 80%;
 }
 
-// les Animations "validation" cachées pour les Etiquettes
 
-// .container__animationMenu:hover::before > .slideInRight,
-// .container__animationMenu:focus::before > .slideInRight {
-// animation: rotateIn slideInRight 0ms;
-// display: none;
-// transform: translateX(100%);
-// width: 0;
-// }
 
 .container__animationMenu:hover > .slideInRight,
 .container__animationMenu:focus > .slideInRight {
@@ -36,10 +28,6 @@ transform: translateX(0);
 width: 75px;
 }
 
-.container__animationMenu:hover::before > .label__menu,
-.container__animationMenu:focus::before > .label__menu {
-width: 100%;
-}
 
 .container__animationMenu:hover > .label__menu,
 .container__animationMenu:focus > .label__menu {
@@ -61,40 +49,20 @@ text-overflow: clip;
 
   .slideInRight
    {
-  -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   cursor: pointer;
   }
-  @-webkit-keyframes slideInRight {
-  0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    opacity: 0;
-    display: none;
-    width: 0;
-    }
-    100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-    display: flex;
-    width: 75px;
-    }
-  }
+
   @keyframes slideInRight {
   0% {
-  -webkit-transform: translateX(100%);
   transform: translateX(100%);
   opacity: 0;
   display: none;
   width: 0;
   }
   100% {
-  -webkit-transform: translateX(0);
   transform: translateX(0);
   display: flex;
   width: 75px;
@@ -104,43 +72,21 @@ text-overflow: clip;
 /* rotateIn s'active bien au survol du parent */
 
 .rotateIn {
-  -webkit-animation-name: rotateIn;
   animation-name: rotateIn;
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   color: #99E2D0;
   cursor: pointer;
   }
-  @-webkit-keyframes rotateIn {
-    0% {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-    transform: rotate3d(0, 0, 1, -200deg);
-    opacity: 1;
-    }
-    100% {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
-    }
-  }
+
   @keyframes rotateIn {
   0% {
-  -webkit-transform-origin: center;
   transform-origin: center;
-  -webkit-transform: rotate3d(0, 0, 1, -200deg);
   transform: rotate3d(0, 0, 1, -200deg);
   opacity: 1;
   }
   100% {
-  -webkit-transform-origin: center;
   transform-origin: center;
-  -webkit-transform: none;
   transform: none;
   opacity: 1;
   }

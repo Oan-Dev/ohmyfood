@@ -115,73 +115,54 @@ body {
   animation: rotateIn, slideInRight;
   transition: animation 450ms;
   display: flex;
-  transform: translateX(0);
   width: 75px;
 }
 
-.container__animationMenu:hover > .label__menu,
-.container__animationMenu:focus > .label__menu {
-  transition: 5s;
-  border-radius: 20px 0 0 20px;
-  text-overflow: clip;
-}
-.container__animationMenu:hover > .label__menu .block__tarifs,
-.container__animationMenu:focus > .label__menu .block__tarifs {
-  width: auto;
-}
-.container__animationMenu:hover > .label__menu .dish-specificite--hidden,
-.container__animationMenu:focus > .label__menu .dish-specificite--hidden {
-  display: none;
-}
-.container__animationMenu:hover > .label__menu .threePoints,
-.container__animationMenu:focus > .label__menu .threePoints {
-  opacity: 1;
-}
-
 .slideInRight {
-  animation-name: slideInRight;
+  animation-name: slideInRight running;
   animation-duration: 450ms;
   animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
   cursor: pointer;
+  transform-origin: right;
+  transform: width;
 }
 
 @keyframes slideInRight {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0px);
     transform-origin: right;
     opacity: 0;
-    display: none;
     width: 0;
   }
   15% {
-    transform: translateX(80%);
+    transform: translateX(15px);
     opacity: 0.15;
-    display: none;
     width: 10px;
   }
   33% {
-    transform: translateX(66%);
+    transform: translateX(20px);
     opacity: 0.3;
     display: flex;
     width: 20px;
   }
   50% {
-    transform: translateX(50%);
+    transform: translateX(30px);
     opacity: 0.5;
     width: 30px;
   }
   66% {
-    transform: translateX(33%);
+    transform: translateX(50px);
     opacity: 0.6;
     width: 50px;
   }
   80% {
-    transform: translateX(20%);
+    transform: translateX(60px);
     opacity: 0.8;
     width: 60px;
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(75px);
     opacity: 1;
     display: flex;
     width: 75px;

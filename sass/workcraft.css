@@ -112,8 +112,8 @@ body {
 
 .container__animationMenu:hover > .slideInRight,
 .container__animationMenu:focus > .slideInRight {
-  animation: rotateIn slideInRight;
-  transition: animation 2s;
+  animation: rotateIn, slideInRight;
+  transition: animation 450ms;
   display: flex;
   transform: translateX(0);
   width: 75px;
@@ -140,7 +140,7 @@ body {
 
 .slideInRight {
   animation-name: slideInRight;
-  animation-duration: 2s;
+  animation-duration: 450ms;
   animation-fill-mode: both;
   cursor: pointer;
 }
@@ -148,12 +148,41 @@ body {
 @keyframes slideInRight {
   0% {
     transform: translateX(100%);
+    transform-origin: right;
     opacity: 0;
     display: none;
     width: 0;
   }
+  15% {
+    transform: translateX(80%);
+    opacity: 0.15;
+    display: none;
+    width: 10px;
+  }
+  33% {
+    transform: translateX(66%);
+    opacity: 0.3;
+    display: flex;
+    width: 20px;
+  }
+  50% {
+    transform: translateX(50%);
+    opacity: 0.5;
+    width: 30px;
+  }
+  66% {
+    transform: translateX(33%);
+    opacity: 0.6;
+    width: 50px;
+  }
+  80% {
+    transform: translateX(20%);
+    opacity: 0.8;
+    width: 60px;
+  }
   100% {
     transform: translateX(0);
+    opacity: 1;
     display: flex;
     width: 75px;
   }
@@ -170,7 +199,7 @@ body {
 @keyframes rotateIn {
   0% {
     transform-origin: center;
-    transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -180deg);
     opacity: 1;
   }
   100% {
@@ -178,55 +207,4 @@ body {
     transform: none;
     opacity: 1;
   }
-}
-.menu__entrees .label-load1,
-.menu__plats .label-load1,
-.menu__deserts .label-load1 {
-  animation: label-load 650ms ease-in-out;
-  transition: animation 2s;
-}
-.menu__entrees .label-load2,
-.menu__plats .label-load2,
-.menu__deserts .label-load2 {
-  animation: label-load 650ms ease-in-out;
-  animation-delay: 100ms;
-  transition: animation 2s 2s;
-}
-.menu__entrees .label-load3,
-.menu__plats .label-load3,
-.menu__deserts .label-load3 {
-  animation: label-load 650ms ease-in-out;
-  animation-delay: 150ms;
-  transition: animation 2s 4s;
-}
-
-@keyframes label-load {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  33% {
-    transform: translateY(66%);
-    opacity: 0.1;
-  }
-  50% {
-    transform: translateY(50%);
-    opacity: 0.3;
-  }
-  66% {
-    transform: translateY(33%);
-    opacity: 0.4;
-  }
-  80% {
-    opacity: 0.8;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.element-btn:hover,
-.element-btn:focus {
-  transform: scale(1.02);
-  transition: transform 1.01s;
 }

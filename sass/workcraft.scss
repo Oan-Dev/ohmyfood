@@ -1,10 +1,12 @@
 
-
+// section import
 @import "base/general";
 
 @import "utils/variables";
 
 @import "components/labelBox";
+
+// section Config plan de travail
 
 body {
   background-color: #808080;
@@ -15,18 +17,30 @@ body {
 .container__animationMenu {
   width: 80%;
 }
+// fin de section config plan de travail
 
+// propriétés en plan de travail
 
+// section de la partie Animation
 
 .container__animationMenu:hover > .slideInRight,
 .container__animationMenu:focus > .slideInRight {
 
-animation: rotateIn slideInRight;
-transition: animation 2s;
+animation: rotateIn, slideInRight;
+transition: animation 450ms;
 display: flex;
 transform: translateX(0);
 width: 75px;
 }
+// .container__animationMenu:hover > .slideWithRotateIn,
+// .container__animationMenu:focus > .slideWithRotateIn {
+//
+// animation: slideWithRotateIn;
+// transition: animation 2s;
+// display: flex;
+// transform: translateX(0);
+// width: 75px;
+// }
 
 
 .container__animationMenu:hover > .label__menu,
@@ -50,7 +64,7 @@ text-overflow: clip;
   .slideInRight
    {
   animation-name: slideInRight;
-  animation-duration: 2s;
+  animation-duration: 450ms;
   animation-fill-mode: both;
   cursor: pointer;
   }
@@ -58,12 +72,45 @@ text-overflow: clip;
   @keyframes slideInRight {
   0% {
   transform: translateX(100%);
+  transform-origin: right;
   opacity: 0;
   display: none;
   width: 0;
   }
+  15%{
+    transform: translateX(80%);
+    opacity: 0.15;
+    display: none;
+    width: 10px;
+  }
+  33% {
+  transform: translateX(66%);
+  opacity: .3;
+  display: flex;
+  width: 20px;
+  }
+  50% {
+    transform: translateX(50%);
+    opacity: .5;
+    // display: flex;
+    width: 30px;
+  }
+  66% {
+    transform: translateX(33%);
+    opacity: .6;
+    // display: flex;
+    width: 50px;
+    }
+  80%{
+    transform: translateX(20%);
+    opacity: .8;
+    // display: flex;
+    width: 60px;
+  }
   100% {
   transform: translateX(0);
+  // transform-origin: left;
+  opacity: 1;
   display: flex;
   width: 75px;
   }
@@ -82,7 +129,7 @@ text-overflow: clip;
   @keyframes rotateIn {
   0% {
   transform-origin: center;
-  transform: rotate3d(0, 0, 1, -200deg);
+  transform: rotate3d(0, 0, 1, -180deg);
   opacity: 1;
   }
   100% {
@@ -91,56 +138,91 @@ text-overflow: clip;
   opacity: 1;
   }
 }
-.menu__entrees,
-.menu__plats,
-.menu__deserts  {
-.label-load1 {
-  animation: label-load 650ms ease-in-out;
-  transition: animation 2s;
 
-}
-.label-load2 {
-  animation: label-load 650ms ease-in-out;
-  animation-delay: 100ms;
-  transition: animation 2s 2s;
-}
-.label-load3 {
-  animation: label-load 650ms ease-in-out ;
-  animation-delay: 100ms + 50ms;
-  transition: animation 2s 4s;
-}
-}
+// Fusion animation Etiquettes
 
-@keyframes label-load {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  33%{
-    transform: translateY(66%);
-    opacity: .1;
-  }
-  50% {
-    transform: translateY(50%);
-    opacity: .3;
-  }
-  66%{
-    transform: translateY(33%);
-    opacity: .4;
-  }
-  80%{
-    opacity: .8;
-  }
-  100%{
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+// Tentative de fusion n°1
+
+// .slideWithRotateIn {
+//   animation-name: slideWithRotateIn;
+//   animation-duration: 2s;
+//   animation-fill-mode: both;
+//   cursor: pointer;
+// }
+// @keyframes slideWithRotateIn {
+//   0% {
+//     transform: translateX(100%);
+//     opacity: 0;
+//     display: none;
+//     width: 0;
+//     transform-origin: center;
+//     transform: rotate3d(0, 0, 1, -200deg);
+//   }
+//   50% {
+//
+//   }
+//   100% {
+//     transform-origin: center;
+//     transform: none;
+//     opacity: 1;
+//     transform-origin: center;
+//     transform: none;
+//
+//   }
+// }
+
+// le Chargeur Etiquettes
+
+// .menu__entrees,
+// .menu__plats,
+// .menu__deserts  {
+// .label-load1 {
+//   animation: label-load 650ms ease-in-out;
+//   transition: animation 2s;
+//
+// }
+// .label-load2 {
+//   animation: label-load 650ms ease-in-out;
+//   animation-delay: 100ms;
+//   transition: animation 2s 2s;
+// }
+// .label-load3 {
+//   animation: label-load 650ms ease-in-out ;
+//   animation-delay: 100ms + 50ms;
+//   transition: animation 2s 4s;
+// }
+// }
+//
+// @keyframes label-load {
+//   0% {
+//     transform: translateY(100%);
+//     opacity: 0;
+//   }
+//   33%{
+//     transform: translateY(66%);
+//     opacity: .1;
+//   }
+//   50% {
+//     transform: translateY(50%);
+//     opacity: .3;
+//   }
+//   66%{
+//     transform: translateY(33%);
+//     opacity: .4;
+//   }
+//   80%{
+//     opacity: .8;
+//   }
+//   100%{
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+// }
 
 // Animations sur le btn
 
-.element-btn:hover,
-.element-btn:focus {
-  transform: scale(1.02);
-  transition: transform 1.01s;
-}
+// .element-btn:hover,
+// .element-btn:focus {
+//   transform: scale(1.02);
+//   transition: transform 1.01s;
+// }

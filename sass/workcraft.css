@@ -236,3 +236,14 @@ body {
   background-color: #808080;
   padding: 100px 150px 100px 50px;
 }
+
+.label__menu1 {
+  display: flex;
+  width: 100%;
+  height: 0.005vh;
+  padding: 0 0.05vw;
+}
+.label__menu1 .plats__titre {
+  display: inline-block;
+  justify-content: center;
+}

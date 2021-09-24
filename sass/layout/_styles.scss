@@ -2,27 +2,29 @@
 
 // les imports
 @import "../utils/_variables.scss";
+@import "../base/_general.scss";
 
-/*Général*/
-@font-face {
-  font-family: Roboto;
-  src: url("../../Fonts/Roboto/Roboto-Regular.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Shrikhand;
-  src: url("../../Fonts/Shrikhand/Shrikhand-Regular.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
+// /*Général*/
+// @font-face {
+//   font-family: 'Roboto';
+//   src: url("../fonts/Roboto/Roboto-Regular.ttf");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+//
+// @font-face {
+//   font-family: 'Shrikhand';
+//   src: url("../fonts/Shrikhand/Shrikhand-Regular.ttf");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+//
+// body {
+//   width: 100%;
+//   margin: 0;
+//   padding: 0;
+//   font-family: 'Roboto';
+// }
 
 /*header logo*/
 header{
@@ -266,6 +268,8 @@ header{
 }
 .element-textLabel h3 {
   font-weight: 900;
+  font-family: 'Roboto';
+
 }
 .block__iconlove {
   width: 50px;
@@ -314,7 +318,7 @@ header{
 .container__down h4 {
   font-size: 20px;
   margin: 0 0 10px 40px;
-  font-family: Shrikhand;
+  font-family: 'Shrikhand' !important;
 }
 .container__down ul li {
   list-style: none;

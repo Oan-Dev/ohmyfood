@@ -78,7 +78,8 @@ header {
 // // the picture
 
 #block__RestoPalette {
-  background-image: url('../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+  // background-image: url('../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+  background-image: $image-resto1;
   max-width: 100%;
   height: 300px;
   background-size: cover;
@@ -86,7 +87,8 @@ header {
   box-sizing: border-box;
 }
 #block__RestoLanote {
-  background-image: url('../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
+  // background-image: url('../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
+  background-image: $image-resto2;
   max-width: 100%;
   height: 300px;
   background-size: cover;
@@ -95,7 +97,8 @@ header {
 }
 
 #block__RestoAlafrancaise {
-  background-image: url('../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
+  // background-image: url('../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
+  background-image: $image-resto3;
   max-width: 100%;
   height: 300px;
   background-size: cover;
@@ -104,8 +107,9 @@ header {
 }
 
 #block__RestoDelice {
-  background-image: url('../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
-  width: 100%;
+  // background-image: url('../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
+  background-image: $image-resto4;
+width: 100%;
   height: 300px;
   background-size: cover;
   z-index: -1;

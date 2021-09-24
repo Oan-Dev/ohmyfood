@@ -8,20 +8,20 @@
 // slide loading Page
 .container__animationMenu:hover > .label__menu,
 .container__animationMenu:focus > .label__menu {
-transition: 5s;
-// transform: border-radius;
-border-radius: 20px 0 0 20px;
-text-overflow: clip;
-.block__tarifs {
-  width: auto;
-}
+  transition: 5s;
+  // transform: border-radius;
+  border-radius: 20px 0 0 20px;
+  text-overflow: clip;
+  .block__tarifs {
+    width: auto;
+  }
 
-.dish-specificite--hidden {
-  display: none;
-}
-.threePoints {
-  opacity: 1;
-}
+  .dish-specificite--hidden {
+    display: none;
+  }
+  .threePoints {
+    opacity: 1;
+  }
 }
 
 // mode animation slide only sur hover

@@ -10,17 +10,6 @@
     }
   }
 
-// .block__iconlove:hover::before,
-// .block__iconlove:focus::before {
-//   .icon-before:hover::before,
-//   .icon-before:focus::before {
-//     display: block;
-//   }
-//   .icon-hover:hover::before,
-//   .icon-hover:focus::before {
-//     display: none;
-//   }
-// }
 .block__iconlove:hover,
 .block__iconlove:focus {
   .icon-before {
@@ -34,28 +23,7 @@
 
 // les Animations "validation" cachées pour les Etiquettes
 
-// .container__animationMenu:hover::before > .slideInRight,
-// .container__animationMenu:focus::before > .slideInRight {
-// animation: rotateIn slideInRight 0ms;
-// display: none;
-// transform: translateX(100%);
-// width: 0;
-// }
 
-.container__animationMenu:hover > .slideInRight,
-.container__animationMenu:focus > .slideInRight {
-
-animation: rotateIn slideInRight;
-transition: animation 2s;
-display: flex;
-transform: translateX(0);
-width: 75px;
-}
-
-.container__animationMenu:hover::before > .label__menu,
-.container__animationMenu:focus::before > .label__menu {
-width: 100%;
-}
 
 .container__animationMenu:hover > .label__menu,
 .container__animationMenu:focus > .label__menu {
@@ -75,92 +43,66 @@ text-overflow: clip;
 }
 }
 
-  .slideInRight
-   {
-  -webkit-animation-name: slideInRight;
+// mode animation slide only sur hover
+.container__animationMenu:focus > .slideInRight,
+.container__animationMenu:hover > .slideInRight {
+  animation: slideInRight 2s ease;
+  transition: animation 2ms;
+  transform-origin: right;
+  display: flex;
+  width: 75px;
+}
+
+
+.slideInRight {
   animation-name: slideInRight;
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
   cursor: pointer;
-  }
-  @-webkit-keyframes slideInRight {
+  transform-origin: right;
+  display: none;
+  width: 75px;
+}
+@keyframes slideInRight {
   0% {
-    -webkit-transform: translateX(100%);
     transform: translateX(100%);
+    transform-origin: right;
     opacity: 0;
     display: none;
     width: 0;
-    }
-    100% {
-    -webkit-transform: translateX(0);
+  }
+
+  100% {
     transform: translateX(0);
     opacity: 1;
     display: flex;
     width: 75px;
-    }
-  }
-  @keyframes slideInRight {
-  0% {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  opacity: 0;
-  display: none;
-  width: 0;
-  }
-  100% {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  display: flex;
-  width: 75px;
   }
 }
-
 /* rotateIn s'active bien au survol du parent */
-
 .rotateIn {
-  -webkit-animation-name: rotateIn;
   animation-name: rotateIn;
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   color: #99E2D0;
   cursor: pointer;
-  }
-  @-webkit-keyframes rotateIn {
-    0% {
-    -webkit-transform-origin: center;
+}
+@keyframes rotateIn {
+  0% {
     transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-    transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -180deg);
     opacity: 1;
-    }
-    100% {
-    -webkit-transform-origin: center;
+  }
+
+  100% {
     transform-origin: center;
-    -webkit-transform: none;
     transform: none;
     opacity: 1;
-    }
-  }
-  @keyframes rotateIn {
-  0% {
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  -webkit-transform: rotate3d(0, 0, 1, -200deg);
-  transform: rotate3d(0, 0, 1, -200deg);
-  opacity: 1;
-  }
-  100% {
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  -webkit-transform: none;
-  transform: none;
-  opacity: 1;
   }
 }
+
+// le Chargeur Etiquettes
 .menu__entrees,
 .menu__plats,
 .menu__deserts  {
@@ -180,7 +122,7 @@ text-overflow: clip;
   transition: animation 2s 4s;
 }
 }
-
+// le loading des Etiquettes
 @keyframes label-load {
   0% {
     transform: translateY(100%);
@@ -206,9 +148,7 @@ text-overflow: clip;
     opacity: 1;
   }
 }
-
 // Animations sur le btn
-
 .element-btn:hover,
 .element-btn:focus {
   transform: scale(1.02);

@@ -1,7 +1,7 @@
 // Format Mobile-first
 
 // les imports
-@import "../utils/variables";
+@import "../utils/_variables.scss";
 
 /*Général*/
 @font-face {
@@ -189,8 +189,9 @@ header{
 }
 /* identité unique des eléments des produits et de leurs format */
 #block__RestoPalette {
-  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  // background-image: $image-resto1;
+  // background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  // background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: $image-resto1;
   height: 200px;
   max-width: 100%;
   z-index: 0;

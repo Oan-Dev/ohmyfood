@@ -28,7 +28,7 @@
 
     // le container principal
     .container__menu{
-      width:90%;
+      max-width: 90%;
     }
     .container__titreRestaurant {
       display: flex;
@@ -104,7 +104,7 @@
 
   // le container principal
   .container__menu{
-    width: 100%;
+    max-width: 90%;
   }
   .container__titreRestaurant {
     display: flex;
@@ -185,7 +185,7 @@
 
     // le container principal
     .container__menu{
-      width: 90%;
+      max-width: 90%;
     }
     .container__titreRestaurant {
       display: flex;

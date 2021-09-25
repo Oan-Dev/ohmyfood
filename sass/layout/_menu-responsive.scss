@@ -28,7 +28,7 @@
 
     // le container principal
     .container__menu{
-      width: 100%;
+      width:90%;
     }
     .container__titreRestaurant {
       display: flex;
@@ -80,7 +80,7 @@
 
 @media screen and (min-width: 1240px) and (max-width: 1310px) {
   body {
-    width: 100%;
+    width: 90%;
   }
 
   // le picture
@@ -185,7 +185,7 @@
 
     // le container principal
     .container__menu{
-      width: 100%;
+      width: 90%;
     }
     .container__titreRestaurant {
       display: flex;
@@ -241,7 +241,7 @@
       z-index: -1;
       box-sizing: border-box;
     }
-  
+
     .block__imagesRestaurant2 {
       height: 700px;
       // object-fit: cover;

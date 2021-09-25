@@ -135,7 +135,7 @@ width: 100%;
 // container principal
 
 .container__menu {
-  width: 98%;
+  width: 80%;
   height: auto;
   background-color: #f2f2f2;
   border-radius: 25px 25px 0 0;
@@ -147,7 +147,7 @@ width: 100%;
   }
 }
 .block__menu {
-  width: 100%;
+  width: 90%;
   background-color: #f2f2f2;
   .container__titreRestaurant {
     display: flex;
@@ -173,7 +173,7 @@ width: 100%;
 // Etiquettes
 .container__animationMenu {
   cursor: pointer;
-  width: 100%;
+  width: 90%;
   height: 70px;
   margin-bottom: 15px;
   display: flex;
@@ -185,7 +185,7 @@ width: 100%;
   // transform: animation;
   animation: slideInRight;
       .label__menu {
-        width: 100%;
+        width:90%;
         height: 70px;
         padding: 5px 15px 0 10px;
         display: flex;

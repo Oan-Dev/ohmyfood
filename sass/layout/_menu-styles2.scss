@@ -1,0 +1,113 @@
+// Format Mobile-first
+
+// les imports
+@import "../utils/_variables.scss";
+@import "../base/_general.scss";
+
+
+// // the picture
+
+#block__RestoPalette {
+  background-image: url('../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+  // background-image: $image-resto1;
+  max-width: 100%;
+  height: 41.04vh;
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+#block__RestoLanote {
+  background-image: url('../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
+  // background-image: $image-resto2;
+  max-width: 100%;
+  height: 41.04vh;
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+#block__RestoAlafrancaise {
+  background-image: url('../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
+  // background-image: $image-resto3;
+  max-width: 100%;
+  height: 41.04vh;
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+#block__RestoDelice {
+  background-image: url('../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
+  // background-image: $image-resto4;
+  max-width: 100%;
+  height: 41.04vh;
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+// le container des menus
+
+.container__menu {
+  // margin-bottom: 41.04vh;
+  width: auto;
+  // height: 50.76vh;
+  .container__titreRestaurant {
+    background-color: darkorange;
+    width: auto;
+    // height: 13.68vh;
+  }
+  .container_blockLabel {
+    background-color: darkgrey;
+
+    // margin-bottom: 700px;
+  }
+.container__animationMenu {
+  display: flex;
+
+  width: 90%;
+  height: 7.83vh;
+  border: 2px solid #000;
+  margin-bottom: 30px;
+  .label__menu {
+    display: flex;
+  }
+}
+
+}
+
+
+
+.block__btn {
+  height: 50px;
+  // margin-bottom: 300px;
+}
+
+// Etiquettes
+
+
+
+/* footer*/
+.container__down {
+  // margin-top: 700px;
+  width: auto;
+  height: 27.40vh;
+  background-color: #353535;
+  color: #ffff;
+  padding-top: 20px;
+  h4 {
+    margin: 0 0 5px 40px;
+    // font-family: Shrikhand;
+    font-size: 20px;
+  }
+  ul li {
+    list-style: none;
+    margin-bottom: 5px;
+    a {
+      text-decoration: none;
+      color: #ffff;
+    }
+  }
+}
+// fin footer
+// fin mode Mobile-first

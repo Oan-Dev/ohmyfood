@@ -91,7 +91,7 @@ header .navBar .block__Logo {
 
 .container__menu {
   max-width: 100%;
-  height: 95.76vh;
+  height: 97.76vh;
   background-color: #f2f2f2;
   border-radius: 25px 25px 0 0;
   padding: 15px 10px;
@@ -168,7 +168,7 @@ header .navBar .block__Logo {
   width: auto;
   height: inherit;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-end;
 }
 .container__menu .container__animationMenu .label__menu .block__tarifs .tarifs {
@@ -185,6 +185,7 @@ header .navBar .block__Logo {
   height: 100%;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
+  display: none;
 }
 .container__menu .container__animationMenu .animaValidation .check-ok {
   width: 30px;
@@ -226,7 +227,7 @@ header .navBar .block__Logo {
 
 /* footer*/
 .container__down {
-  margin-top: 81.04vh;
+  margin-top: 68.04vh;
   width: auto;
   height: 27.4vh;
   background-color: #353535;
@@ -244,4 +245,149 @@ header .navBar .block__Logo {
 .container__down ul li a {
   text-decoration: none;
   color: #ffff;
+}
+
+.block__iconlove {
+  font-size: 30px;
+}
+.block__iconlove .icon-hover {
+  display: none;
+  color: #cc12c4;
+}
+
+.block__iconlove:hover .icon-before,
+.block__iconlove:focus .icon-before {
+  display: none;
+}
+.block__iconlove:hover .icon-hover,
+.block__iconlove:focus .icon-hover {
+  display: block;
+  transition: display 2s;
+}
+
+.container__animationMenu:hover > .label__menu,
+.container__animationMenu:focus > .label__menu {
+  transition: 5s;
+  border-radius: 20px 0 0 20px;
+  text-overflow: clip;
+}
+.container__animationMenu:hover > .label__menu .block__tarifs,
+.container__animationMenu:focus > .label__menu .block__tarifs {
+  width: auto;
+}
+.container__animationMenu:hover > .label__menu .dish-specificite--hidden,
+.container__animationMenu:focus > .label__menu .dish-specificite--hidden {
+  display: none;
+}
+.container__animationMenu:hover > .label__menu .threePoints,
+.container__animationMenu:focus > .label__menu .threePoints {
+  opacity: 1;
+}
+
+.container__animationMenu:focus > .slideInRight,
+.container__animationMenu:hover > .slideInRight {
+  animation: slideInRight 2s ease;
+  transition: animation 2ms;
+  transform-origin: right;
+  display: flex;
+  width: 75px;
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
+  transform-origin: right;
+  display: none;
+  width: 75px;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    transform-origin: right;
+    opacity: 0;
+    display: none;
+    width: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    display: flex;
+    width: 75px;
+  }
+}
+/* rotateIn s'active bien au survol du parent */
+.rotateIn {
+  animation-name: rotateIn;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  color: #99E2D0;
+  cursor: pointer;
+}
+
+@keyframes rotateIn {
+  0% {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -180deg);
+    opacity: 1;
+  }
+  100% {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
+}
+.menu__entrees .label-load1,
+.menu__plats .label-load1,
+.menu__deserts .label-load1 {
+  animation: label-load 650ms ease-in-out;
+  transition: animation 2s;
+}
+.menu__entrees .label-load2,
+.menu__plats .label-load2,
+.menu__deserts .label-load2 {
+  animation: label-load 650ms ease-in-out;
+  animation-delay: 100ms;
+  transition: animation 2s 2s;
+}
+.menu__entrees .label-load3,
+.menu__plats .label-load3,
+.menu__deserts .label-load3 {
+  animation: label-load 650ms ease-in-out;
+  animation-delay: 150ms;
+  transition: animation 2s 4s;
+}
+
+@keyframes label-load {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  33% {
+    transform: translateY(66%);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translateY(50%);
+    opacity: 0.3;
+  }
+  66% {
+    transform: translateY(33%);
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.element-btn:hover,
+.element-btn:focus {
+  transform: scale(1.02);
+  transition: transform 1.01s;
 }

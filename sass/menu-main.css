@@ -11,6 +11,12 @@ a {
   text-decoration: none;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -97,6 +103,7 @@ header .navBar .block__Logo {
   padding: 15px 10px;
   z-index: 2;
   margin-top: -50px;
+  margin-bottom: auto;
 }
 .container__menu .container__titreRestaurant {
   background-color: darkorange;
@@ -137,7 +144,7 @@ header .navBar .block__Logo {
   animation: slideInRight;
 }
 .container__menu .container__animationMenu .label__menu {
-  width: auto;
+  width: 100%;
   height: inherit;
   padding: 5px 15px 0 10px;
   display: flex;
@@ -155,6 +162,7 @@ header .navBar .block__Logo {
   font-size: 12px;
   display: flex;
   flex-direction: row;
+  flex-grow: 2;
 }
 .container__menu .container__animationMenu .label__menu .titre-dish .dish-specificite--hidden {
   display: inline-block;
@@ -227,7 +235,7 @@ header .navBar .block__Logo {
 
 /* footer*/
 .container__down {
-  margin-top: 68.04vh;
+  margin-top: 550px;
   width: auto;
   height: 27.4vh;
   background-color: #353535;

@@ -29,6 +29,11 @@
 @import "./base/_general.scss";
 // @import "./layout/_menu-animations.scss";
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 // header donc le logo & l'ancrage vers l'index.html
 header {
@@ -126,6 +131,7 @@ header {
   padding: 15px 10px;
   z-index: 2;
   margin-top: -50px;
+  margin-bottom: auto;
   .container__titreRestaurant {
     background-color: darkorange;
     width: auto;
@@ -168,7 +174,7 @@ header {
   animation: slideInRight;
 
     .label__menu {
-      width: auto;
+      width: 100%;
       height: inherit;
       padding: 5px 15px 0 10px;
       display: flex;
@@ -184,6 +190,8 @@ header {
           font-size: 12px;
           display: flex;
           flex-direction: row;
+          flex-grow: 2
+
         }
         .dish-specificite--hidden {
           display: inline-block;
@@ -273,7 +281,7 @@ header {
 
 /* footer*/
 .container__down {
-  margin-top: 68.04vh;
+  margin-top: 550px;
   width: auto;
   height: 27.40vh;
   background-color: #353535;

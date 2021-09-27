@@ -4,3 +4,17 @@
 @import "layout/responsive";
 // les différentes animations
 @import "layout/animations";
+
+
+
+
+@media screen and (min-device-width: 1240px) and (max-device-width: 1310px) and (orientation: landscape) {
+.block__restaurant {
+  width: auto;
+  height: auto;
+  .lien__Resto {
+    height: inherit;
+  }
+}
+
+}

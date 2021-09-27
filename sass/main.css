@@ -1,21 +1,14 @@
 @charset "UTF-8";
 /*Général*/
-@font-face {
-  font-family: Roboto;
-  src: url("../../Fonts/Roboto/Roboto-Regular.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: Shrikhand;
-  src: url("../../Fonts/Shrikhand/Shrikhand-Regular.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
 body {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
 }
 
 /*header logo*/
@@ -261,6 +254,7 @@ a {
 
 .element-textLabel h3 {
   font-weight: 900;
+  font-family: "Roboto";
 }
 
 .block__iconlove {
@@ -308,7 +302,7 @@ a {
 .container__down h4 {
   font-size: 20px;
   margin: 0 0 10px 40px;
-  font-family: Shrikhand;
+  font-family: "Shrikhand" !important;
 }
 
 .container__down ul li {
@@ -322,7 +316,7 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1239px) {
-  .container__restaurant {
+  .container__menu {
     height: auto;
     padding: 70px 20px 70px 0;
   }
@@ -582,4 +576,14 @@ to {
 .block__iconlove:focus .icon-hover {
   display: block;
   transition: display 2s;
+}
+
+@media screen and (min-device-width: 1240px) and (max-device-width: 1310px) and (orientation: landscape) {
+  .block__restaurant {
+    width: auto;
+    height: auto;
+  }
+  .block__restaurant .lien__Resto {
+    height: inherit;
+  }
 }

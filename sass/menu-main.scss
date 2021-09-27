@@ -30,9 +30,10 @@
 // @import "./layout/_menu-animations.scss";
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: block;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
 }
 
 // header donc le logo & l'ancrage vers l'index.html
@@ -162,7 +163,7 @@ header {
   }
 .container__animationMenu {
   max-width: 100%;
-  height:11.58vh;
+  height:10.65vh;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -184,10 +185,10 @@ header {
       cursor: pointer;
       .titre-dish {
         font-weight: 700;
-        font-size: 14px;
+        font-size: 1.15rem;
         .dish-specificite {
           font-weight: 400;
-          font-size: 12px;
+          font-size: .90rem;
           display: flex;
           flex-direction: row;
           flex-grow: 2

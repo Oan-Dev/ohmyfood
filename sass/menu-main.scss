@@ -156,7 +156,7 @@ header {
   }
 .container__animationMenu {
   max-width: 100%;
-  height:9.58vh;
+  height:11.58vh;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -178,10 +178,10 @@ header {
     cursor: pointer;
     .titre-dish {
       font-weight: 700;
-      font-size: 16px;
+      font-size: 14px;
       .dish-specificite {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         display: flex;
         flex-direction: row;
       }
@@ -272,7 +272,7 @@ header {
 
 /* footer*/
 .container__down {
-  margin-top: 47.04vh;
+  margin-top: 81.04vh;
   width: auto;
   height: 27.40vh;
   background-color: #353535;

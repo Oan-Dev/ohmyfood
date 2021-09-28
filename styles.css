@@ -170,7 +170,7 @@ a {
 
 .container__restaurant {
   width: auto;
-  height: auto;
+  height: 1500px;
   padding: 15px 15px 15px 15px;
   margin-top: 450px;
   background-color: #f2f2f2;
@@ -316,7 +316,11 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1239px) {
-  .container__menu {
+   body {
+   max-width: auto;
+ }
+
+  .container__restaurant{
     height: auto;
     padding: 70px 20px 70px 0;
   }

@@ -95,7 +95,7 @@ header .navBar .block__Logo {
 
 .container__menu {
   max-width: 100%;
-  height: 1350px;
+  height: auto;
   background-color: #f2f2f2;
   border-radius: 25px 25px 0 0;
   padding: 15px 10px;
@@ -128,7 +128,7 @@ header .navBar .block__Logo {
 }
 .container__menu .container__animationMenu {
   max-width: 100%;
-  height: 10.65vh;
+  height: 90px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -210,10 +210,11 @@ header .navBar .block__Logo {
 }
 
 .block__btn {
-  height: 50px;
+  height: 120px;
   width: auto;
   display: flex;
   justify-content: center;
+  /* background-color: #f2f2f2; */
 }
 .block__btn .element-btn {
   width: 260px;
@@ -230,6 +231,7 @@ header .navBar .block__Logo {
 
 /* footer*/
 .container__down {
+  /* margin-top: 30px; */
   width: auto;
   height: 27.4vh;
   background-color: #353535;
@@ -259,7 +261,46 @@ header .navBar .block__Logo {
   body .titre-dish .dish-specificite {
     font-size: 0.8rem;
   }
+  .container__down {
+    width: auto;
+  }
+  .container__down h4 {
+    display: flex;
+    justify-content: center;
+  }
+  .container__down ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .container__down ul li {
+    margin: auto;
+    padding-right: 50px;
+  }
 }
+@media screen and (min-width: 1240px) {
+  .container__down {
+    width: auto;
+  }
+  .container__down h4 {
+    display: flex;
+    justify-content: center;
+  }
+  .container__down ul {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .container__down ul li {
+    margin: auto;
+    padding-right: 50px;
+  }
+
+}
+
+
+/* Les animations */
+
 .block__iconlove {
   font-size: 30px;
 }

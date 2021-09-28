@@ -254,6 +254,7 @@ header .navBar .block__Logo {
 @media screen and (min-width: 768px) and (max-width: 1239px) {
   body {
     max-width: 100%;
+    height: auto;
   }
   body .titre-dish {
     font-size: 1rem;
@@ -309,7 +310,12 @@ header .navBar .block__Logo {
   }
 
 }
-
+@media screen and (max-device-width: 768px) and (orientation: landscape) {
+  .container__down {
+    width: auto;
+    height: 180px;
+  }
+}
 
 /* Les animations */
 

@@ -261,6 +261,12 @@ header .navBar .block__Logo {
   body .titre-dish .dish-specificite {
     font-size: 0.8rem;
   }
+  #block__RestoPalette,
+  #block__RestoLanote,
+  #block__RestoAlafrancaise,
+  #block__RestoDelice {
+    background-position-y: -150px;
+  }
   .container__down {
     width: auto;
   }
@@ -279,6 +285,12 @@ header .navBar .block__Logo {
   }
 }
 @media screen and (min-width: 1240px) {
+  #block__RestoPalette,
+  #block__RestoLanote,
+  #block__RestoAlafrancaise,
+  #block__RestoDelice {
+    background-position-y: -350px;
+  }
   .container__down {
     width: auto;
   }

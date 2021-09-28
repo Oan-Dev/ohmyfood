@@ -1,0 +1,228 @@
+
+// Les couleurs
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$colorGradient: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);
+$colorFooter: #353535;
+$color-white: #fff;
+$color-accent-white: #f2f2f2;
+
+// les polices de caractères & texture
+
+$main-txt-font: 'Roboto';
+$logo-font: 'Shrikland';
+
+$noramlWeight-txt: 400;
+$middleBold-txt: 700;
+$strongBold-txt: 900;
+
+// Dimensions et Formats Boites
+
+// Boites Rondes
+$circleBox: 25px;
+
+// border-radius
+$top-radius: 25px 25px 0 0;
+$bottom-radius: 0 0 25px 25px;
+
+// Etiquettes Format
+$labelBox-size: 20px;
+$troispoints: "...";
+
+// les images des restaurants
+
+$image-resto1: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+$image-resto2: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+$image-resto3: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+$image-resto4: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+
+// Le logo de la société
+$logo1: url("../images/logo/ohmyfood.png");
+$logo2: url("../images/logo/ohmyfood@2x.svg");
+
+// Début des variables des menus
+// La palette du gout
+
+// Entées
+
+$palette-entreesTitre1: "Fricassée d'escargot";
+$palette-entreesSousTitre1: "Au piment d'Espelette";
+$palette-entreesPrix1: "25€";
+
+$palette-entreesTitre2: "Foie gras de canard mi-cuit";
+$palette-entreesSousTitre2: "Assaisonné à la truffe sur lit de caviar";
+$palette-entreesPrix2: "35€";
+
+$palette-entreesTitre3: "Oeuf au plat";
+$palette-entreesSousTitre3: "Au piment d'Espelette";
+$palette-entreesPrix3: "20€";
+
+// Plats
+
+$palette-platsTitre1: "Filet de boeuf aux herbes";
+$palette-platsSousTitre1: "Accompagné de sa ribambelle de légumes";
+$palette-platsPrix1: "40€";
+
+$palette-platsTitre2: "Parmentier de queue de boeuf";
+$palette-platsSousTitre2: "À la truffe noire sur sa purée de panais";
+$palette-platsPrix2: "35€";
+
+$palette-platsTitre3: "Filet de turbot";
+$palette-platsSousTitre3: "Aux agrumes";
+$palette-platsPrix3: "44€";
+
+// Desserts
+
+$palette-dessertsTitre1: "Paris-Brest";
+$palette-dessertsSousTitre1: "Revisité";
+$palette-dessertsPrix1: "18€";
+
+$palette-dessertsTitre2: "Macaron au chocolat d'exception";
+$palette-dessertsSousTitre2: "Et glace à la vanille de Madagascar";
+$palette-dessertsPrix2: "22€";
+
+$palette-dessertsTitre3: "Mousse au chocolat";
+$palette-dessertsSousTitre3: "Au piment d'Espelette et à la truffe noire";
+$palette-dessertsPrix3: "23€";
+
+// La note enchantée
+
+// Entées
+
+$lanote-entreesTitre1: "Ravioles de foie grast";
+$lanote-entreesSousTitre1: "Accompagnés de leur crème à la truffe";
+$lanote-entreesPrix1: "25€";
+
+$lanote-entreesTitre2: "Caviar osciètre";
+$lanote-entreesSousTitre2: "Sur blini à la farine de blé noir";
+$lanote-entreesPrix2: "35€";
+
+$lanote-entreesTitre3: "Homard et espuma de potiron";
+$lanote-entreesSousTitre3: "Mariné aux zestes d'orange";
+$lanote-entreesPrix3: "20€";
+
+$lanote-entreesTitre4: "Foie gras de canard cuit entier";
+$lanote-entreesSousTitre4: "Confiture de figue et pain toasté";
+$lanote-entreesPrix4: "35€";
+
+// Plats
+
+$lanote-platsTitre3: "Noix de coquilles Saint-Jacques";
+$lanote-platsSousTitre1: "Sur lit de purée de céleri-rave";
+$lanote-platsPrix1: "40€";
+
+$lanote-platsTitre2: "Langoustine poêlée";
+$lanote-platsSousTitre2: "Purée de patate douce";
+$lanote-platsPrix2: "35€";
+
+$lanote-platsTitre3: "Mijoté de queue de boeuf";
+$lanote-platsSousTitre3: "Et riz sauvage aux zestes de citron";
+$lanote-platsPrix3: "44€";
+
+// Desserts
+
+$lanote-dessertsTitre1: "Macaron noisette et chocolat";
+$lanote-dessertsSousTitre1: "Glace au caramel brun et sel de Guérande";
+$lanote-dessertsPrix1: "18€";
+
+$lanote-dessertsTitre2: "Baba au rhum revisité";
+$lanote-dessertsSousTitre2: "Avec son coulis de citron";
+$lanote-dessertsPrix2: "22€";
+
+$lanote-dessertsTitre3: "Tarte au citron meringuée";
+$lanote-dessertsSousTitre3: "Déstructurée";
+$lanote-dessertsPrix3: "23€";
+
+// Resto à la française
+
+// Entées
+
+$alafrancaise-entreesTitre8: "Tartare de poulpe acidulé";
+$alafrancaise-entreesSousTitre8: "Aux zestes d'orange";
+$alafrancaise-entreesPrix8: "25€";
+
+$alafrancaise-entreesTitre9: "Velouté de légumes d'antan";
+$alafrancaise-entreesSousTitre9: "Carotte, panais, topinambour";
+$alafrancaise-entreesPrix9: "35€";
+
+$alafrancaise-entreesTitre10: "Soupe à l'oignon";
+$alafrancaise-entreesSousTitre10: "Revisitée";
+$alafrancaise-entreesPrix10: "20€";
+
+
+// Plats
+
+$alafrancaise-platsTitre1: "Coquilles Saint-Jacques";
+$alafrancaise-platsSousTitre1: "Accompagnées d'une purée de panais";
+$alafrancaise-platsPrix1: "40€";
+
+$alafrancaise-platsTitre2: "Magret de canard";
+$alafrancaise-platsSousTitre2: "Et parmentier de pommes de terre";
+$alafrancaise-platsPrix2: "35€";
+
+$alafrancaise-platsTitre9: "Pigeonneau d’Ille-et-Vilaine";
+$alafrancaise-platsSousTitre3: "Sur son lit de gnocchis aux légumes";
+$alafrancaise-platsPrix3: "44€";
+
+// Desserts
+
+$alafrancaise-dessertsTitre1: "Pétales de violettes glacés";
+$alafrancaise-dessertsSousTitre1: "Et purée de noisettes";
+$alafrancaise-dessertsPrix1: "18€";
+
+$alafrancaise-dessertsTitre2: "Fondant au chocolat";
+$alafrancaise-dessertsSousTitre2: "Revisité";
+$alafrancaise-dessertsPrix2: "22€";
+
+$alafrancaise-dessertsTitre3: "Millefeuille croustillant";
+$alafrancaise-dessertsSousTitre3: "Myrtilles et pâte d’amande";
+$alafrancaise-dessertsPrix3: "23€";
+
+// Les délices des sens
+
+// Entées
+
+$delices-entreesTitre1: "Tartare de thon";
+$delices-entreesSousTitre1: "Assaisonné au yuzu";
+$delices-entreesPrix1: "25€";
+
+$delices-entreesTitre2: "Bouchée de homard croustillant ";
+$delices-entreesSousTitre2: "Et sa farandole de petits légumes";
+$delices-entreesPrix2: "35€";
+
+$delices-entreesTitre3: "Velouté de cèpes";
+$delices-entreesSousTitre3: "Aux truffes";
+$delices-entreesPrix3: "20€";
+
+
+// Plats
+
+$delices-platsTitre1: "Poulet rôti aux herbes de Provence";
+$delices-platsSousTitre1: "Et sa crème de truffe";
+$delices-platsPrix1: "40€";
+
+$delices-platsTitre2: "Langouste rôtie";
+$delices-platsSousTitre2: "Et ses légumes de saison";
+$delices-platsPrix2: "35€";
+
+$delices-platsTitre3: "Côte de boeuf Angus ";
+$delices-platsSousTitre3: "Et sa purée de panais";
+$delices-platsPrix3: "44€";
+
+// Desserts
+
+$delices-dessertsTitre1: "Farandole de desserts";
+$delices-dessertsSousTitre1: "Du chef";
+$delices-dessertsPrix1: "18€";
+
+$delices-dessertsTitre2: "Crème brulée";
+$delices-dessertsSousTitre2: "Revisité";
+$delices-dessertsPrix2: "22€";
+
+$delices-dessertsTitre3: "Tiramisu";
+$delices-dessertsSousTitre3: "À la noisette";
+$delices-dessertsPrix3: "23€";
+
+// Fin des variables des menus des Restos

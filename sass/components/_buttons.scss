@@ -1,0 +1,21 @@
+/* Bouton Commander */
+.block__btn {
+  height: 150px;
+  width: auto;
+  background-color: #f2f2f2;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  .element-btn {
+    width: 260px;
+    height: 80px;
+    background: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);
+    border-radius: 40px;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}

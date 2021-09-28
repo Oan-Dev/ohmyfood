@@ -1,0 +1,21 @@
+/* footer*/
+.container__down {
+  width: auto;
+  height: 200px;
+  background-color: #353535;
+  color: #ffff;
+  padding-top: 20px;
+  h4 {
+    margin: 0 0 5px 40px;
+    font-family: Shrikhand;
+    font-size: 20px;
+  }
+  ul li {
+    list-style: none;
+    margin-bottom: 5px;
+    a {
+      text-decoration: none;
+      color: #ffff;
+    }
+  }
+}

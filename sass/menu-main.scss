@@ -1,0 +1,471 @@
+// le format Mobile-first
+// @import "layout/menu-styles";
+//
+// le Responsive Tablette & Desktop
+// @import "layout/menu-responsive";
+//
+// les différentes animations
+// @import "layout/menu-animations";
+
+
+
+// // Plan de Travail
+//
+// @import "layout/menu-styles2";
+//
+//
+// @import "layout/responsive2";
+
+// @import "layout/menu-animations";
+
+// ______________
+
+
+
+// Format Mobile-first
+
+// les imports
+@import "./utils/_variables.scss";
+@import "./base/_general.scss";
+// @import "./layout/_menu-animations.scss";
+
+body {
+  display: block;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+}
+
+// header donc le logo & l'ancrage vers l'index.html
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: inherit;
+  height: 70px;
+  background-color: #ffff;
+  z-index: 1;
+
+  .navBar{
+    width: 100%;
+    height: 2vh;
+    z-index: 1;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    .container__logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        margin-top: 40px;
+        margin-right: 80px;
+        padding: 15px;
+
+    }
+    .block__iconHtml {
+      width: 50px;
+      display: flex;
+      justify-content: flex-start;
+      padding-right: 40px;
+      margin-left: 15px;
+    }
+    .color-IconIndex {
+        color: #000;
+    }
+    .block__Logo {
+      width: auto;
+    }
+  }
+}
+
+// // the picture
+
+#block__RestoPalette {
+  background-image: url('../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+  // background-image: $image-resto1;
+  max-width: 100%;
+  height: 41.04vh;
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+#block__RestoLanote {
+  background-image: url('../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg');
+  // background-image: $image-resto2;
+  max-width: 100%;
+  height: 41.04vh;
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+#block__RestoAlafrancaise {
+  background-image: url('../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg');
+  // background-image: $image-resto3;
+  max-width: 100%;
+  height: 41.04vh;
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+#block__RestoDelice {
+  background-image: url('../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg');
+  // background-image: $image-resto4;
+  max-width: 100%;
+  height: 41.04vh;
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+// le container des menus
+
+.container__menu {
+  max-width: 100%;
+  height: 1350px;
+  background-color: #f2f2f2;
+  border-radius: 25px 25px 0 0;
+  padding: 15px 10px;
+  z-index: 2;
+  margin-top: -50px;
+  margin-bottom: auto;
+  .container__titreRestaurant {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .block__titre{
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: Shrikhand;
+      }
+    }
+    .block__iconlove {
+      background-color: transparent !important;
+      width: auto;
+      height: auto;
+      margin-left: 50px;
+      cursor: pointer;
+      }
+  }
+  .container_blockLabel {
+    width: inherit;
+    height: inherit;
+    padding: 10px;
+
+  }
+.container__animationMenu {
+  max-width: 100%;
+  height:10.65vh;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // border: 2px solid #000;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  background-color: #fff;
+  animation: slideInRight;
+
+    .label__menu {
+      width: 100%;
+      height: inherit;
+      padding: 5px 15px 0 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-radius: 20px;
+      cursor: pointer;
+      .titre-dish {
+        font-weight: 700;
+        font-size: 1.15rem;
+        .dish-specificite {
+          font-weight: 400;
+          font-size: .90rem;
+          display: flex;
+          flex-direction: row;
+          flex-grow: 2;
+
+        }
+        .dish-specificite--hidden {
+          display: inline-block;
+          margin-left: 5px;
+        }
+        .threePoints {
+          display: inline-block;
+
+          opacity: 0;
+        }
+      }
+      .block__tarifs {
+        width: auto;
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .tarifs {
+          height: inherit;
+          display: flex;
+          align-items: flex-end;
+          margin-bottom: 20px;
+        }
+      }
+
+    }
+    .animaValidation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 75px;
+      height: 100%;
+      background-color: #99E2D0;
+      border-radius: 0 20px 20px 0;
+      display: none;
+          .check-ok {
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #99E2D0;
+            .fa-check {
+                color: #99E2D0;
+          }
+    }
+  }
+}
+
+}
+.titreMenu {
+  .titreMenu-underline {
+    border-bottom: 3px solid #99E2D0;
+    padding-bottom: 5px;
+  }
+}
+
+
+.block__btn {
+  // margin-top: 10.68vh;
+  height: 50px;
+  // margin-bottom: 300px;
+  width: auto;
+  // background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  .element-btn {
+    width: 260px;
+    height: 80px;
+    background: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);
+    border-radius: 40px;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    }
+}
+
+// Etiquettes
+
+
+
+/* footer*/
+.container__down {
+  width: auto;
+  height: 27.40vh;
+  background-color: #353535;
+  color: #ffff;
+  padding-top: 20px;
+  h4 {
+    margin: 0 0 5px 40px;
+    // font-family: Shrikhand;
+    font-size: 20px;
+  }
+  ul li {
+    list-style: none;
+    margin-bottom: 5px;
+    a {
+      text-decoration: none;
+      color: #ffff;
+    }
+  }
+}
+// fin footer
+// fin mode Mobile-first
+
+// Mode Responsive
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  body {
+    max-width: 100%;
+    .titre-dish {
+      font-size: 1rem;
+      .dish-specificite {
+        font-size: .80rem;
+      }
+    }
+  }
+
+}
+// les Animations
+
+// animation des icones Coeur
+  .block__iconlove {
+    font-size: 30px;
+    .icon-hover {
+      display: none;
+      color: #cc12c4;
+
+    }
+  }
+
+.block__iconlove:hover,
+.block__iconlove:focus {
+  .icon-before {
+    display: none;
+  }
+  .icon-hover {
+    display: block;
+    transition: display 2s;
+  }
+}
+
+// les Animations "validation" cachées pour les Etiquettes
+
+
+
+.container__animationMenu:hover > .label__menu,
+.container__animationMenu:focus > .label__menu {
+  transition: 5s;
+  border-radius: 20px 0 0 20px;
+  text-overflow: clip;
+  .block__tarifs {
+    width: auto;
+  }
+
+  .dish-specificite--hidden {
+    display: none;
+  }
+  .threePoints {
+    opacity: 1;
+  }
+}
+
+// mode animation slide only sur hover
+.container__animationMenu:focus > .slideInRight,
+.container__animationMenu:hover > .slideInRight {
+  animation: slideInRight 2s ease;
+  transition: animation 2ms;
+  transform-origin: right;
+  display: flex;
+  width: 75px;
+}
+
+
+.slideInRight {
+  animation-name: slideInRight;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
+  transform-origin: right;
+  display: none;
+  width: 75px;
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    transform-origin: right;
+    opacity: 0;
+    display: none;
+    width: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    display: flex;
+    width: 75px;
+  }
+}
+/* rotateIn s'active bien au survol du parent */
+.rotateIn {
+  animation-name: rotateIn;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  color: #99E2D0;
+  cursor: pointer;
+}
+@keyframes rotateIn {
+  0% {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -180deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+// le Chargeur Etiquettes
+.menu__entrees,
+.menu__plats,
+.menu__deserts  {
+.label-load1 {
+  animation: label-load 650ms ease-in-out;
+  transition: animation 2s;
+
+}
+.label-load2 {
+  animation: label-load 650ms ease-in-out;
+  animation-delay: 100ms;
+  transition: animation 2s 2s;
+}
+.label-load3 {
+  animation: label-load 650ms ease-in-out ;
+  animation-delay: 100ms + 50ms;
+  transition: animation 2s 4s;
+}
+}
+// le loading des Etiquettes
+@keyframes label-load {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  33%{
+    transform: translateY(66%);
+    opacity: .1;
+  }
+  50% {
+    transform: translateY(50%);
+    opacity: .3;
+  }
+  66%{
+    transform: translateY(33%);
+    opacity: .4;
+  }
+  80%{
+    opacity: .8;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+// Animations sur le btn
+.element-btn:hover,
+.element-btn:focus {
+  transform: scale(1.02);
+  transition: transform 1.01s;
+}

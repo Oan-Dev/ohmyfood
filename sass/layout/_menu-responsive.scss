@@ -1,0 +1,260 @@
+// Mode Responsive
+
+
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+    body {
+      width: 100%;
+    }
+
+    // le picture
+    #block__RestoPalette,
+    #block__RestoLanote,
+    #block__RestoAlafrancaise,
+    #block__RestoDelice  {
+      max-width: 100%;
+      height: inherit;
+      background-position-y: -100px;
+      background-repeat: no-repeat;
+
+    }
+    .block__images {
+      background-size: 50% auto;
+      height: 450px;
+    }
+    .block__images2 {
+      background-size: 50% auto;
+      height: 700px;
+    }
+
+    // le container principal
+    .container__menu{
+      max-width: 90%;
+    }
+    .container__titreRestaurant {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container_blockLabel {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      .container__animationMenu {
+        margin-bottom: 20px;
+      }
+      .menu__entrees,
+      .menu__plats,
+      .menu__deserts {
+        width: 40%;
+        .label__menu p span {
+          font-size: 13px;
+        }
+
+      }
+      .menu__plats,
+      .menu__deserts {
+        margin-left: 20px;
+      }
+    }
+
+    // le footer
+      .container__down {
+        width: auto;
+        h4 {
+          display: flex;
+          justify-content: center;
+        }
+        ul {
+          width: auto;
+          display: flex;
+          flex-direction: row;
+            li {
+              margin: auto;
+              padding-right: 50px
+            }
+        }
+      }
+  }
+
+@media screen and (min-width: 1240px) and (max-width: 1310px) {
+  body {
+    width: 90%;
+  }
+
+  // le picture
+  #block__RestoPalette,
+  #block__RestoLanote,
+  #block__RestoAlafrancaise,
+  #block__RestoDelice  {
+    max-width: 100%;
+    height: inherit;
+    background-position-y: -100px;
+  }
+
+  .block__images {
+    background-size: 50% auto;
+    height: 550px;
+  }
+  .block__images2 {
+    background-size: 50% auto;
+    height: 550px;
+  }
+
+  // le container principal
+  .container__menu{
+    max-width: 90%;
+  }
+  .container__titreRestaurant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container_blockLabel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .container__animationMenu {
+      margin-bottom: 20px;
+    }
+    .menu__entrees,
+    .menu__plats,
+    .menu__deserts {
+      width: 40%;
+    }
+    .menu__plats,
+    .menu__deserts {
+      margin-left: 20px;
+    }
+  }
+
+  // le footer
+    .container__down {
+      width: auto;
+      h4 {
+        display: flex;
+        justify-content: center;
+      }
+      ul {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+          li {
+            margin: auto;
+            padding-right: 50px
+          }
+      }
+    }
+}
+
+
+/* Mode Desktop (Taille minimum pour les 13 pouces) & au delà */
+@media screen and (min-width: 1311px) {
+    body {
+      width: 100%;
+    }
+
+    // le header avec la navBar
+    header {
+      background-color: #fff !important;
+      .navBar {
+        background-color: #fff !important;
+      }
+    }
+
+    // le picture
+    #block__RestoPalette,
+    #block__RestoLanote,
+    #block__RestoAlafrancaise,
+    #block__RestoDelice {
+      max-width: 100%;
+      height: inherit;
+      background-position-y: -100px;
+    }
+    .block__images {
+      background-size: 50% auto;
+      height: 550px;
+    }
+    .block__images2 {
+      background-size: 50% auto;
+      height: 550px;
+    }
+
+    // le container principal
+    .container__menu{
+      max-width: 90%;
+    }
+    .container__titreRestaurant {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container_blockLabel {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      .container__animationMenu {
+        margin-bottom: 20px;
+      }
+      .menu__entrees,
+      .menu__plats,
+      .menu__deserts {
+        width: 80%;
+      }
+      .menu__plats,
+      .menu__deserts {
+        margin-left: 20px;
+      }
+    }
+    // le footer
+      .container__down {
+        width: auto;
+        h4 {
+          display: flex;
+          justify-content: center;
+        }
+        ul {
+          width: auto;
+          display: flex;
+          flex-direction: row;
+            li {
+              margin: auto;
+              padding-right: 50px
+            }
+        }
+      }
+  }
+  @media screen and (min-width: 1500px) {
+    // le picture
+    #block__RestoPalette,
+    #block__RestoLanote,
+    #block__RestoAlafrancaise,
+    #block__RestoDelice {
+      max-width: 100%;
+      height: inherit;
+      background-position-y: -150px;
+      background-size: cover;
+      z-index: -1;
+      box-sizing: border-box;
+    }
+
+    .block__imagesRestaurant2 {
+      height: 700px;
+      // object-fit: cover;
+
+    }
+
+    .block__images {
+      background-size: 50% auto;
+      height: 700px;
+    }
+    .block__images2 {
+      // background-size: 50% auto;
+      height: 700px;
+    }
+
+  }

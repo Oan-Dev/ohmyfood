@@ -1,0 +1,406 @@
+@charset "UTF-8";
+/*Général*/
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: block;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: inherit;
+  height: 70px;
+  background-color: #ffff;
+  z-index: 1;
+}
+header .navBar {
+  width: 100%;
+  height: 2vh;
+  z-index: 1;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+header .navBar .container__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 40px;
+  margin-right: 80px;
+  padding: 15px;
+}
+header .navBar .block__iconHtml {
+  width: 50px;
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 40px;
+  margin-left: 15px;
+}
+header .navBar .color-IconIndex {
+  color: #000;
+}
+header .navBar .block__Logo {
+  width: auto;
+}
+
+#block__RestoPalette {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  max-width: 100%;
+  height: 41.04vh;
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+#block__RestoLanote {
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  max-width: 100%;
+  height: 41.04vh;
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+#block__RestoAlafrancaise {
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  max-width: 100%;
+  height: 41.04vh;
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+#block__RestoDelice {
+  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  max-width: 100%;
+  height: 41.04vh;
+  background-size: cover;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+.container__menu {
+  max-width: 100%;
+  height: 1350px;
+  background-color: #f2f2f2;
+  border-radius: 25px 25px 0 0;
+  padding: 15px 10px;
+  z-index: 2;
+  margin-top: -50px;
+  margin-bottom: auto;
+}
+.container__menu .container__titreRestaurant {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__menu .container__titreRestaurant .block__titre h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Shrikhand;
+}
+.container__menu .container__titreRestaurant .block__iconlove {
+  background-color: transparent !important;
+  width: auto;
+  height: auto;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.container__menu .container_blockLabel {
+  width: inherit;
+  height: inherit;
+  padding: 10px;
+}
+.container__menu .container__animationMenu {
+  max-width: 100%;
+  height: 10.65vh;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  background-color: #fff;
+  animation: slideInRight;
+}
+.container__menu .container__animationMenu .label__menu {
+  width: 100%;
+  height: inherit;
+  padding: 5px 15px 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.container__menu .container__animationMenu .label__menu .titre-dish {
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+.container__menu .container__animationMenu .label__menu .titre-dish .dish-specificite {
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 2;
+}
+.container__menu .container__animationMenu .label__menu .titre-dish .dish-specificite--hidden {
+  display: inline-block;
+  margin-left: 5px;
+}
+.container__menu .container__animationMenu .label__menu .titre-dish .threePoints {
+  display: inline-block;
+  opacity: 0;
+}
+.container__menu .container__animationMenu .label__menu .block__tarifs {
+  width: auto;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.container__menu .container__animationMenu .label__menu .block__tarifs .tarifs {
+  height: inherit;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+.container__menu .container__animationMenu .animaValidation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 100%;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  display: none;
+}
+.container__menu .container__animationMenu .animaValidation .check-ok {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #99E2D0;
+}
+.container__menu .container__animationMenu .animaValidation .check-ok .fa-check {
+  color: #99E2D0;
+}
+
+.titreMenu .titreMenu-underline {
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+}
+
+.block__btn {
+  height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+.block__btn .element-btn {
+  width: 260px;
+  height: 80px;
+  background: linear-gradient(0.45turn, #FF79DA -25%, #9356DC 125%);
+  border-radius: 40px;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* footer*/
+.container__down {
+  width: auto;
+  height: 27.4vh;
+  background-color: #353535;
+  color: #ffff;
+  padding-top: 20px;
+}
+.container__down h4 {
+  margin: 0 0 5px 40px;
+  font-size: 20px;
+}
+.container__down ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+.container__down ul li a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  body {
+    max-width: 100%;
+  }
+  body .titre-dish {
+    font-size: 1rem;
+  }
+  body .titre-dish .dish-specificite {
+    font-size: 0.8rem;
+  }
+}
+.block__iconlove {
+  font-size: 30px;
+}
+.block__iconlove .icon-hover {
+  display: none;
+  color: #cc12c4;
+}
+
+.block__iconlove:hover .icon-before,
+.block__iconlove:focus .icon-before {
+  display: none;
+}
+.block__iconlove:hover .icon-hover,
+.block__iconlove:focus .icon-hover {
+  display: block;
+  transition: display 2s;
+}
+
+.container__animationMenu:hover > .label__menu,
+.container__animationMenu:focus > .label__menu {
+  transition: 5s;
+  border-radius: 20px 0 0 20px;
+  text-overflow: clip;
+}
+.container__animationMenu:hover > .label__menu .block__tarifs,
+.container__animationMenu:focus > .label__menu .block__tarifs {
+  width: auto;
+}
+.container__animationMenu:hover > .label__menu .dish-specificite--hidden,
+.container__animationMenu:focus > .label__menu .dish-specificite--hidden {
+  display: none;
+}
+.container__animationMenu:hover > .label__menu .threePoints,
+.container__animationMenu:focus > .label__menu .threePoints {
+  opacity: 1;
+}
+
+.container__animationMenu:focus > .slideInRight,
+.container__animationMenu:hover > .slideInRight {
+  animation: slideInRight 2s ease;
+  transition: animation 2ms;
+  transform-origin: right;
+  display: flex;
+  width: 75px;
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
+  transform-origin: right;
+  display: none;
+  width: 75px;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    transform-origin: right;
+    opacity: 0;
+    display: none;
+    width: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    display: flex;
+    width: 75px;
+  }
+}
+/* rotateIn s'active bien au survol du parent */
+.rotateIn {
+  animation-name: rotateIn;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  color: #99E2D0;
+  cursor: pointer;
+}
+
+@keyframes rotateIn {
+  0% {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -180deg);
+    opacity: 1;
+  }
+  100% {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
+}
+.menu__entrees .label-load1,
+.menu__plats .label-load1,
+.menu__deserts .label-load1 {
+  animation: label-load 650ms ease-in-out;
+  transition: animation 2s;
+}
+.menu__entrees .label-load2,
+.menu__plats .label-load2,
+.menu__deserts .label-load2 {
+  animation: label-load 650ms ease-in-out;
+  animation-delay: 100ms;
+  transition: animation 2s 2s;
+}
+.menu__entrees .label-load3,
+.menu__plats .label-load3,
+.menu__deserts .label-load3 {
+  animation: label-load 650ms ease-in-out;
+  animation-delay: 150ms;
+  transition: animation 2s 4s;
+}
+
+@keyframes label-load {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  33% {
+    transform: translateY(66%);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translateY(50%);
+    opacity: 0.3;
+  }
+  66% {
+    transform: translateY(33%);
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.element-btn:hover,
+.element-btn:focus {
+  transform: scale(1.02);
+  transition: transform 1.01s;
+}

@@ -1,4 +1,11 @@
 @charset "UTF-8";
+
+@font-face {
+  font-family: 'Shrikhand';
+  src: url("./fonts/Shrikhand/Shrikhand-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 /*Général*/
 body {
   width: 100%;
@@ -296,6 +303,7 @@ header .navBar .block__Logo {
     width: auto;
   }
   .container__down h4 {
+    font-family: 'Shrikhand' !important;
     display: flex;
     justify-content: center;
   }

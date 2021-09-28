@@ -170,7 +170,7 @@ a {
 
 .container__restaurant {
   width: auto;
-  height: 1500px;
+  height: auto;
   padding: 15px 15px 15px 15px;
   margin-top: 450px;
   background-color: #f2f2f2;

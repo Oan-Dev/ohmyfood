@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*Général*/
-body {
-  width: 100%;
+html, body {
+  width: auto;
   margin: 0;
   padding: 0;
   font-family: "Roboto";
@@ -314,12 +314,19 @@ a {
   color: #ffff;
   text-decoration: none;
 }
+/* fin du mobile-first */
+
+/* le Responsive */
 
 @media screen and (min-width: 768px) and (max-width: 1239px) {
-   body {
-   max-width: 100%;
+  html, body {
+   width: auto;
+   margin: 0;
+   padding: 0;
  }
-
+  header, body .container__circle {
+    width: auto;
+  }
 
   .container__restaurant{
     height: auto;
@@ -327,7 +334,7 @@ a {
   }
 
   .block__Resto {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -358,6 +365,14 @@ a {
   }
 }
 @media screen and (min-width: 1240px) and (max-width: 1310px) {
+  html, body {
+   width:auto;
+   margin: 0;
+   padding: 0;
+ }
+ header, body .container__circle {
+   width: auto;
+ }
   .container__nav {
     margin: 0;
   }
@@ -379,7 +394,7 @@ a {
   }
 
   .block__Resto {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -416,6 +431,14 @@ a {
   }
 }
 @media screen and (min-width: 1311px) {
+  html, body {
+   width: auto;
+   margin: 0;
+   padding: 0;
+ }
+ header, body .container__circle {
+   width: auto;
+ }
   .container__nav {
     margin: 0;
   }
@@ -437,7 +460,7 @@ a {
   }
 
   .block__Resto {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -475,6 +498,15 @@ a {
   }
 }
 @media screen and (min-width: 1240px) and (max-width: 1310px) and (orientation: landscape) {
+  html, body {
+   width: auto;
+   margin: 0;
+   padding: 0;
+ }
+ header, body .container__circle {
+   width: auto;
+ }
+
   .block__restaurant {
     width: auto;
     height: auto;
@@ -483,6 +515,8 @@ a {
     height: inherit;
   }
 }
+
+/* Les animations */
 
 body {
   position: relative;
@@ -493,7 +527,7 @@ body {
 body .container__circle {
   position: absolute;
   min-height: 25vh;
-  min-width: 100vw;
+  min-width: 95vw;
   display: flex;
   justify-content: center;
   align-items: center;

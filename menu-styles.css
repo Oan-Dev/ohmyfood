@@ -215,7 +215,7 @@ header .navBar .block__Logo {
   border-bottom: 3px solid #99E2D0;
   padding-bottom: 5px;
 }
-
+/* le format du btn */
 .block__btn {
   height: 120px;
   width: auto;
@@ -257,7 +257,9 @@ header .navBar .block__Logo {
   text-decoration: none;
   color: #ffff;
 }
+/* fin du mobile first */
 
+/* le responsive */
 @media screen and (min-width: 768px) and (max-width: 1239px) {
   body {
     max-width: 100%;
@@ -324,9 +326,11 @@ header .navBar .block__Logo {
     height: 180px;
   }
 }
+/* fin du responsive */
 
 /* Les animations */
 
+/* Animation sur icone love */
 .block__iconlove {
   font-size: 30px;
 }
@@ -344,6 +348,8 @@ header .navBar .block__Logo {
   display: block;
   transition: display 2s;
 }
+/* les Animations des Etiquettes */
+
 
 .container__animationMenu:hover > .label__menu,
 .container__animationMenu:focus > .label__menu {
@@ -364,6 +370,7 @@ header .navBar .block__Logo {
   opacity: 1;
 }
 
+/* l'animation du slide */
 .container__animationMenu:focus > .slideInRight,
 .container__animationMenu:hover > .slideInRight {
   animation: slideInRight 2s ease;
@@ -399,6 +406,7 @@ header .navBar .block__Logo {
     width: 75px;
   }
 }
+
 /* rotateIn s'active bien au survol du parent */
 .rotateIn {
   animation-name: rotateIn;
@@ -441,6 +449,7 @@ header .navBar .block__Logo {
   transition: animation 2s 4s;
 }
 
+/* la loading page sur le menu */
 @keyframes label-load {
   0% {
     transform: translateY(100%);
@@ -466,6 +475,8 @@ header .navBar .block__Logo {
     opacity: 1;
   }
 }
+
+/* Animation transform sur le btn */
 .element-btn:hover,
 .element-btn:focus {
   transform: scale(1.02);

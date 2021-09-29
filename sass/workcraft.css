@@ -256,16 +256,25 @@ body {
   cursor: pointer;
   text-overflow: clip;
 }
+.label__menu {
+  width: 20px;
+  height: 75px;
+   white-space: nowrap;
+}
+.exemple {
+   white-space: nowrap;
+}
 
-/* .dish-title, .dish-subtitle {
-  text-overflow: ellipsis;
-} */
+.container__animationMenu:hover .label__menu .exemple {
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
 /* .container__animationMenu:hover >  .label__dish .dish-title,
 .container__animationMenu:focus >  .label__dish .dish-title {
     width: 100%;
     text-overflow: ellipsis;
 } */
-.hidden-title {
+/* .hidden-title {
   display: block;
 }
 .ponctuation {
@@ -278,4 +287,4 @@ body {
 .container__animationMenu:hover >  .label__dish .dish-title .ponctuation,
 .container__animationMenu:focus >  .label__dish .dish-title .ponctuation {
  display:block;
-}
+} */

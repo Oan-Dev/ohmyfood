@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+    .container {
+      display: flex;
+      background-color: red;
+      height: 17px;
+    }
+
+    .container:hover > .animation {
+      display: flex;
+    }
+
+    .container:hover > .text {
+      text-overflow: ellipsis;
+    }
+
+    .text {
+      background-color: aqua;
+      flex-grow: 1;
+      overflow: hidden;
+    }
+
+    .prix {
+      background-color: blueviolet;
+      flex-grow: 3;
+    }
+
+    .animation {
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class='container'>
+  <div class='text'>
+    This is some long text that will not fit in the box.
+    This is some long text that will not fit in the box.
+    This is some long text that will not fit in the box.
+    This is some long text that will not fit in the box.
+    This is some long text that will not fit in the box.
+    This is some long text that will not fit in the box.
+  </div>
+  <div class='prix'>
+    33
+  </div>
+  <div class='animation'>
+    haha
+  </div>
+</div>
+
+</body>
+</html>

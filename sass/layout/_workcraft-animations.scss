@@ -85,54 +85,54 @@
 }
 
 // le Chargeur Etiquettes
-.menu__entrees,
-.menu__plats,
-.menu__deserts  {
-.label-load1 {
-  animation: label-load 650ms ease-in-out;
-  transition: animation 2s;
+// .menu__entrees,
+// .menu__plats,
+// .menu__deserts  {
+// .label-load1 {
+//   animation: label-load 650ms ease-in-out;
+//   transition: animation 2s;
+//
+// }
+// .label-load2 {
+//   animation: label-load 650ms ease-in-out;
+//   animation-delay: 100ms;
+//   transition: animation 2s 2s;
+// }
+// .label-load3 {
+//   animation: label-load 650ms ease-in-out ;
+//   animation-delay: 100ms + 50ms;
+//   transition: animation 2s 4s;
+// }
+// }
 
-}
-.label-load2 {
-  animation: label-load 650ms ease-in-out;
-  animation-delay: 100ms;
-  transition: animation 2s 2s;
-}
-.label-load3 {
-  animation: label-load 650ms ease-in-out ;
-  animation-delay: 100ms + 50ms;
-  transition: animation 2s 4s;
-}
-}
-
-@keyframes label-load {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  33%{
-    transform: translateY(66%);
-    opacity: .1;
-  }
-  50% {
-    transform: translateY(50%);
-    opacity: .3;
-  }
-  66%{
-    transform: translateY(33%);
-    opacity: .4;
-  }
-  80%{
-    opacity: .8;
-  }
-  100%{
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-Animations sur le btn
-.element-btn:hover,
-.element-btn:focus {
-  transform: scale(1.02);
-  transition: transform 1.01s;
-}
+// @keyframes label-load {
+//   0% {
+//     transform: translateY(100%);
+//     opacity: 0;
+//   }
+//   33%{
+//     transform: translateY(66%);
+//     opacity: .1;
+//   }
+//   50% {
+//     transform: translateY(50%);
+//     opacity: .3;
+//   }
+//   66%{
+//     transform: translateY(33%);
+//     opacity: .4;
+//   }
+//   80%{
+//     opacity: .8;
+//   }
+//   100%{
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+// }
+// Animations sur le btn
+// .element-btn:hover,
+// .element-btn:focus {
+//   transform: scale(1.02);
+//   transition: transform 1.01s;
+// }

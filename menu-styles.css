@@ -367,6 +367,7 @@ header .navBar .block__Logo {
 }
 .container__animationMenu:hover > .label__menu .threePoints,
 .container__animationMenu:focus > .label__menu .threePoints {
+  display: inline-block;
   opacity: 1;
 }
 

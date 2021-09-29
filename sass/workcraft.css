@@ -96,10 +96,7 @@ body {
   color: #99E2D0;
 }
 
-.titreMenu .titreMenu-underline {
-  border-bottom: 3px solid #99E2D0;
-  padding-bottom: 5px;
-}
+
 
 .container__animationMenu {
   width: 80%;
@@ -180,7 +177,7 @@ body {
     opacity: 1;
   }
 }
-.menu__entrees .label-load1,
+/* .menu__entrees .label-load1,
 .menu__plats .label-load1,
 .menu__deserts .label-load1 {
   animation: label-load 650ms ease-in-out;
@@ -199,8 +196,8 @@ body {
   animation: label-load 650ms ease-in-out;
   animation-delay: 150ms;
   transition: animation 2s 4s;
-}
-
+} */
+/*
 @keyframes label-load {
   0% {
     transform: translateY(100%);
@@ -230,14 +227,14 @@ Animations sur le btn .element-btn:hover,
 .element-btn:focus {
   transform: scale(1.02);
   transition: transform 1.01s;
-}
+} */
 
 body {
   background-color: #808080;
   padding: 100px 150px 100px 50px;
 }
 
-.label__menu1 {
+/* .label__menu1 {
   display: flex;
   width: 100%;
   height: 0.005vh;
@@ -246,4 +243,4 @@ body {
 .label__menu1 .plats__titre {
   display: inline-block;
   justify-content: center;
-}
+} */

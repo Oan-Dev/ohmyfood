@@ -27,18 +27,22 @@ body {
 }
 .container__text {
   height: inherit;
-  width: 250px;
+  width: inherit;
 }
 
 .container:hover > .animation {
   display: flex;
 
 }
+.container:hover > .container__text{
+ width: 120px;
 
-.container:hover > .text {
+}
+
+.container:hover > .container__text .text {
   text-overflow: ellipsis;
     overflow: hidden;
-    width: 75px;
+    width: 120px;
 }
 
 .text {

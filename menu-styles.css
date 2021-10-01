@@ -139,7 +139,7 @@ header .navBar .block__Logo {
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 15px;
   border-radius: 20px;
   background-color: #fff;
@@ -178,7 +178,7 @@ header .navBar .block__Logo {
   width: auto;
   height: inherit;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
 }
 .container__menu .container__animationMenu .label__menu .block__tarifs .tarifs {
@@ -351,6 +351,9 @@ header .navBar .block__Logo {
 /* les Animations des Etiquettes */
 .label__menu {
   width: 100%;
+}
+.container__animationMenu {
+  justify-content: space-around;
 }
 
 .container__animationMenu .label__menu .menu__titre {

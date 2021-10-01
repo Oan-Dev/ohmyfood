@@ -354,6 +354,26 @@ header .navBar .block__Logo {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  flex-grow: 1;
+
+}
+.container__animationMenu .label__menu .menu__titre div:first-child {
+  font-size: 1.10rem;
+  font-weight: 900;
+  white-space: nowrap;
+
+}
+.container__animationMenu .label__menu .menu__titre div:last-child {
+  font-size: 1.05 rem;
+  font-weight: 400;
+  white-space: nowrap;
+
+}
+.container__animationMenu:hover > .label__menu .menu__titre .text,
+.container__animationMenu:focus > .label__menu .menu__titre  .text{
+  text-overflow: ellipsis;
+    overflow: hidden;
+    width: auto;
 }
 
 

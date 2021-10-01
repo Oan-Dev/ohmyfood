@@ -349,6 +349,9 @@ header .navBar .block__Logo {
   transition: display 2s;
 }
 /* les Animations des Etiquettes */
+.label__menu {
+  width: 100%;
+}
 
 .container__animationMenu .label__menu .menu__titre {
   display: flex;
@@ -358,22 +361,34 @@ header .navBar .block__Logo {
 
 }
 .container__animationMenu .label__menu .menu__titre div:first-child {
-  font-size: 1.10rem;
+  font-size: 1rem;
   font-weight: 900;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
 }
 .container__animationMenu .label__menu .menu__titre div:last-child {
-  font-size: 1.05 rem;
+  font-size: .98 rem;
   font-weight: 400;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
 }
 .container__animationMenu:hover > .label__menu .menu__titre .text,
 .container__animationMenu:focus > .label__menu .menu__titre  .text{
   text-overflow: ellipsis;
-    overflow: hidden;
-    width: auto;
+  overflow: hidden;
+  width: 50%;
+}
+.container__animationMenu:hover > .label__menu,
+.container__animationMenu:focus > .label__menu{
+width: 70%;
+}
+.container__animationMenu:hover > .label__menu .menu__titre,
+.container__animationMenu:focus > .label__menu .menu__titre{
+width: 50%;
 }
 
 

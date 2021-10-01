@@ -365,7 +365,7 @@ header .navBar .block__Logo {
 
 }
 .container__animationMenu .label__menu .menu__titre div:first-child {
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-weight: 900;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -373,7 +373,7 @@ header .navBar .block__Logo {
 
 }
 .container__animationMenu .label__menu .menu__titre div:last-child {
-  font-size: .98 rem;
+  font-size: 1.05rem;
   font-weight: 400;
   white-space: nowrap;
   text-overflow: ellipsis;

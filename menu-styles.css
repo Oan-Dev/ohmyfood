@@ -350,7 +350,11 @@ header .navBar .block__Logo {
 }
 /* les Animations des Etiquettes */
 
-
+.container__animationMenu .label__menu .menu__titre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 
 /* l'animation du slide */

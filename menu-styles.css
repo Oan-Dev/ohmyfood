@@ -349,45 +349,9 @@ header .navBar .block__Logo {
   transition: display 2s;
 }
 /* les Animations des Etiquettes */
-/* .container__animationMenu:hover > .label__menu,
-.container__animationMenu:focus > .label__menu {
-  transition: 5s;
-  border-radius: 20px 0 0 20px;
-  text-overflow: clip;
-} */
-/* .container__animationMenu:hover > .label__menu .block__tarifs,
-.container__animationMenu:focus > .label__menu .block__tarifs {
-  width: auto;
-} */
-.container__animationMenu:hover > .label__menu .dish-specificite--hidden,
-.container__animationMenu:focus > .label__menu .dish-specificite--hidden {
-  display: none;
-}
-.container__animationMenu:hover > .label__menu .threePoints,
-.container__animationMenu:focus > .label__menu .threePoints {
-  display: inline-block;
-  opacity: 1;
-}
 
-/* .container__animationMenu:hover > .label__menu,
-.container__animationMenu:focus > .label__menu {
-  transition: 5s;
-  border-radius: 20px 0 0 20px;
-  text-overflow: clip;
-}
-.container__animationMenu:hover > .label__menu .block__tarifs,
-.container__animationMenu:focus > .label__menu .block__tarifs {
-  width: auto;
-}
-.container__animationMenu:hover > .label__menu .dish-specificite--hidden,
-.container__animationMenu:focus > .label__menu .dish-specificite--hidden {
-  display: none;
-}
-.container__animationMenu:hover > .label__menu .threePoints,
-.container__animationMenu:focus > .label__menu .threePoints {
-  display: inline-block;
-  opacity: 1;
-} */
+
+
 
 /* l'animation du slide */
 .container__animationMenu:focus > .slideInRight,

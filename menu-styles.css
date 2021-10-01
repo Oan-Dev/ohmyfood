@@ -151,7 +151,7 @@ header .navBar .block__Logo {
   padding: 5px 15px 0 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -382,10 +382,10 @@ header .navBar .block__Logo {
   overflow: hidden;
   width: 50%;
 }
-.container__animationMenu:hover > .label__menu,
+/* .container__animationMenu:hover > .label__menu,
 .container__animationMenu:focus > .label__menu{
 width: 70%;
-}
+} */
 .container__animationMenu:hover > .label__menu .menu__titre,
 .container__animationMenu:focus > .label__menu .menu__titre{
 width: 50%;

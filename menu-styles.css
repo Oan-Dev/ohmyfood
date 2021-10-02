@@ -221,7 +221,6 @@ header .navBar .block__Logo {
   width: auto;
   display: flex;
   justify-content: center;
-  /* background-color: #f2f2f2; */
 }
 .block__btn .element-btn {
   width: 260px;
@@ -387,10 +386,7 @@ header .navBar .block__Logo {
   overflow: hidden;
   width: 50%;
 }
-/* .container__animationMenu:hover > .label__menu,
-.container__animationMenu:focus > .label__menu{
-width: 70%;
-} */
+
 .container__animationMenu:hover > .label__menu .menu__titre,
 .container__animationMenu:focus > .label__menu .menu__titre{
 width: 50%;

@@ -358,6 +358,7 @@ header .navBar .block__Logo {
 }
 
 .container__animationMenu .label__menu .menu__titre {
+  padding-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

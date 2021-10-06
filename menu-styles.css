@@ -6,6 +6,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 /*Général*/
 body {
   width: 100%;
@@ -31,6 +32,7 @@ header {
   background-color: #ffff;
   z-index: 1;
 }
+
 header .navBar {
   width: 100%;
   height: 2vh;
@@ -40,6 +42,7 @@ header .navBar {
   justify-content: center;
   background-color: #fff;
 }
+
 header .navBar .container__logo {
   display: flex;
   flex-direction: row;
@@ -50,6 +53,7 @@ header .navBar .container__logo {
   margin-right: 80px;
   padding: 15px;
 }
+
 header .navBar .block__iconHtml {
   width: 50px;
   display: flex;
@@ -57,9 +61,11 @@ header .navBar .block__iconHtml {
   padding-right: 40px;
   margin-left: 15px;
 }
+
 header .navBar .color-IconIndex {
   color: #000;
 }
+
 header .navBar .block__Logo {
   width: auto;
 }
@@ -110,17 +116,20 @@ header .navBar .block__Logo {
   margin-top: -50px;
   margin-bottom: auto;
 }
+
 .container__menu .container__titreRestaurant {
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .container__menu .container__titreRestaurant .block__titre h2 {
   font-size: 1.5rem;
   font-weight: 700;
   font-family: Shrikhand;
 }
+
 .container__menu .container__titreRestaurant .block__iconlove {
   background-color: transparent !important;
   width: auto;
@@ -128,11 +137,13 @@ header .navBar .block__Logo {
   margin-left: 50px;
   cursor: pointer;
 }
+
 .container__menu .container_blockLabel {
   width: inherit;
   height: inherit;
   padding: 10px;
 }
+
 .container__menu .container__animationMenu {
   max-width: 100%;
   height: 90px;
@@ -145,6 +156,7 @@ header .navBar .block__Logo {
   background-color: #fff;
   animation: slideInRight;
 }
+
 .container__menu .container__animationMenu .label__menu {
   width: 100%;
   height: inherit;
@@ -155,10 +167,12 @@ header .navBar .block__Logo {
   border-radius: 20px;
   cursor: pointer;
 }
+
 .container__menu .container__animationMenu .label__menu .titre-dish {
   font-weight: 700;
   font-size: 1.15rem;
 }
+
 .container__menu .container__animationMenu .label__menu .titre-dish .dish-specificite {
   font-weight: 400;
   font-size: 0.9rem;
@@ -166,14 +180,17 @@ header .navBar .block__Logo {
   flex-direction: row;
   flex-grow: 2;
 }
+
 .container__menu .container__animationMenu .label__menu .titre-dish .dish-specificite--hidden {
   display: inline-block;
   margin-left: 5px;
 }
+
 .container__menu .container__animationMenu .label__menu .titre-dish .threePoints {
   display: inline-block;
   opacity: 0;
 }
+
 .container__menu .container__animationMenu .label__menu .block__tarifs {
   width: auto;
   height: inherit;
@@ -181,12 +198,14 @@ header .navBar .block__Logo {
   justify-content: space-around;
   align-items: flex-end;
 }
+
 .container__menu .container__animationMenu .label__menu .block__tarifs .tarifs {
   height: inherit;
   display: flex;
   align-items: flex-end;
   margin-bottom: 20px;
 }
+
 .container__menu .container__animationMenu .animaValidation {
   display: flex;
   justify-content: center;
@@ -197,6 +216,7 @@ header .navBar .block__Logo {
   border-radius: 0 20px 20px 0;
   display: none;
 }
+
 .container__menu .container__animationMenu .animaValidation .check-ok {
   width: 30px;
   height: 30px;
@@ -207,6 +227,7 @@ header .navBar .block__Logo {
   align-items: center;
   color: #99E2D0;
 }
+
 .container__menu .container__animationMenu .animaValidation .check-ok .fa-check {
   color: #99E2D0;
 }
@@ -215,6 +236,7 @@ header .navBar .block__Logo {
   border-bottom: 3px solid #99E2D0;
   padding-bottom: 5px;
 }
+
 /* le format du btn */
 .block__btn {
   height: 120px;
@@ -222,6 +244,7 @@ header .navBar .block__Logo {
   display: flex;
   justify-content: center;
 }
+
 .block__btn .element-btn {
   width: 260px;
   height: 80px;
@@ -244,96 +267,112 @@ header .navBar .block__Logo {
   color: #ffff;
   padding-top: 20px;
 }
+
 .container__down h4 {
   margin: 0 0 5px 40px;
   font-size: 20px;
   font-family: 'Shrikhand';
 }
+
 .container__down ul li {
   list-style: none;
   margin-bottom: 5px;
 }
+
 .container__down ul li a {
   text-decoration: none;
   color: #ffff;
 }
-/* fin du mobile first */
 
+/* fin du mobile first */
 /* le responsive */
 @media screen and (min-width: 768px) and (max-width: 1239px) {
   body {
     max-width: 100%;
     height: auto;
   }
+
   body .titre-dish {
     font-size: 1rem;
   }
+
   body .titre-dish .dish-specificite {
     font-size: 0.8rem;
   }
+
   #block__RestoPalette,
   #block__RestoLanote,
   #block__RestoAlafrancaise,
   #block__RestoDelice {
     background-position-y: -150px;
   }
+
   .container__down {
     width: auto;
   }
+
   .container__down h4 {
     display: flex;
     justify-content: center;
   }
+
   .container__down ul {
     width: auto;
     display: flex;
     flex-direction: row;
   }
+
   .container__down ul li {
     margin: auto;
     padding-right: 50px;
   }
 }
+
 @media screen and (min-width: 1240px) {
+
   #block__RestoPalette,
   #block__RestoLanote,
   #block__RestoAlafrancaise,
   #block__RestoDelice {
     background-position-y: -350px;
   }
+
   .container__down {
     width: auto;
   }
+
   .container__down h4 {
     font-family: 'Shrikhand' !important;
     display: flex;
     justify-content: center;
   }
+
   .container__down ul {
     width: auto;
     display: flex;
     flex-direction: row;
   }
+
   .container__down ul li {
     margin: auto;
     padding-right: 50px;
   }
-
 }
+
 @media screen and (max-width: 768px) and (orientation: landscape) {
   .container__down {
     width: auto;
     height: 180px;
   }
 }
+
 /* fin du responsive */
-
 /* Les animations */
-
 /* Animation sur icone love */
 .block__iconlove {
   font-size: 30px;
 }
+
 .block__iconlove .icon-hover {
   display: none;
   color: #cc12c4;
@@ -343,15 +382,18 @@ header .navBar .block__Logo {
 .block__iconlove:focus .icon-before {
   display: none;
 }
+
 .block__iconlove:hover .icon-hover,
 .block__iconlove:focus .icon-hover {
   display: block;
   transition: display 2s;
 }
+
 /* les Animations des Etiquettes */
 .label__menu {
   width: 100%;
 }
+
 .container__animationMenu {
   justify-content: space-around;
 }
@@ -362,40 +404,39 @@ header .navBar .block__Logo {
   flex-direction: column;
   justify-content: space-around;
   flex-grow: 1;
-
 }
+
 .container__animationMenu .label__menu .menu__titre div:first-child {
   font-size: 1.10rem;
   font-weight: 900;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-
 }
+
 .container__animationMenu .label__menu .menu__titre div:last-child {
   font-size: .95rem;
   font-weight: 400;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-
 }
-.container__animationMenu:hover > .label__menu .menu__titre .text,
-.container__animationMenu:focus > .label__menu .menu__titre  .text{
+
+.container__animationMenu:hover>.label__menu .menu__titre .text,
+.container__animationMenu:focus>.label__menu .menu__titre .text {
   text-overflow: ellipsis;
   overflow: hidden;
   width: 50%;
 }
 
-.container__animationMenu:hover > .label__menu .menu__titre,
-.container__animationMenu:focus > .label__menu .menu__titre{
-width: 50%;
+.container__animationMenu:hover>.label__menu .menu__titre,
+.container__animationMenu:focus>.label__menu .menu__titre {
+  width: 50%;
 }
 
-
 /* l'animation du slide */
-.container__animationMenu:focus > .slideInRight,
-.container__animationMenu:hover > .slideInRight {
+.container__animationMenu:focus>.slideInRight,
+.container__animationMenu:hover>.slideInRight {
   animation: slideInRight 2s ease;
   transition: animation 2ms;
   transform-origin: right;
@@ -422,6 +463,7 @@ width: 50%;
     display: none;
     width: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -445,18 +487,21 @@ width: 50%;
     transform: rotate3d(0, 0, 1, -180deg);
     opacity: 1;
   }
+
   100% {
     transform-origin: center;
     transform: none;
     opacity: 1;
   }
 }
+
 .menu__entrees .label-load1,
 .menu__plats .label-load1,
 .menu__deserts .label-load1 {
   animation: label-load 650ms ease-in-out;
   transition: animation 2s;
 }
+
 .menu__entrees .label-load2,
 .menu__plats .label-load2,
 .menu__deserts .label-load2 {
@@ -464,6 +509,7 @@ width: 50%;
   animation-delay: 100ms;
   transition: animation 2s 2s;
 }
+
 .menu__entrees .label-load3,
 .menu__plats .label-load3,
 .menu__deserts .label-load3 {
@@ -478,21 +524,26 @@ width: 50%;
     transform: translateY(100%);
     opacity: 0;
   }
+
   33% {
     transform: translateY(66%);
     opacity: 0.1;
   }
+
   50% {
     transform: translateY(50%);
     opacity: 0.3;
   }
+
   66% {
     transform: translateY(33%);
     opacity: 0.4;
   }
+
   80% {
     opacity: 0.8;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;

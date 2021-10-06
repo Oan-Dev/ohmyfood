@@ -6,6 +6,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 /*Général*/
 html, body {
   width: auto;
@@ -288,6 +289,7 @@ a {
 .block__restaurant {
   position: relative;
 }
+
 .block__restaurant .label-Nouveau {
   position: absolute;
   right: 0;
@@ -320,21 +322,21 @@ a {
   color: #ffff;
   text-decoration: none;
 }
+
 /* fin du mobile-first */
-
 /* le Responsive */
-
 @media screen and (min-width: 768px) and (max-width: 1239px) {
   html, body {
-   width: auto;
-   margin: 0;
-   padding: 0;
- }
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
   header, body .container__circle {
     width: auto;
   }
 
-  .container__restaurant{
+  .container__restaurant {
     height: auto;
     padding: 70px 20px 70px 0;
   }
@@ -346,6 +348,7 @@ a {
     flex-direction: row;
     justify-content: space-around;
   }
+
   .block__Resto .block__RestoColumn1, .block__Resto .block__RestoColumn2 {
     width: 100%;
     height: auto;
@@ -356,37 +359,45 @@ a {
   .container__down {
     width: auto;
   }
+
   .container__down h4 {
     display: flex;
     justify-content: center;
   }
+
   .container__down ul {
     width: auto;
     display: flex;
     flex-direction: row;
   }
+
   .container__down ul li {
     margin: auto;
     padding-right: 50px;
   }
 }
+
 @media screen and (min-width: 1240px) and (max-width: 1310px) {
   html, body {
-   width:auto;
-   margin: 0;
-   padding: 0;
- }
- header, body .container__circle {
-   width: auto;
- }
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  header, body .container__circle {
+    width: auto;
+  }
+
   .container__nav {
     margin: 0;
   }
+
   .container__nav .container__navBar {
     display: flex;
     flex-direction: row;
     height: 70px;
   }
+
   .container__nav .container__navBar .nav__btn {
     width: auto;
     height: 50%;
@@ -406,6 +417,7 @@ a {
     flex-direction: row;
     justify-content: space-around;
   }
+
   .block__Resto .block__RestoColumn1, .block__Resto .block__RestoColumn2 {
     width: 100%;
     height: auto;
@@ -414,6 +426,7 @@ a {
     flex-direction: row;
     justify-content: center;
   }
+
   .block__Resto .block__RestoColumn1 .block__restaurant, .block__Resto .block__RestoColumn2 .block__restaurant {
     width: 100%;
     margin: 10px;
@@ -422,37 +435,45 @@ a {
   .container__down {
     width: auto;
   }
+
   .container__down h4 {
     display: flex;
     justify-content: center;
   }
+
   .container__down ul {
     width: auto;
     display: flex;
     flex-direction: row;
   }
+
   .container__down ul li {
     margin: auto;
     padding-right: 50px;
   }
 }
+
 @media screen and (min-width: 1311px) {
   html, body {
-   width: auto;
-   margin: 0;
-   padding: 0;
- }
- header, body .container__circle {
-   width: auto;
- }
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  header, body .container__circle {
+    width: auto;
+  }
+
   .container__nav {
     margin: 0;
   }
+
   .container__nav .container__navBar {
     display: flex;
     flex-direction: row;
     height: 70px;
   }
+
   .container__nav .container__navBar .nav__btn {
     width: auto;
     height: 50%;
@@ -472,6 +493,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
   }
+
   .block__Resto .block__RestoColumn1, .block__Resto .block__RestoColumn2 {
     width: 100%;
     height: auto;
@@ -481,6 +503,7 @@ a {
     justify-content: center;
     align-items: center;
   }
+
   .block__Resto .block__RestoColumn1 .block__restaurant, .block__Resto .block__RestoColumn2 .block__restaurant {
     width: 100%;
     margin: 10px;
@@ -489,47 +512,53 @@ a {
   .container__down {
     width: auto;
   }
+
   .container__down h4 {
     display: flex;
     justify-content: center;
   }
+
   .container__down ul {
     width: auto;
     display: flex;
     flex-direction: row;
   }
+
   .container__down ul li {
     margin: auto;
     padding-right: 50px;
   }
 }
+
 @media screen and (min-width: 1240px) and (max-width: 1310px) and (orientation: landscape) {
   html, body {
-   width: auto;
-   margin: 0;
-   padding: 0;
- }
- header, body .container__circle {
-   width: auto;
- }
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  header, body .container__circle {
+    width: auto;
+  }
 
   .block__restaurant {
     width: auto;
     height: auto;
   }
+
   .block__restaurant .lien__Resto {
     height: inherit;
   }
 }
 
 /* Les animations */
-
 body {
   position: relative;
   animation: loadingPage 1550ms ease-in-out;
   animation-delay: 200ms;
   transition: animation 4s;
 }
+
 body .container__circle {
   position: absolute;
   min-height: 25vh;
@@ -538,6 +567,7 @@ body .container__circle {
   justify-content: center;
   align-items: center;
 }
+
 body .container__circle .circle {
   display: flex;
   justify-content: center;
@@ -550,6 +580,7 @@ body .container__circle .circle {
   animation: spin 150ms linear 25 forwards;
   opacity: 0;
 }
+
 body .container__circle .circle .spin__content {
   display: flex;
   justify-content: center;
@@ -565,27 +596,32 @@ body .container__circle .circle .spin__content {
     transform: rotate(0);
     opacity: 1;
   }
+
   to {
     transform: rotate(360deg);
     opacity: 0;
   }
 }
+
 @keyframes no-spin {
   from {
     transform: rotate(360deg);
     opacity: 1;
   }
+
   to {
     transform: rotate(0);
     opacity: 0;
   }
 }
+
 @keyframes loadingPage {
   from {
     opacity: 0;
     transform: translateY(100vh);
   }
 }
+
 to {
   opacity: 1;
   transform: translateY(0);
@@ -618,6 +654,7 @@ to {
 .block__iconlove {
   font-size: 30px;
 }
+
 .block__iconlove .icon-hover {
   display: none;
   color: #cc12c4;
@@ -627,6 +664,7 @@ to {
 .block__iconlove:focus .icon-before {
   display: none;
 }
+
 .block__iconlove:hover .icon-hover,
 .block__iconlove:focus .icon-hover {
   display: block;
